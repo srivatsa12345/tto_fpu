@@ -15,7 +15,7 @@ module qspi_top;
 
     initial begin
         clk=1'b0;
-        forever #5 clk=~clk;
+        forever #20 clk=~clk;
     end
 
     initial begin
