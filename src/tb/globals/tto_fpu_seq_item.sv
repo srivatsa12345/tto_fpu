@@ -1,23 +1,12 @@
-`include "defines.svh"
-class qspi_seq_item extends uvm_sequence_item;
+class tto_fpu_seq_item extends uvm_sequence_item;
   
-  `uvm_object_utils(qspi_seq_item)
+    `uvm_object_utils(tto_fpu_seq_item)
   
-  function new(string name="qspi_seq_item");
-    super.new(name);
-  endfunction
+    function new(string name="tto_fpu_seq_item");
+        super.new(name);
+    endfunction
   
-  bit PRESETn;
-  bit PSEL;
-  bit PENABLE;
-  rand bit PWRITE;
-  rand bit [`AW-1:0]PADDR;
-  rand bit [`DW-1:0]PWDATA;
-  logic PREADY;
-  logic[`DW-1:0]PRDATA;
-  logic PSLVERR;
-  logic spi_sclk;
-  logic cs_n;
-  rand logic[3:0]io;
+    logic [7:0] ui_in, uio_in;
+    logic [7:0] uio_oe, uio_out, uo_out;
   
 endclass
