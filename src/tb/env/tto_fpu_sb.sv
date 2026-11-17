@@ -32,7 +32,14 @@ class tto_fpu_sb extends uvm_scoreboard;
     endtask
 
 	task validate_outputs(tto_fpu_seq_item inp, tto_fpu_seq_item out);
-    
+    	++TOTAL;
+		if(inp.compare(out)) begin
+			++MATCH;
+			`uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n", inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_MEDIUM)
+		end else begin
+			++MISMATCH;
+			`uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n_______________________________________________________________________________________________________________________________________",inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_NONE)
+		end
     endtask
 
 	task predictor(tto_fpu_seq_item inp);
