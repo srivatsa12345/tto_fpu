@@ -1,12 +1,12 @@
 class base_seq extends uvm_sequence#(tto_fpu_seq_item);
     `uvm_object_utils(base_seq)
-    tto_fpu_seq_item tr;
 	
     function new(string name="base_seq");
         super.new(name);
     endfunction
 
-    task body();
+    task body();	
+		tto_fpu_seq_item tr;
         tr=tto_fpu_seq_item::type_id::create("tr");
  	    start_item(tr);
         if(tr.randomize())
