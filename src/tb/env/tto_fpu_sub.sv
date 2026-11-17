@@ -1,8 +1,8 @@
 `uvm_analysis_imp_decl(_out)
-class subscriber extends uvm_subscriber #(tto_fpu_seq_item);
-    `uvm_component_utils(subscriber)
-    uvm_analysis_imp #(tto_fpu_seq_item,subscriber) input_imp;
-    uvm_analysis_imp_out #(tto_fpu_seq_item,subscriber) output_imp;
+class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
+    `uvm_component_utils(tto_fpu_sub)
+    uvm_analysis_imp #(tto_fpu_seq_item,tto_fpu_sub) input_imp;
+    uvm_analysis_imp_out #(tto_fpu_seq_item,tto_fpu_sub) output_imp;
     tto_fpu_seq_item drv;
     tto_fpu_seq_item mon;
     covergroup input_cg;
@@ -57,7 +57,7 @@ class subscriber extends uvm_subscriber #(tto_fpu_seq_item);
           bins output_enable={8'hFF};
       }
     endgroup
-    function new(string name="subscriber",uvm_component parent=null);
+    function new(string name="tto_fpu_sub",uvm_component parent=null);
         super.new(name,parent);
         input_imp=new("input_imp",this);
         output_imp=new("output_imp",this);
