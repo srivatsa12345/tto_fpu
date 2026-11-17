@@ -7,7 +7,8 @@ class tto_fpu_config extends uvm_object;
     
     virtual tto_fpu_if vif;
 
-    uvm_active_passive_enum tto_agent;
+    uvm_active_passive_enum tto_act_agent;
+    uvm_active_passive_enum tto_pass_agent;
 
 endclass
  
