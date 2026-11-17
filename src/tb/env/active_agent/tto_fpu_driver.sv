@@ -31,6 +31,7 @@ class tto_fpu_driver extends uvm_driver#(tto_fpu_seq_item);
                 vif.drv_cb.ui_in<=req.ui_in;
                 vif.drv_cb.uio_in<=req.uio_in;
             end
+            `uvm_info("DRV", $sformatf("Sampled data:RESET:%0b, ui_in:%0h, uio_in:%0h", req.rst_n, req.ui_in, req.uio_in), UVM_LOW)
             seq_item_port.item_done();
         end
     endtask
