@@ -1,4 +1,3 @@
-`uvm_analysis_imp_decl(_out)
 class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
     `uvm_component_utils(tto_fpu_sub)
     uvm_analysis_imp #(tto_fpu_seq_item,tto_fpu_sub) input_imp;
