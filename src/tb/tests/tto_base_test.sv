@@ -18,7 +18,7 @@ class tto_base_test extends uvm_test;
         `uvm_fatal(get_type_name(), "Failed to get Virtual interface")
       
         cfg.tto_act_agent = UVM_ACTIVE;
-        cfg.tto_pass_agent = UVM_PASSIVE;
+        cfg.tto_rst_agent = UVM_ACTIVE;
     
         uvm_config_db#(tto_fpu_config)::set(this, "*", "Config Object", cfg);
     endfunction
