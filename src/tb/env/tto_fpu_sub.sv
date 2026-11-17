@@ -1,8 +1,8 @@
-`uvm_analysis_imp_decl(_output)
+`uvm_analysis_imp_decl(_out)
 class subscriber extends uvm_subscriber #(tto_fpu_seq_item);
     `uvm_component_utils(subscriber)
     uvm_analysis_imp #(tto_fpu_seq_item,subscriber) input_imp;
-    uvm_analysis_imp_output #(tto_fpu_seq_item,subscriber) output_imp;
+    uvm_analysis_imp_out #(tto_fpu_seq_item,subscriber) output_imp;
     tto_fpu_seq_item drv;
     tto_fpu_seq_item mon;
     covergroup input_cg;
