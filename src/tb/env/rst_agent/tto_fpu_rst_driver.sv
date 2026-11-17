@@ -5,7 +5,7 @@ class tto_fpu_rst_driver extends uvm_driver#(tto_fpu_seq_item);
     virtual tto_fpu_if.RST_DRV vif;
     tto_fpu_config cfg;
  
-    function new(string name="tto_fpu_driver",uvm_component parent);
+    function new(string name="tto_fpu_rst_driver",uvm_component parent);
         super.new(name,parent);
     endfunction
  
