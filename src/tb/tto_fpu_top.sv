@@ -3,9 +3,8 @@ module qspi_top;
     import tto_fpu_package::*;
 
     bit clk;
-    bit rst_n;
 
-    tto_fpu_if intrf(.clk(clk),.rst_n(rst_n));
+    tto_fpu_if intrf(.clk(clk));
 
     //DUT
     initial begin
@@ -18,10 +17,5 @@ module qspi_top;
         forever #20 clk=~clk;
     end
 
-    initial begin
-        rst_n=1'b0;
-        repeat(4) @(posedge clk);
-        #1 rst_n=1'b1;
-    end
 endmodule
  
