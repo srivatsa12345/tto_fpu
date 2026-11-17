@@ -1,12 +1,13 @@
-interface tto_fpu_if (input logic clk, input logic rst_n);
+interface tto_fpu_if (input logic clk);
 
+    logic rst_n;
     logic [7:0] ui_in, uio_in;
     logic [7:0] uio_oe, uio_out, uo_out;
 
     clocking drv_cb @(posedge clk);
         default input #1 output #1;
-        output ui_in, uio_in;
-        input rst_n, uo_out;
+        output ui_in, uio_in, rst_n,;
+        input uo_out;
     endclocking
   
     clocking in_mon_cb @(posedge clk);
