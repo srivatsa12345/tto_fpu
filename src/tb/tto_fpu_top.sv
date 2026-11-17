@@ -1,4 +1,4 @@
-module qspi_top;
+module tto_fpu_top;
     import uvm_pkg::*;
     import tto_fpu_package::*;
 
