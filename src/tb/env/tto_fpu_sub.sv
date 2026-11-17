@@ -24,7 +24,7 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
         }
         uio_in_byte: coverpoint drv.uio_in{
             bins zero={8'h00};
-            bins non_zero={8'h01:8'hFF};
+            bins non_zero={[8'h01:8'hFF]};
         }
         unused_pins: coverpoint drv.ui_in[7:4]{
             bins val={[0:15]};
