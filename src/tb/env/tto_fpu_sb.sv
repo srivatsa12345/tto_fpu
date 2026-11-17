@@ -14,15 +14,29 @@ class tto_fpu_sb extends uvm_scoreboard;
     endfunction
     
     task run_phase(uvm_phase phase);
+    	my_transaction inp_mon_xn,inp_mon_hold;
+		my_transaction out_mon_xn;
+		forever begin
+			fork 
+				in_fifo.get(inp_mon_xn);
+				out_fifo.get(out_mon_xn);
+			join
+			if (inp_mon_hold==null) begin
+				inp_mon_hold=inp_mon_xn;
+			end else begin
+				ref_model(inp_mon_hold);
+				validate_outputs(inp_mon_hold,out_mon_xn);
+				inp_mon_hold=inp_mon_xn;
+			end
+		end
+    endtask
+
+	task validate_outputs(tto_fpu_seq_item inp, tto_fpu_seq_item out);
     
     endtask
 
-    task validate_outputs(qspi_seq_item apb, qspi_seq_item flash);
-    
-    endtask
-
-    task ref_task(qspi_seq_item apb, qspi_seq_item flash);
-   
+	task predictor(tto_fpu_seq_item inp);
+		
     endtask
 
     function void report_phase(uvm_phase phase);
