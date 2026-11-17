@@ -7,55 +7,55 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
     tto_fpu_seq_item mon;
     covergroup input_cg;
   
-      write_en: coverpoint drv.ui_in[0]{
-          bins write_0={0};
-          bins write_1={1};
-      }
-      read_en: coverpoint drv.ui_in[1]{
-          bins read_0={0};
-          bins read_1={1};
-      }
-      start: coverpoint drv.ui_in[2]{
-          bins start_0={0};
-          bins start_1={1};
-      }
-      opcode: coverpoint drv.ui_in[3]{
-          bins add={0};
-          bins subtract={1};
-      }
-      uio_in_byte: coverpoint drv.uio_in{
-          bins zero={8'h00};
-          bins non_zero={8'h01:8'hFF};
-      }
-      unused_pins: coverpoint drv.ui_in[7:4]{
-          bins val={[0:15]};
-      }
+        write_en: coverpoint drv.ui_in[0]{
+            bins write_0={0};
+            bins write_1={1};
+        }
+        read_en: coverpoint drv.ui_in[1]{
+            bins read_0={0};
+            bins read_1={1};
+        }
+        start: coverpoint drv.ui_in[2]{
+            bins start_0={0};
+            bins start_1={1};
+        }
+        opcode: coverpoint drv.ui_in[3]{
+            bins add={0};
+            bins subtract={1};
+        }
+        uio_in_byte: coverpoint drv.uio_in{
+            bins zero={8'h00};
+            bins non_zero={8'h01:8'hFF};
+        }
+        unused_pins: coverpoint drv.ui_in[7:4]{
+            bins val={[0:15]};
+        }
     endgroup
     covergroup output_cg;
-      busy: coverpoint mon.uo_out[0]{
-          bins busy_0={0};
-          bins busy_1={1};
-      }
-      done: coverpoint mon.uo_out[1]{
-          bins done_0={0};
-          bins done_1={1};
-      }
-      error: coverpoint mon.uo_out[2]{
-          bins error_0={0};
-          bins error_1={1};
-      }
-      ready: coverpoint mon.uo_out[3]{
-          bins ready_0={0};
-          bins ready_1={1};
-      }
-      wr_ptr: coverpoint mon.uo_out[7:4]{
-          bins val_ptr[4]={[0:3]};
-          bins val_ptr_other_val={[4:15]};
-      }
-      uio_oe: coverpoint mon.uio_oe{
-          bins input_enable={8'h00};
-          bins output_enable={8'hFF};
-      }
+        busy: coverpoint mon.uo_out[0]{
+            bins busy_0={0};
+            bins busy_1={1};
+        }
+        done: coverpoint mon.uo_out[1]{
+            bins done_0={0};
+            bins done_1={1};
+        }
+        error: coverpoint mon.uo_out[2]{
+            bins error_0={0};
+            bins error_1={1};
+        }
+        ready: coverpoint mon.uo_out[3]{
+            bins ready_0={0};
+            bins ready_1={1};
+        }
+        wr_ptr: coverpoint mon.uo_out[7:4]{
+            bins val_ptr[4]={[0:3]};
+            bins val_ptr_other_val={[4:15]};
+        }
+        uio_oe: coverpoint mon.uio_oe{
+            bins input_enable={8'h00};
+            bins output_enable={8'hFF};
+        }
     endgroup
     function new(string name="tto_fpu_sub",uvm_component parent=null);
         super.new(name,parent);
