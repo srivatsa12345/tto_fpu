@@ -70,11 +70,13 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
     endfunction
   
     virtual function void write(tto_fpu_seq_item t);
-        drv=t;
+        if(!$cast(drv,t))
+            `uvm_fatal(get_type_name(), "Casting failed from input monitor");
         input_cg.sample();
     endfunction
-    virtual function void write_output(tto_fpu_seq_item t);
-        mon=t;
+    virtual function void write_out(tto_fpu_seq_item t);
+        if(!$cast(mon,t))
+            `uvm_fatal(get_type_name(), "Casting failed from output monitor");
         output_cg.sample();
     endfunction
 endclass
