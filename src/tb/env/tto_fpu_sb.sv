@@ -17,10 +17,8 @@ class tto_fpu_sb extends uvm_scoreboard;
     	my_transaction inp_mon_xn,inp_mon_hold;
 		my_transaction out_mon_xn;
 		forever begin
-			fork 
-				in_fifo.get(inp_mon_xn);
-				out_fifo.get(out_mon_xn);
-			join
+			in_fifo.get(inp_mon_xn);
+			out_fifo.get(out_mon_xn);
 			if (inp_mon_hold==null) begin
 				inp_mon_hold=inp_mon_xn;
 			end else begin
