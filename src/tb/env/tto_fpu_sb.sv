@@ -22,7 +22,7 @@ class tto_fpu_sb extends uvm_scoreboard;
 			if (inp_mon_hold==null) begin
 				inp_mon_hold=inp_mon_xn;
 			end else begin
-				ref_model(inp_mon_hold);
+				predictor(inp_mon_hold);
 				validate_outputs(inp_mon_hold,out_mon_xn);
 				inp_mon_hold=inp_mon_xn;
 			end
