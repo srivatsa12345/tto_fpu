@@ -24,12 +24,10 @@ class tto_fpu_driver extends uvm_driver#(tto_fpu_seq_item);
         forever begin
             seq_item_port.get_next_item(req);
             @(vif.drv_cb);
-            if(!req.rst_n) begin
-                vif.drv_cb.rst_n<=0;
+            if(!vif.drv_cb.rst_n) begin
                 vif.drv_cb.ui_in<=0;
                 vif.drv_cb.uio_in<=0;
             end else begin
-                vif.drv_cb.rst_n<=req.rst_n;
                 vif.drv_cb.ui_in<=req.ui_in;
                 vif.drv_cb.uio_in<=req.uio_in;
             end
