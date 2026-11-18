@@ -15,6 +15,6 @@ class load_neg_5_seq_1 extends base_seq;
 	      	`uvm_fatal(get_type_name(),"Randomization failed")
 		end
  	    finish_item(tr);
-		end
+		
     endtask
 endclass
