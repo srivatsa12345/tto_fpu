@@ -1,4 +1,4 @@
-class sanity_test extends tto_base_test;
+class sanity_test extends uvm_test;
     `uvm_component_utils(sanity_test);
     
     tto_fpu_env env;
