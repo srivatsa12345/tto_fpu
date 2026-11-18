@@ -46,13 +46,13 @@ class normal_addition_test extends uvm_test ;
 
         rst.start(env.rst_ag.sqr);
         wr.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        //no_op.start(env.act.sqr);
         wr.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        //no_op.start(env.act.sqr);
         wr.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        //no_op.start(env.act.sqr);
         wr.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        //no_op.start(env.act.sqr);
         add.start(env.act.sqr);
         st.start(env.act.sqr);
 
