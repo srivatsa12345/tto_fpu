@@ -1,4 +1,4 @@
-class load_operand_A_B_test extends base_test;
+class load_operand_A_B_test extends tto_base_test ;
     `uvm_component_utils(load_operand_A_B_test);
     
     tto_fpu_env env;
