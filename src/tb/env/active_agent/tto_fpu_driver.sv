@@ -24,16 +24,17 @@ class tto_fpu_driver extends uvm_driver#(tto_fpu_seq_item);
         forever begin
             seq_item_port.get_next_item(req);
             @(vif.drv_cb);
-            if(!vif.drv_cb.rst_n) begin
+            if(!vif.rst_n) begin
                 do begin
                     vif.drv_cb.ui_in<=0;
                     vif.drv_cb.uio_in<=0;
+                    `uvm_info("DRV", $sformatf("Driven data:RESET:%0b, ui_in:%0h, uio_in:%0h", vif.drv_cb.rst_n, req.ui_in, req.uio_in), UVM_LOW)
                     @(vif.drv_cb);
-                 end while (vif.drv_cb.rst_n);
+                end while (vif.rst_n!=1);
             end
             vif.drv_cb.ui_in<=req.ui_in;
             vif.drv_cb.uio_in<=req.uio_in;
-         `uvm_info("DRV", $sformatf("Driven data:RESET:%0b, ui_in:%0h, uio_in:%0h", vif.drv_cb.rst_n, req.ui_in, req.uio_in), UVM_LOW)
+            `uvm_info("DRV", $sformatf("Driven data:RESET:%0b, ui_in:%0h, uio_in:%0h", vif.drv_cb.rst_n, req.ui_in, req.uio_in), UVM_LOW)
             seq_item_port.item_done();
         end
     endtask
