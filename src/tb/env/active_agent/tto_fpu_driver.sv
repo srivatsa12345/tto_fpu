@@ -26,6 +26,8 @@ class tto_fpu_driver extends uvm_driver#(tto_fpu_seq_item);
             @(vif.drv_cb);
             if(!vif.drv_cb.rst_n) begin
                 do 
+                    vif.drv_cb.ui_in<=0;
+                    vif.drv_cb.uio_in<=0;
                     @(vif.drv_cb);
                 while (vif.drv_cb.rst_n);
             end
