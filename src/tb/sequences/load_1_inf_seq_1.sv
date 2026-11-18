@@ -1,4 +1,4 @@
-class load_1_inf_seq_1 extends base_seq;
+class load_1_inf_seq extends base_seq;
     `uvm_object_utils(load_1_inf_seq)
 	
     function new(string name="load_inf_1_seq");
