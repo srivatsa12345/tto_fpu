@@ -14,7 +14,6 @@ class assert_start_pulse_seq extends base_seq;
 		end else begin
 	      	`uvm_fatal(get_type_name(),"Randomization failed")
 		end
- 	    finish_item(tr);
-		
+ 	    finish_item(tr);	
     endtask
 endclass
