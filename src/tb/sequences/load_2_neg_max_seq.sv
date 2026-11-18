@@ -1,7 +1,7 @@
 class load_2_neg_max_seq extends base_seq;
-    `uvm_object_utils(load_2_max_seq)
+	`uvm_object_utils(load_2_neg_max_seq)
 	
-    function new(string name="load_2_max_seq");
+	function new(string name="load_2_neg_max_seq");
         super.new(name);
     endfunction
 
