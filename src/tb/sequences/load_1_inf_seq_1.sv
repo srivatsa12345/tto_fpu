@@ -1,7 +1,7 @@
 class load_1_inf_seq extends base_seq;
     `uvm_object_utils(load_1_inf_seq)
 	
-    function new(string name="load_inf_1_seq");
+	function new(string name="load_1_inf_seq");
         super.new(name);
     endfunction
 
@@ -15,6 +15,6 @@ class load_1_inf_seq extends base_seq;
 	      	`uvm_fatal(get_type_name(),"Randomization failed")
 		end
  	    finish_item(tr);
-		end
+		
     endtask
 endclass
