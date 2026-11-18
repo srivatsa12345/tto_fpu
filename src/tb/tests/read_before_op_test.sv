@@ -1,4 +1,4 @@
-class read_before_op_test extends base_test;
+class read_before_op_test extends uvm_test;
     `uvm_component_utils(read_before_op_test);
     
     tto_fpu_env env;
