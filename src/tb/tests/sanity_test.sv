@@ -47,6 +47,7 @@ class sanity_test extends uvm_test;
             end
             begin
 				repeat(3) begin
+					repeat(2) no.start(env.act.sqr);
                 	repeat(4) wr.start(env.act.sqr);
                 	st.start(env.act.sqr);
 					repeat(4) no.start(env.act.sqr);
