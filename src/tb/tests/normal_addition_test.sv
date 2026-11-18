@@ -1,4 +1,4 @@
-class normal_addition_test extends tto_base_test ;
+class normal_addition_test extends uvm_test ;
     `uvm_component_utils(normal_addition_test);
     
     tto_fpu_env env;
