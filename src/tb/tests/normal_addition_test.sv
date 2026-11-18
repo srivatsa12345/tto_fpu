@@ -1,5 +1,5 @@
 class normal_addition_test extends uvm_test ;
-    `uvm_component_utils(normal_addition_test);
+    `uvm_component_utils(normal_addition_test)
     
     tto_fpu_env env;
     tto_fpu_config cfg;
