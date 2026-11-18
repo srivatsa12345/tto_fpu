@@ -60,7 +60,7 @@ $(REGRESS_TARGETS): regress_run_%:
 
 # 6. Open the Waveform in Verdi
 wave:
-	verdi -ssf wave.fsdb &
+	verdi -ssf dump.fsdb &
 
 # 7. Clean up generated files to start fresh
 clean:
