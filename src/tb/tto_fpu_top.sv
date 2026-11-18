@@ -9,6 +9,12 @@ module tto_fpu_top;
     tto_fpu_if intrf(.clk(clk));
     
     initial begin
+        $fsdbDumpfile("dump.fsdb");    
+        $fsdbDumpvars(0, tto_fpu_top);   
+        $fsdbDumpSVA;                   
+    end
+
+    initial begin
         uvm_config_db#(virtual tto_fpu_if)::set(null,"*","Virtual Interface",intrf);
         run_test();
     end
@@ -19,4 +25,3 @@ module tto_fpu_top;
     end
 
 endmodule
- 
