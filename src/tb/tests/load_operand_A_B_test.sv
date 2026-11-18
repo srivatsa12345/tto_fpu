@@ -1,5 +1,5 @@
 class load_operand_A_B_test extends uvm_test ;
-    `uvm_component_utils(load_operand_A_B_test);
+    `uvm_component_utils(load_operand_A_B_test)
     
     tto_fpu_env env;
     tto_fpu_config cfg;
