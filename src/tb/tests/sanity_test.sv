@@ -3,6 +3,12 @@ class sanity_test extends uvm_test;
     
     tto_fpu_env env;
     tto_fpu_config cfg;
+
+    reset_seq rst;
+    write_one_byte_seq wr;
+    assert_start_pulse_seq st;
+    no_op_seq no;
+    assert_read_en_seq rd;
   
     function new (string name, uvm_component parent);
         super.new(name, parent);
@@ -30,7 +36,25 @@ class sanity_test extends uvm_test;
 
     task run_phase(uvm_phase phase);
         phase.raise_objection(this);
-        //seqs
+        rst=reset_seq::type_id::create("rst");
+        wr=write_one_byte_seq::type_id::create("wr");
+        st=assert_start_pulse_seq::type_id::create("st");
+        no=no_op_seq::type_id::create("no");
+        rd=assert_read_en_seq::type_id::create("rd");
+        fork
+            begin
+		        rst.start(env.rst_ag.sqr);
+            end
+            begin
+                repeat(4) wr.start(env.act.sqr);
+                st.start(env.act.sqr);
+                repeat(3) no.start(env.act.sqr);
+                repeat(2) begin
+                    rd.start(env.act.sqr);
+                    no.start(env.act.sqr);
+                end
+            end
+        join
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
     endtask
