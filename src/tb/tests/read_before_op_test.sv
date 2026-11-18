@@ -1,5 +1,5 @@
-class read_before_op extends base_test;
-    `uvm_component_utils(read_before_op);
+class read_before_op_test extends base_test;
+    `uvm_component_utils(read_before_op_test);
     
     tto_fpu_env env;
     tto_fpu_config cfg;
@@ -8,7 +8,7 @@ class read_before_op extends base_test;
     assert_read_en_seq rd;
     no_op_seq no_op;
   
-    function new (string name="read_before_op", uvm_component parent);
+    function new (string name="read_before_op_test", uvm_component parent);
         super.new(name, parent);
     endfunction
 
