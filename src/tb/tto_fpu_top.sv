@@ -1,3 +1,4 @@
+`include "uvm_macros.svh"
 module tto_fpu_top;
     import uvm_pkg::*;
     import tto_fpu_package::*;
