@@ -1,4 +1,4 @@
 `define EXP_W 5
 `define MAN_W 10
 `define n 100
-`define rst 100
+`define rst 10
