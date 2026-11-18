@@ -24,8 +24,6 @@ class tto_fpu_rst_driver extends uvm_driver#(tto_fpu_seq_item);
         forever begin
             seq_item_port.get_next_item(req);
             vif.rst_n<=req.rst_n;
-            vif.rst_drv_cb.ui_in<=0;
-            vif.rst_drv_cb.uio_in<=0;
             `uvm_info("RST_DRV", $sformatf("RESET ASSERTED"), UVM_LOW)
             repeat(3) @(vif.rst_drv_cb);
             vif.rst_n<=!req.rst_n;
