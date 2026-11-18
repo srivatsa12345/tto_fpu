@@ -151,9 +151,9 @@ class tto_fpu_sb extends uvm_scoreboard;
             end
             result=convertrealtofp16(inter);
             if (result[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}}) begin
-                result={result[(1+`EXP_W+`MAN_W)-1],`EXP_W{1'b1},`MAN_W{1'b0}};
+				result={result[(1+`EXP_W+`MAN_W)-1], {`EXP_W{1'b1}}, {`MAN_W{1'b0}}};
             end else if (result[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
-                result={result[(1+`EXP_W+`MAN_W)-1],`EXP_W{1'b0},`MAN_W{1'b0}};
+				result={result[(1+`EXP_W+`MAN_W)-1],{`EXP_W{1'b0}},{`MAN_W{1'b0}}};
             end 
         end
     endtask
