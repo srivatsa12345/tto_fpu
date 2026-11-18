@@ -21,7 +21,7 @@ class tto_fpu_driver extends uvm_driver#(tto_fpu_seq_item);
     endfunction
  
     task run_phase(uvm_phase phase);
-     repeat (2) @(vif.drv_cb);
+        repeat (2) @(vif.drv_cb);
         forever begin
             seq_item_port.get_next_item(req);
             @(vif.drv_cb);
