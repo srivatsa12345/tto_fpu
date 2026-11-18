@@ -46,13 +46,16 @@ class sanity_test extends uvm_test;
 		        rst.start(env.rst_ag.sqr);
             end
             begin
-                repeat(4) wr.start(env.act.sqr);
-                st.start(env.act.sqr);
-                repeat(3) no.start(env.act.sqr);
-                repeat(2) begin
-                    rd.start(env.act.sqr);
-                    no.start(env.act.sqr);
-                end
+				repeat(3) begin
+                	repeat(4) wr.start(env.act.sqr);
+                	st.start(env.act.sqr);
+					repeat(4) no.start(env.act.sqr);
+                	repeat(2) begin
+                	    rd.start(env.act.sqr);
+                    	no.start(env.act.sqr);
+                	end
+					repeat(2) no.start(env.act.sqr);
+				end
             end
         join
         phase.phase_done.set_drain_time(this, 10ns); 
