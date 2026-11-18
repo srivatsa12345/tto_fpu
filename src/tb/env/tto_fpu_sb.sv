@@ -117,31 +117,31 @@ class tto_fpu_sb extends uvm_scoreboard;
         end
     endtask
 
-    task perform_operation(tto_fpu_seq_item tran);
+	task perform_operation(tto_fpu_seq_item txn);
         if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}}) begin
-            tran.uo_out[2:0]=3'b110;
+            txn.uo_out[2:0]=3'b110;
             result=0;
         end else if (opb[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}}) begin
-            tran.uo_out[2:0]=3'b110;
+            txn.uo_out[2:0]=3'b110;
             result=0;
         end else if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
             if (opa[`MAN_W-1:0]=={`EXP_W{1'b0}}) begin
-                tran.uo_out[2:0]=3'b010;
+                txn.uo_out[2:0]=3'b010;
                 result=opb;
             end else begin
-                tran.uo_out[2:0]=3'b110;
+                txn.uo_out[2:0]=3'b110;
                 result=0;
             end
         end else if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
             if (opb[`MAN_W-1:0]=={`EXP_W{1'b0}}) begin
-                tran.uo_out[2:0]=3'b010;
+                txn.uo_out[2:0]=3'b010;
                 result=opa;
             end else begin
-                tran.uo_out[2:0]=3'b110;
+                txn.uo_out[2:0]=3'b110;
                 result=0;
             end
         end else begin
-            tran.uo_out[2:0]=3'b010;
+            txn.uo_out[2:0]=3'b010;
             a=convertfp16toreal(opa);
             b=convertfp16toreal(opb);
             if (prev_op) begin
