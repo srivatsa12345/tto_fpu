@@ -1,7 +1,7 @@
 class assert_start_pulse_seq extends base_seq;
-    `uvm_object_utils(start_pulse_seq)
+    `uvm_object_utils(assert_start_pulse_seq)
 	
-    function new(string name="start_pulse_seq");
+    function new(string name="assert_start_pulse_seq");
         super.new(name);
     endfunction
 
