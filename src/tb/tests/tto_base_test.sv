@@ -1,5 +1,5 @@
 class tto_base_test extends uvm_test;
-    `uvm_component_utils(tto_base_test);
+    `uvm_component_utils(tto_base_test)
     
     tto_fpu_env env;
     tto_fpu_config cfg;
