@@ -1,0 +1,5 @@
+  CREATE_STREAM @0 {NAME:rst T:Transactions SCOPE:uvm_test_top.env.rst_ag.sqr STREAM:995}
+  CREATE_STREAM @0 {NAME:wr T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:998}
+  CREATE_STREAM @420000 {NAME:st T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:1273}
+  CREATE_STREAM @460000 {NAME:no T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:1303}
+  CREATE_STREAM @620000 {NAME:rd T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:1408}

@@ -1,0 +1,21 @@
+Command: vcs -full64 -sverilog -timescale=1ns/1ps -ntb_opts uvm-1.2 -debug_access+all \
+-kdb +incdir+src/tb/globals -cm line+cond+fsm+tgl+branch+assert -cm_dirlog_folder/simv.vdb \
+-o log_folder/simv -Mdir=log_folder/csrc -l log_folder/compile.log src/tb/globals/tto_fpu_package.sv \
+
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Wed Nov 18 14:57:07 2026
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Error-[CM-UNKARG] Unknown argument
+  -cm_dirlog_folder/simv.vdb was given on the command line, but it is not a 
+  recognized flag.
+  Refer to the user guide for the full list of supported options.
+
+Bad command line arg encountered
+CPU time: .190 seconds to compile
