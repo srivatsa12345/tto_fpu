@@ -159,37 +159,23 @@ class tto_fpu_sb extends uvm_scoreboard;
     endtask
 
     function bit [(1+`EXP_W+`MAN_W)-1:0] convertrealtofp16(real num);
-        localparam int W = 1+`EXP_W+`MAN_W;
-        int bias=(1<<(`EXP_W-1)) - 1;
-        int exp_max=(1<<`EXP_W) - 2;
-        bit sign=(num<0.0);
-        real num1=sign?(-num):num;
-        int count1=0;
-        bit [`MAN_W-1:0] frac;
-        if (num1==0.0) begin
-            return '0;   
-        end             
-        while (num1>=2.0) begin 
-            num1 /= 2.0; count1++; 
-        end      
-        while (num1<1.0) begin 
-            num1 *= 2.0; count1--; 
-        end 
-        if (count1+bias>exp_max) begin                     
-            return {sign, {`EXP_W{1'b1}}, {`MAN_W{1'b0}}};
-        end
-        if (count1+bias<=0) begin                
-            return {sign, {((1+`EXP_W+`MAN_W)-1){1'b0}}};
-        end
-        frac = $floor((num1-1.0) * (2.0**`MAN_W));  
-        return {sign, (`EXP_W)'(count1 + bias), frac};
+        bit [63:0] fp64;
+        int bias;
+        fp64 = $realtobits(num);
+        if (num == 0.0) return '0;                                    
+        bias = (int'(fp64[62:52]) - 1023) + ((1 << (`EXP_W-1)) - 1);  
+        if (bias > (1 << `EXP_W) - 2)                                
+            return {fp64[63], {`EXP_W{1'b1}}, {`MAN_W{1'b0}}};
+        if (bias <= 0)                                            
+            return {fp64[63], {(`EXP_W+`MAN_W){1'b0}}};
+        return {fp64[63], (`EXP_W)'(bias), fp64[51 -: `MAN_W]};     
     endfunction
     
     function real convertfp16toreal(bit [(1+`EXP_W+`MAN_W)-1:0] fp16);
-        int bias = (1 << (`EXP_W - 1)) - 1;
-        int exp_val = fp16[`EXP_W+`MAN_W-1 : `MAN_W] - bias;
-        real mant_val = 1.0 + (real'(fp16[`MAN_W-1:0]) / (2.0 ** `MAN_W));
-        real final_val = mant_val * (2.0 ** exp_val);
+        int bias = (1 << (`EXP_W-1)) - 1;
+        int exp_val = fp16[`EXP_W+`MAN_W-1:`MAN_W] - bias;
+        real mant_val = 1.0 + (real'(fp16[`MAN_W-1:0]) / (2.0**`MAN_W));
+        real final_val = mant_val * (2.0**exp_val);
         if (fp16[`EXP_W+`MAN_W]) begin
             return -final_val;
         end else begin
