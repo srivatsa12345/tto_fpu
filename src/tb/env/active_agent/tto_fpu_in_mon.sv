@@ -23,7 +23,7 @@ class tto_fpu_in_mon extends uvm_monitor;
     endfunction
 
     task run_phase(uvm_phase phase);
-        @(vif.in_mon_cb);
+        //@(vif.in_mon_cb);
         forever begin
             tr=tto_fpu_seq_item::type_id::create("tr");
             @(vif.in_mon_cb);
