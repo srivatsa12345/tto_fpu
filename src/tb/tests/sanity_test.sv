@@ -1,5 +1,5 @@
 class sanity_test extends uvm_test;
-    `uvm_component_utils(sanity_test);
+    `uvm_component_utils(sanity_test)
     
     tto_fpu_env env;
     tto_fpu_config cfg;
