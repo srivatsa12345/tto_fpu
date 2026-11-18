@@ -31,3 +31,11 @@ package tto_fpu_package;
     `include "../tests/tto_base_test.sv"
     `include "../tests/sanity_test.sv"
 endpackage : tto_fpu_package
+// DUT
+`include "../../dut/fpu_core.v"
+`include "../../dut/tt_um_project_fpu.v"
+// Interface & Assertions
+`include "../tto_fpu_if.sv"
+`include "../tto_fpu_assertions.sv"
+// Top-level Module
+`include "../tto_fpu_top.sv"
