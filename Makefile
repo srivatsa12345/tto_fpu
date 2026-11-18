@@ -3,6 +3,7 @@ MASTER_FILE = src/tb/globals/tto_fpu_package.sv
 INCDIRS = +incdir+src/tb/globals
 TESTNAME ?= sanity_test
 COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
+OUT_DIR = log_folder
 
 # List of tests to run in a regression
 TEST_LIST = sanity_test tto_base_test
@@ -28,16 +29,19 @@ start:
 # Note: Added -kdb for Verdi integration and FSDB dumping support
 compile:
 	vcs -full64 -sverilog -timescale=1ns/1ps -ntb_opts uvm-1.2 \
-	-debug_access+all -kdb $(COV_FLAGS) $(INCDIRS) -l compile.log $(MASTER_FILE)
+	-debug_access+all -kdb $(COV_FLAGS) $(INCDIRS) \
+	-Mdir=$(OUT_DIR)/csrc -o $(OUT_DIR)/simv -cm_dir $(OUT_DIR)/simv.vdb \
+	-l $(OUT_DIR)/compile.log $(MASTER_FILE)
 
 # 3. Run the Simulation (Used for standalone / single test runs)
 # Note: Added -cm_name to keep coverage distinct for regressions
 sim:
-	./simv -l $(TESTNAME)_simulate.log $(COV_FLAGS) -cm_name $(TESTNAME) +UVM_TESTNAME=$(TESTNAME)
+	./$(OUT_DIR)/simv -l $(OUT_DIR)/$(TESTNAME)_simulate.log $(COV_FLAGS) \
+	-cm_dir $(OUT_DIR)/simv.vdb -cm_name $(TESTNAME) +UVM_TESTNAME=$(TESTNAME)
 
 # 4. Generate the HTML Coverage Report
 cov:
-	urg -full64 -dir simv.vdb -report covReport
+	urg -full64 -dir $(OUT_DIR)/simv.vdb -report $(OUT_DIR)/covReport
 
 # 5. Run Regression (Compiles once, runs all tests x all seeds in parallel)
 regression: compile
@@ -56,15 +60,16 @@ $(REGRESS_TARGETS): regress_run_%:
 	@TNAME=$$(echo $* | cut -d'.' -f1); \
 	SEED=$$(echo $* | cut -d'.' -f2); \
 	echo "-> Running $$TNAME [Seed: $$SEED]"; \
-	./simv -l $${TNAME}_$${SEED}_simulate.log $(COV_FLAGS) -cm_name $${TNAME}_$${SEED} +UVM_TESTNAME=$$TNAME +ntb_random_seed=$$SEED +FSDB_NAME=$${TNAME}_$${SEED}.fsdb > /dev/null
+	./$(OUT_DIR)/simv -l $(OUT_DIR)/$${TNAME}_$${SEED}_simulate.log $(COV_FLAGS) \
+	-cm_dir $(OUT_DIR)/simv.vdb -cm_name $${TNAME}_$${SEED} +UVM_TESTNAME=$$TNAME +ntb_random_seed=$$SEED +FSDB_NAME=$(OUT_DIR)/$${TNAME}_$${SEED}.fsdb > /dev/null
 
 # 6. Open the Waveform in Verdi
 wave:
-	verdi -ssf dump.fsdb &
+	verdi -ssf $(OUT_DIR)/dump.fsdb &
 
 # 7. Clean up generated files to start fresh
 clean:
-	rm -rf simv* csrc* *.log *.vpd *.fsdb *.vdb ucli.key verdiLog novas* covReport DVEfiles
+	rm -rf $(OUT_DIR)/simv* $(OUT_DIR)/csrc* $(OUT_DIR)/*.log $(OUT_DIR)/*.vpd $(OUT_DIR)/*.fsdb $(OUT_DIR)/*.vdb ucli.key verdiLog novas* $(OUT_DIR)/covReport DVEfiles
 
 # 8. Git automation
 git:
