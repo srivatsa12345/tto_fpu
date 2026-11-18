@@ -64,8 +64,9 @@ regression: compile
 	$(MAKE) cov
 
 # Pattern rule to execute individual test/seed combinations during regression
-# Note: Routes individual FSDBs and logs into OUT_DIR
-$(REGRESS_TARGETS): regress_run_\%: init_dir @TNAME=$$(echo $* \vert{} cut -d'.' -f1); \ SEED=$$(echo$* | cut -d'.' -f2); \
+# Note: Fixed the pattern rule syntax for older versions of GNU Make
+regress_run_%: init_dir
+	@TNAME=$$(echo $* \vert{} cut -d'.' -f1); \ SEED=$$(echo$* | cut -d'.' -f2); \
 	echo "-> Running $$TNAME [Seed:$$SEED]"; \
 	$(OUT_DIR)/simv -l $(OUT_DIR)/$${TNAME}_$${SEED}_simulate.log $(COV_FLAGS) \
-	-cm_dir $(OUT_DIR)/simv.vdb -cm_name$${TNAME}_$${SEED} \ +UVM_TESTNAME=$$TNAME +ntb_
+	-cm
