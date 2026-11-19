@@ -10,7 +10,7 @@ class reset_seq extends base_seq;
         tr=tto_fpu_seq_item::type_id::create("tr");
  	    start_item(tr);
         if(tr.randomize() with {rst_n==0;})
-            `uvm_info(get_type_name(),$sformatf("RESET:%0b, ui_in:%0h, uio_in:%0h, uio_oe:%0h, uio_out:%0h, uo_out:%0h", tr.rst_n, tr.ui_in, tr.uio_in, tr.uio_oe, tr.uio_out, tr.uo_out),UVM_MEDIUM)
+            `uvm_info(get_type_name(),$sformatf("RESET:%0b", tr.rst_n),UVM_MEDIUM)
         else
 	        `uvm_fatal(get_type_name(),"Randomization failed")
  	    finish_item(tr);
