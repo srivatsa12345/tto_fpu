@@ -11,6 +11,7 @@ package tto_fpu_package;
     `include "../sequences/reset_seq.sv"
     `include "../sequences/no_op_seq.sv"
     `include "../sequences/write_one_byte_seq.sv"
+    `include "../sequences/assert_wr_en_seq.sv"
     `include "../sequences/assert_start_pulse_seq.sv"
     `include "../sequences/assert_read_en_seq.sv"
     // Active Agent 
