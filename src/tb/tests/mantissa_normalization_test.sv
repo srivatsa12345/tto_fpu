@@ -5,8 +5,9 @@ class mantissa_normalization_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    mantissa_normalization_load_1_seq mn1;
-    mantissa_normalization_load_2_seq mn2;
+    mantissa_alignment_load_1_seq mn1
+    mantissa_alignment_load_4_seq mn2;
+    
     assert_wr_en_seq wr;
     no_op_seq no_op;  
     assert_read_en_seq rd;
@@ -42,8 +43,8 @@ class mantissa_normalization_test extends uvm_test ;
         no_op=no_op_seq::type_id::create("no");
         st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
-        mn1=mantissa_normalization_load_1_seq::type_id::create("ma1");
-        mn2=mantissa_normalization_load_2_seq::type_id::create("ma2");
+        mn1=mantissa_alignment_load_1_seq::type_id::create("mn1");
+        mn2=mantissa_alignment_load_4_seq::type_id::create("mn2");
         wr=assert_wr_en_seq::type_id::create("wr");
         
         rst.start(env.rst_ag.sqr);
