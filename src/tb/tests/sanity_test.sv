@@ -37,7 +37,7 @@ class sanity_test extends uvm_test;
     task run_phase(uvm_phase phase);
         phase.raise_objection(this);
         rst=reset_seq::type_id::create("rst");
-        wr=write_one_byte_seq::type_id::create("wr");
+        wr=assert_wr_en_seq::type_id::create("wr");
         st=assert_start_pulse_seq::type_id::create("st");
         no=no_op_seq::type_id::create("no");
         rd=assert_read_en_seq::type_id::create("rd");
