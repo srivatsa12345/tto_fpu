@@ -14,7 +14,7 @@ class sub_zero_operand_A_test extends uvm_test ;
     assert_start_pulse_seq st;
     assert_wr_en_seq wr;
     
-    function new (string name="add_zero_operand_test", uvm_component parent);
+  function new (string name="sub_zero_operand_A_test", uvm_component parent);
         super.new(name, parent);
     endfunction
 
