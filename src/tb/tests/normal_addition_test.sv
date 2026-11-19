@@ -8,7 +8,7 @@ class normal_addition_test extends uvm_test ;
     write_one_byte_seq wr;
     no_op_seq no_op;  
     opcode_0_seq add;
-    assert_start_pulse_seq st;
+    //assert_start_pulse_seq st;
     assert_read_en_seq rd;
     
     function new (string name="normal_addition_test", uvm_component parent);
@@ -41,7 +41,7 @@ class normal_addition_test extends uvm_test ;
         no_op=no_op_seq::type_id::create("no");
         wr=write_one_byte_seq::type_id::create("wr");
         add=opcode_0_seq::type_id::create("opcode_0_seq");
-        st=assert_start_pulse_seq::type_id::create("st");
+        //st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
 
         rst.start(env.rst_ag.sqr);
@@ -54,7 +54,7 @@ class normal_addition_test extends uvm_test ;
         wr.start(env.act.sqr);
         //no_op.start(env.act.sqr);
         add.start(env.act.sqr);
-        st.start(env.act.sqr);
+        //st.start(env.act.sqr);
 
         repeat(4) no_op.start(env.act.sqr);
 
