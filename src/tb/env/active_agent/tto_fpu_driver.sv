@@ -28,7 +28,7 @@ class tto_fpu_driver extends uvm_driver#(tto_fpu_seq_item);
                 do begin
                     vif.drv_cb.ui_in<=0;
                     vif.drv_cb.uio_in<=0;
-                    `uvm_info("DRV", $sformatf("Driven data:RESET:%0b, ui_in:%0h, uio_in:%0h", vif.rst_n), UVM_LOW)
+                    `uvm_info("DRV", $sformatf("Driven data:RESET:%0b", vif.rst_n), UVM_LOW)
                     @(vif.drv_cb);
                 end while (vif.rst_n!=1);
             end
