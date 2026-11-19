@@ -6,7 +6,7 @@ class load_operand_A_B_test extends uvm_test ;
 
     reset_seq rst;
     write_one_byte_seq wr;
-    no_op_seq no;  
+    no_op_seq no_op;  
     function new (string name="load_operand_A_B_test", uvm_component parent);
         super.new(name, parent);
     endfunction
