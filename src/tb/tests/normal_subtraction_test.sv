@@ -5,10 +5,10 @@ class normal_subtraction_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    write_one_byte_seq wr;
+    assert_wr_en_seq wr;
     no_op_seq no_op;  
     opcode_1_seq sub;
-    //assert_start_pulse_seq st;
+    assert_start_pulse_seq st;
     assert_read_en_seq rd;
     
     function new (string name="normal_subtraction_test", uvm_component parent);
@@ -39,23 +39,23 @@ class normal_subtraction_test extends uvm_test ;
         phase.raise_objection(this);
         rst=reset_seq::type_id::create("rst");
         no_op=no_op_seq::type_id::create("no");
-        wr=write_one_byte_seq::type_id::create("wr");
+        wr=assert_wr_en_seq::type_id::create("wr");
         sub=opcode_1_seq::type_id::create("opcode_1_seq");
-        //st=assert_start_pulse_seq::type_id::create("st");
+        st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
 
         rst.start(env.rst_ag.sqr);
         wr.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
+        no_op.start(env.act.sqr);
         wr.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
+        no_op.start(env.act.sqr);
         wr.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
+        no_op.start(env.act.sqr);
         wr.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
+        no_op.start(env.act.sqr);
+        st.start(env.act.sqr);
         sub.start(env.act.sqr);
-        //st.start(env.act.sqr);
-
+        
         repeat(4) no_op.start(env.act.sqr);
 
         rd.start(env.act.sqr);
