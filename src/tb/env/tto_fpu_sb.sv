@@ -120,15 +120,15 @@ class tto_fpu_sb extends uvm_scoreboard;
             txn.uo_out[2:0]=3'b110;
             result=0;
         end else if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
-            if (opa[`MAN_W-1:0]=={`EXP_W{1'b0}}) begin
+            if (opa[`MAN_W-1:0]=={`MAN_W{1'b0}}) begin
                 txn.uo_out[2:0]=3'b010;
                 result=opb;
             end else begin
                 txn.uo_out[2:0]=3'b110;
                 result=0;
             end
-        end else if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
-            if (opb[`MAN_W-1:0]=={`EXP_W{1'b0}}) begin
+		end else if (opb[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
+			if (opb[`MAN_W-1:0]=={`MAN_W{1'b0}}) begin
                 txn.uo_out[2:0]=3'b010;
                 result=opa;
             end else begin
