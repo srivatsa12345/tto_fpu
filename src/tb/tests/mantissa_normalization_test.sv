@@ -5,7 +5,7 @@ class mantissa_normalization_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    mantissa_alignment_load_1_seq mn1
+    mantissa_alignment_load_1_seq mn1;
     mantissa_alignment_load_4_seq mn2;
     
     assert_wr_en_seq wr;
