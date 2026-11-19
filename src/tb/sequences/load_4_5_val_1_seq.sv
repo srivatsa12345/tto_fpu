@@ -1,5 +1,5 @@
 class load_4_5_val_1_seq extends base_seq;
-  `uvm_object_utils(load_4_5_val_1_seq)
+	`uvm_object_utils(load_4_5_val_1_seq)
 	
   function new(string name="load_4_5_val_1_seq");
         super.new(name);
