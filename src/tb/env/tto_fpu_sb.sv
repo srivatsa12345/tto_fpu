@@ -9,7 +9,7 @@ class tto_fpu_sb extends uvm_scoreboard;
     int count;
     bit [(1+`EXP_W+`MAN_W)-1:0] opa, opb, result;
     real a, b, inter;
-    bit prev_wr_en, prev_prev_wr_en, prev_rd_en, prev_start, prev_op;
+    bit prev_wr_en, prev_prev_wr_en, prev_rd_en, prev_prev_start, prev_start, prev_op;
     bit [($clog2((1+`EXP_W+`MAN_W)/8))-1:0] rd_pt;
 
     function new(string name="tto_fpu_sb", uvm_component parent);
@@ -47,8 +47,10 @@ class tto_fpu_sb extends uvm_scoreboard;
             tr.uio_out=0;
             tr.uo_out=0;
             prev_wr_en=0;
+			prev_prev_wr_en=0;
             prev_rd_en=0;
             prev_start=0;
+			prev_prev_start=0;
             prev_op=0;
             rd_pt=0;
             count=0;
@@ -60,13 +62,15 @@ class tto_fpu_sb extends uvm_scoreboard;
             inter=0;
         end else begin
             tr.uio_oe=0;
+			if ((!tr.uo_out[0])&&(!prev_prev_start)&&(prev_start)) begin
+				tr.uo_out[2:0]=3'b001;
+				prev_op=inp.ui_in[3];
+			end
             if (!tr.uo_out[0]) begin
                 if ((inp.ui_in[2])&&(tr.uo_out[3])&&(!prev_start)) begin
-                    check_latency();
-                    tr.uo_out[2:0]=3'b001;
-                    prev_op=inp.ui_in[3];
+					check_latency();
                     tr.uio_oe=8'h00;
-                end else if ((inp.ui_in[0])&&(!prev_wr_en)) begin
+				end else if ((!prev_prev_wr_en)&&(prev_wr_en)) begin
                     tr.uio_oe=8'h00;
                     if (tr.uo_out[7:4]<((1+`EXP_W+`MAN_W)/8)) begin
                         opa[((tr.uo_out[7:4])%((1+`EXP_W+`MAN_W)/8))*8+:8]=inp.uio_in;
@@ -98,6 +102,8 @@ class tto_fpu_sb extends uvm_scoreboard;
                     perform_operation(tr);
                 end
             end
+			prev_prev_wr_en=prev_wr_en;
+			prev_prev_start=prev_start;
             prev_wr_en=inp.ui_in[0];
             prev_rd_en=inp.ui_in[1];
             prev_start=inp.ui_in[2];
@@ -106,9 +112,9 @@ class tto_fpu_sb extends uvm_scoreboard;
 
     task check_latency();
         if ((opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}})||(opb[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}})||(opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}})||(opb[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}})) begin
-            count=1;
-        end else begin
             count=2;
+        end else begin
+            count=3;
         end
     endtask
 
