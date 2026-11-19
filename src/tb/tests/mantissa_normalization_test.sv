@@ -12,6 +12,7 @@ class mantissa_normalization_test extends uvm_test ;
     no_op_seq no_op;  
     assert_read_en_seq rd;
     assert_start_pulse_seq st;
+    opcode_0_seq add;
     
     function new (string name="mantissa_normalization_test", uvm_component parent);
         super.new(name, parent);
@@ -46,7 +47,7 @@ class mantissa_normalization_test extends uvm_test ;
         mn1=mantissa_alignment_load_1_seq::type_id::create("mn1");
         mn2=mantissa_alignment_load_4_seq::type_id::create("mn2");
         wr=assert_wr_en_seq::type_id::create("wr");
-        
+        add=opcode_0_seq::type_id::create("add");
         rst.start(env.rst_ag.sqr);
         wr.start(env.act.sqr);
         mn1.start(env.act.sqr);
@@ -61,6 +62,7 @@ class mantissa_normalization_test extends uvm_test ;
         mn2.start(env.act.sqr);
         //no_op.start(env.act.sqr);
         st.start(env.act.sqr);
+        add.start(env.act.sqr);
 
         repeat(4) no_op.start(env.act.sqr);
 
