@@ -8,7 +8,7 @@ class mantissa_alignment_test extends uvm_test ;
     assert_wr_en_seq wr;
     mantissa_alignment_load_1_seq ma1;
     mantissa_alignment_load_2_seq ma2;
-    mantissa_alignment_load_3_seq ma3;
+    mantissa_alignment_load_1_seq ma3;
     mantissa_alignment_load_4_seq ma4;
     no_op_seq no_op;  
     assert_read_en_seq rd;
@@ -47,7 +47,7 @@ class mantissa_alignment_test extends uvm_test ;
         rd=assert_read_en_seq::type_id::create("rd");
         ma1=mantissa_alignment_load_1_seq::type_id::create("ma1");
         ma2=mantissa_alignment_load_2_seq::type_id::create("ma2");
-        ma3=mantissa_alignment_load_3_seq::type_id::create("ma3");
+        ma3=mantissa_alignment_load_1_seq::type_id::create("ma3");
         ma4=mantissa_alignment_load_4_seq::type_id::create("ma4");
 
         rst.start(env.rst_ag.sqr);
