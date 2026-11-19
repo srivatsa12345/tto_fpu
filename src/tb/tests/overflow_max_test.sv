@@ -8,7 +8,6 @@ class overflow_max_test extends uvm_test ;
     assert_wr_en_seq wr;
     load_1_max_seq mx1;
     load_2_max_seq mx2;
-    load_2_neg_max_seq mx3;
     no_op_seq no_op;  
     assert_read_en_seq rd;
     assert_start_pulse_seq st;
@@ -47,7 +46,6 @@ class overflow_max_test extends uvm_test ;
         rd=assert_read_en_seq::type_id::create("rd");
         mx1=load_1_max_seq::type_id::create("mx1");
         mx2=load_2_max_seq::type_id::create("mx2");
-        mx3=load_2_neg_max_seq::type_id::create("mx3");
         add=opcode_0_seq::type_id::create("add");
 
         rst.start(env.rst_ag.sqr);
@@ -58,7 +56,7 @@ class overflow_max_test extends uvm_test ;
         wr.start(env.act.sqr);
         mx1.start(env.act.sqr);
         wr.start(env.act.sqr);
-        mx3.start(env.act.sqr);
+        mx2.start(env.act.sqr);
         st.start(env.act.sqr);
         add.start(env.act.sqr);
 
