@@ -39,7 +39,7 @@ class normal_addition_test extends uvm_test ;
         phase.raise_objection(this);
         rst=reset_seq::type_id::create("rst");
         no_op=no_op_seq::type_id::create("no");
-        wr=write_one_byte_seq::type_id::create("wr");
+        wr=assert_wr_en_seq::type_id::create("wr");
         add=opcode_0_seq::type_id::create("opcode_0_seq");
         st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
