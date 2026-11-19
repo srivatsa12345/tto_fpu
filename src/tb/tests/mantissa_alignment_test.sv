@@ -51,13 +51,13 @@ class mantissa_alignment_test extends uvm_test ;
         ma4=mantissa_alignment_load_4_seq::type_id::create("ma4");
 
         rst.start(env.rst_ag.sqr);
-        wr.start(env.rst_ag.sqr);
+        wr.start(env.act.sqr);
         ma1.start(env.act.sqr);
-        wr.start(env.rst_ag.sqr);
+        wr.start(env.act.sqr);
         ma2.start(env.act.sqr);
-        wr.start(env.rst_ag.sqr);
+        wr.start(env.act.sqr);
         ma3.start(env.act.sqr);
-        wr.start(env.rst_ag.sqr);
+        wr.start(env.act.sqr);
         ma4.start(env.act.sqr);
         st.start(env.act.sqr);
 
