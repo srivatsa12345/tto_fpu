@@ -22,6 +22,5 @@ class write_one_byte_seq extends base_seq;
 			end
  	    	finish_item(tr);
 		end
-		
     endtask
 endclass
