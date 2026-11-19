@@ -5,8 +5,8 @@ class exact_cancellation_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    load_4_5_val_1_seq ec1;
-    load_0_seq ec2;
+    load_0_seq ec1;
+    load_5_seq ec2;
     opcode_1_seq sub;
     no_op_seq no_op;  
     assert_read_en_seq rd;
@@ -43,8 +43,8 @@ class exact_cancellation_test extends uvm_test ;
         no_op=no_op_seq::type_id::create("no");
         st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
-        ec1=load_4_5_seq::type_id::create("ec1");
-        ec2=load_0_seq::type_id::create("ec2");
+        ec1=load_0_seq::type_id::create("ec1");
+        ec2=load_5_seq::type_id::create("ec2");
         sub=opcode_1_seq::type_id::create("sub");
         wr=assert_wr_en_seq::type_id::create("wr");
         
