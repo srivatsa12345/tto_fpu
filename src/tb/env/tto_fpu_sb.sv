@@ -158,6 +158,7 @@ class tto_fpu_sb extends uvm_scoreboard;
 				result={result[(1+`EXP_W+`MAN_W)-1],{`EXP_W{1'b0}},{`MAN_W{1'b0}}};
             end 
         end
+		txn.uio_out=result[rd_pt*8+:8];
     endtask
 
     function bit [(1+`EXP_W+`MAN_W)-1:0] convertrealtofp16(real num);
