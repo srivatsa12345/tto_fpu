@@ -5,6 +5,7 @@ class mantissa_alignment_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
+    assert_wr_en_seq wr;
     mantissa_alignment_load_1_seq ma1;
     mantissa_alignment_load_2_seq ma2;
     mantissa_alignment_load_3_seq ma3;
@@ -42,6 +43,7 @@ class mantissa_alignment_test extends uvm_test ;
         rst=reset_seq::type_id::create("rst");
         no_op=no_op_seq::type_id::create("no");
         st=assert_start_pulse_seq::type_id::create("st");
+        wr=assert_wr_en_seq::type_id::create("wr");
         rd=assert_read_en_seq::type_id::create("rd");
         ma1=mantissa_alignment_load_1_seq::type_id::create("ma1");
         ma2=mantissa_alignment_load_2_seq::type_id::create("ma2");
@@ -49,14 +51,14 @@ class mantissa_alignment_test extends uvm_test ;
         ma4=mantissa_alignment_load_4_seq::type_id::create("ma4");
 
         rst.start(env.rst_ag.sqr);
+        wr.start(env.rst_ag.sqr);
         ma1.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        wr.start(env.rst_ag.sqr);
         ma2.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        wr.start(env.rst_ag.sqr);
         ma3.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        wr.start(env.rst_ag.sqr);
         ma4.start(env.act.sqr);
-        no_op.start(env.act.sqr);
         st.start(env.act.sqr);
 
         repeat(4) no_op.start(env.act.sqr);
