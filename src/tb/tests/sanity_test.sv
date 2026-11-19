@@ -5,7 +5,7 @@ class sanity_test extends uvm_test;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    write_one_byte_seq wr;
+    assert_wr_en_seq wr;
     assert_start_pulse_seq st;
     no_op_seq no;
     assert_read_en_seq rd;
@@ -47,7 +47,10 @@ class sanity_test extends uvm_test;
             end
             begin
 				repeat(3) begin
-                	repeat(4) wr.start(env.act.sqr);
+					repeat(4) begin
+						wr.start(env.act.sqr);
+						no.start(env.act.sqr);
+					end
                 	st.start(env.act.sqr);
 					repeat(4) no.start(env.act.sqr);
                 	repeat(2) begin
