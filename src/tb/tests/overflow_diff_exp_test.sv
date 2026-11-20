@@ -45,7 +45,7 @@ class overflow_diff_exp_test extends uvm_test ;
         st=assert_start_pulse_seq::type_id::create("st");
         wr=assert_wr_en_seq::type_id::create("wr");
         rd=assert_read_en_seq::type_id::create("rd");
-        mx1=load_1_max_seq::type_id::create("mx1");
+        mx1=mantissa_alignment_load_1_seq::type_id::create("mx1");
         mx2=load_2_max_seq::type_id::create("mx2");
         mx3=load_exp_28_seq::type_id::create("mx3");
         add=opcode_0_seq::type_id::create("add");
