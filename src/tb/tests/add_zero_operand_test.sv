@@ -49,25 +49,31 @@ class add_zero_operand_test extends uvm_test ;
         zo3=mantissa_alignment_load_2_seq::type_id::create("zo3");
         add=opcode_0_seq::type_id::create("add");
         wr=assert_wr_en_seq::type_id::create("wr");
-        
-        rst.start(env.rst_ag.sqr);
-        wr.start(env.act.sqr);
-        zo1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        zo1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        zo2.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        zo3.start(env.act.sqr);
-        st.start(env.act.sqr);
-        add.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
+        fork
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo2.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo3.start(env.act.sqr);
+                st.start(env.act.sqr);
+                add.start(env.act.sqr);
 
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
+
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
+        join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
