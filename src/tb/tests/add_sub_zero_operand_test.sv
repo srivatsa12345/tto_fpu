@@ -48,38 +48,38 @@ class add_sub_zero_operand_test extends uvm_test ;
         sub=opcode_1_seq::type_id::create("sub");
         wr=assert_wr_en_seq::type_id::create("wr");
         fork 
-          begin
-              rst.start(env.rst_ag.sqr);
-          end
-          begin
-              wr.start(env.act.sqr);
-              zo1.start(env.act.sqr);
-              wr.start(env.act.sqr);
-              zo1.start(env.act.sqr);
-              wr.start(env.act.sqr);
-              zo1.start(env.act.sqr);
-              wr.start(env.act.sqr);
-              zo1.start(env.act.sqr);
-              st.start(env.act.sqr);
-              add.start(env.act.sqr);
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                st.start(env.act.sqr);
+                add.start(env.act.sqr);
 
-              repeat(4) no_op.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
 
-              rd.start(env.act.sqr);
-              no_op.start(env.act.sqr);
-              rd.start(env.act.sqr);
-              no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
       
-              st.start(env.act.sqr);
-              sub.start(env.act.sqr);
+                st.start(env.act.sqr);
+                sub.start(env.act.sqr);
 
-              repeat(4) no_op.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
 
-              rd.start(env.act.sqr);
-              no_op.start(env.act.sqr);
-              rd.start(env.act.sqr);
-              no_op.start(env.act.sqr);
-          end
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
         join           
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
