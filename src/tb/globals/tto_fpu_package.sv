@@ -34,6 +34,10 @@ package tto_fpu_package;
     `include "../sequences/mantissa_alignment_load_1_seq.sv"
     `include "../sequences/mantissa_alignment_load_2_seq.sv"
     `include "../sequences/mantissa_alignment_load_4_seq.sv"
+    `include "../sequences/load_01010111_seq.sv"
+    `include "../sequences/load_11110011_seq.sv"
+    `include "../sequences/load_01111001_seq.sv"
+    `include "../sequences/load_00011100_seq.sv"
 
     // Active Agent 
     `include "../env/active_agent/tto_fpu_sequencer.sv"
@@ -79,6 +83,7 @@ package tto_fpu_package;
     `include "../tests/sub_zero_operand_A_test.sv"
     `include "../tests/sub_zero_operand_B_test.sv"
     `include "../tests/write_busy_test.sv"
+    `include "../tests/sanity2.sv"
 endpackage : tto_fpu_package
 
 // DUT
