@@ -25,7 +25,6 @@ package tto_fpu_package;
     `include "../sequences/load_1_nan_seq.sv"
     `include "../sequences/load_2_inf_seq.sv"
     `include "../sequences/load_2_max_seq.sv"
-    `include "../sequences/load_2_min_seq.sv"
     `include "../sequences/load_2_neg_5_seq.sv"
     `include "../sequences/load_2_neg_inf_seq.sv"
     `include "../sequences/load_2_neg_max_seq.sv"
@@ -64,6 +63,7 @@ package tto_fpu_package;
     `include "../tests/exact_cancellation_add_test.sv"
     `include "../tests/exact_cancellation_test.sv"
     `include "../tests/inf_input_test.sv"
+    `include "../tests/load_incomplete_test.sv"
     `include "../tests/mantissa_alignment_test.sv"
     `include "../tests/mantissa_normalization_sub_test.sv"
     `include "../tests/mantissa_normalization_test.sv"
@@ -78,6 +78,7 @@ package tto_fpu_package;
     `include "../tests/sub_zero_invalid_operand_test.sv"
     `include "../tests/sub_zero_operand_A_test.sv"
     `include "../tests/sub_zero_operand_B_test.sv"
+    `include "../tests/write_busy_test.sv"
 endpackage : tto_fpu_package
 
 // DUT
