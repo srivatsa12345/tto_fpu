@@ -27,7 +27,7 @@ class tto_fpu_in_mon extends uvm_monitor;
         forever begin
             tr=tto_fpu_seq_item::type_id::create("tr");
             @(vif.in_mon_cb);
-            tr.rst_n=vif.in_mon_cb.rst_n;
+            tr.rst_n=vif.rst_n;
             tr.ui_in=vif.in_mon_cb.ui_in;
             tr.uio_in=vif.in_mon_cb.uio_in;
             `uvm_info("INPUT_MON", $sformatf("Sampled data:RESET:%0b, ui_in:%0h, uio_in:%0h", tr.rst_n, tr.ui_in, tr.uio_in), UVM_LOW)
