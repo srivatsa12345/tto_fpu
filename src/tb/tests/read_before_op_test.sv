@@ -37,10 +37,15 @@ class read_before_op_test extends uvm_test;
         rst=reset_seq::type_id::create("rst");
         no_op=no_op_seq::type_id::create("no");
         rd=assert_read_en_seq::type_id::create("rd");
-        
-        rst.start(env.rst_ag.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        fork
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
+        join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
