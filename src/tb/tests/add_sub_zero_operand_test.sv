@@ -49,7 +49,9 @@ class add_sub_zero_operand_test extends uvm_test ;
         wr=assert_wr_en_seq::type_id::create("wr");
         fork 
             begin
-                rst.start(env.rst_ag.sqr);
+                repeat(`rst_times) begin
+                    rst.start(env.rst_ag.sqr);
+                end
             end
             begin
                 repeat(`n) begin
