@@ -53,11 +53,11 @@ class write_read_in_between_test extends uvm_test ;
             begin
                 repeat(`n) begin
                     wr_rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
+                    //no_op.start(env.act.sqr);
                     wr_rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
+                    //no_op.start(env.act.sqr);
                     wr_rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
+                    //no_op.start(env.act.sqr);
                     wr_rd.start(env.act.sqr);
                     no_op.start(env.act.sqr);
                     st.start(env.act.sqr);
