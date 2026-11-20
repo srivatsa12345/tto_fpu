@@ -6,7 +6,31 @@ COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
 OUT_DIR = log_folder
 
 # List of tests to run in a regression
-TEST_LIST = sanity_test tto_base_test
+TEST_LIST = \
+	tto_base_test \
+	sanity_test \
+	add_sub_zero_operand_test \
+	add_zero_invalid_operand_test \
+	add_zero_operand_test \
+	back_to_back_op_test \
+	back_to_back_read_test \
+	exact_cancellation_add_test \
+	exact_cancellation_test \
+	inf_input_test \
+	mantissa_alignment_test \
+	mantissa_normalization_sub_test \
+	mantissa_normalization_test \
+	nan_input_test \
+	normal_addition_test \
+	normal_subtraction_test \
+	overflow_diff_exp_test \
+	overflow_max_test \
+	overflow_neg_max_test \
+	read_before_op_test \
+	subnormal_input_test \
+	sub_zero_invalid_operand_test \
+	sub_zero_operand_A_test \
+	sub_zero_operand_B_test
 
 # ==============================================================================
 # Regression Variables
@@ -78,7 +102,7 @@ wave:
 # 7. Clean up generated files to start fresh
 clean:
 	rm -rf $(OUT_DIR)/simv* $(OUT_DIR)/csrc* $(OUT_DIR)/*.log $(OUT_DIR)/*.vpd \
-	$(OUT_DIR)/*.fsdb $(OUT_DIR)/*.vdb $(OUT_DIR)/ucli.key $(OUT_DIR)/verdiLog \
+	$(OUT_DIR)/*.fsdb $(OUT_DIR)/*.vdb $(OUT_DIR)/*ucli.key $(OUT_DIR)/verdiLog \
 	$(OUT_DIR)/novas* $(OUT_DIR)/covReport DVEfiles
 
 # 8. Git automation
