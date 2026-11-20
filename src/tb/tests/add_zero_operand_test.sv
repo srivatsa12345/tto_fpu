@@ -52,27 +52,30 @@ class add_zero_operand_test extends uvm_test ;
 
         fork
             begin
+                repeat(`rst_times) begin
                 rst.start(env.rst_ag.sqr);
             end
             begin
-                wr.start(env.act.sqr);
-                zo1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                zo1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                zo2.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                zo3.start(env.act.sqr);
-                st.start(env.act.sqr);
-                add.start(env.act.sqr);
+                repeat(`n) begin
+                    wr.start(env.act.sqr);
+                    zo1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    zo1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    zo2.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    zo3.start(env.act.sqr);
+                    st.start(env.act.sqr);
+                    add.start(env.act.sqr);
 
-                repeat(4) no_op.start(env.act.sqr);
+                    repeat(4) no_op.start(env.act.sqr);
 
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
-            end
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                end
+            end    
         join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
