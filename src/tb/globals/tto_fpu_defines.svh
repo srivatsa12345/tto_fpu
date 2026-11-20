@@ -2,3 +2,4 @@
 `define MAN_W 10
 `define n 100
 `define rst 10
+`define rst_times 1
