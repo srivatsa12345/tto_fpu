@@ -5,7 +5,7 @@ class write_read_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    assert_write_read_simul wr_rd;
+    write_read_simul wr_rd;
     no_op_seq no_op;  
     assert_start_pulse_seq st;
     assert_read_en_seq rd;
