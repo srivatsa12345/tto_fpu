@@ -47,27 +47,32 @@ class sub_zero_operand_A_test extends uvm_test ;
         zo1=load_0_seq::type_id::create("zo1");
         zo2=mantissa_alignment_load_1_seq::type_id::create("zo2");
         zo3=mantissa_alignment_load_2_seq::type_id::create("zo3");
-      sub=opcode_1_seq::type_id::create("sub");
+        sub=opcode_1_seq::type_id::create("sub");
         wr=assert_wr_en_seq::type_id::create("wr");
-        
-        rst.start(env.rst_ag.sqr);
-        wr.start(env.act.sqr);
-        zo1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        zo1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        zo2.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        zo3.start(env.act.sqr);
-        st.start(env.act.sqr);
-        sub.start(env.act.sqr);
+        fork
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin       
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo2.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                zo3.start(env.act.sqr);
+                st.start(env.act.sqr);
+                sub.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
 
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
+        join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
