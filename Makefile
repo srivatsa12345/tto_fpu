@@ -17,6 +17,7 @@ TEST_LIST = \
 	exact_cancellation_add_test \
 	exact_cancellation_test \
 	inf_input_test \
+	load_incomplete_test \
 	mantissa_alignment_test \
 	mantissa_normalization_sub_test \
 	mantissa_normalization_test \
@@ -30,7 +31,8 @@ TEST_LIST = \
 	subnormal_input_test \
 	sub_zero_invalid_operand_test \
 	sub_zero_operand_A_test \
-	sub_zero_operand_B_test
+	sub_zero_operand_B_test \
+	write_busy_test
 
 # ==============================================================================
 # Regression Variables
