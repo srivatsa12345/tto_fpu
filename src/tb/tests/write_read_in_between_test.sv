@@ -6,6 +6,7 @@ class write_read_in_between_test extends uvm_test ;
 
     reset_seq rst;
     assert_wr_en_seq wr_1;
+    write_read_simul_seq wr_rd;
     write_one_byte_seq wr;
     no_op_seq no_op;  
     assert_start_pulse_seq st;
@@ -41,6 +42,7 @@ class write_read_in_between_test extends uvm_test ;
         no_op=no_op_seq::type_id::create("no");
         wr=write_one_byte_seq::type_id::create("wr");
         wr_1=assert_wr_en_seq::type_id::create("wr_1");
+        wr_rd=write_read_simul_seq::type_id::create("wr_rd");
         st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
 
@@ -52,20 +54,20 @@ class write_read_in_between_test extends uvm_test ;
             end
             begin
                 repeat(`n) begin
-                    wr_rd.start(env.act.sqr);
+                    wr.start(env.act.sqr);
                     //no_op.start(env.act.sqr);
-                    wr_rd.start(env.act.sqr);
+                    wr.start(env.act.sqr);
                     //no_op.start(env.act.sqr);
-                    wr_rd.start(env.act.sqr);
+                    wr.start(env.act.sqr);
                     //no_op.start(env.act.sqr);
-                    wr_rd.start(env.act.sqr);
+                    wr.start(env.act.sqr);
                     no_op.start(env.act.sqr);
                     st.start(env.act.sqr);
                
                     repeat(4) no_op.start(env.act.sqr);
 
                     wr.start(env.act.sqr);
-                    repeat(2) wr_1.start(env.act.sqr);
+                    repeat(2) wr_rd.start(env.act.sqr);
                     rd.start(env.act.sqr);
                     no_op.start(env.act.sqr);
                     rd.start(env.act.sqr);
