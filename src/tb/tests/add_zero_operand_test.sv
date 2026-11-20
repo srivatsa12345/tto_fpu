@@ -53,7 +53,8 @@ class add_zero_operand_test extends uvm_test ;
         fork
             begin
                 repeat(`rst_times) begin
-                rst.start(env.rst_ag.sqr);
+                    rst.start(env.rst_ag.sqr);
+                end
             end
             begin
                 repeat(`n) begin
