@@ -47,29 +47,29 @@ class mantissa_normalization_sub_test extends uvm_test ;
         mn2=mantissa_alignment_load_2_seq::type_id::create("mn2");
         sub=opcode_1_seq::type_id::create("sub");
         wr=assert_wr_en_seq::type_id::create("wr");
-        
-        rst.start(env.rst_ag.sqr);
-        wr.start(env.act.sqr);
-        mn1.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        mn2.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        mn1.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        mn2.start(env.act.sqr);
-        //no_op.start(env.act.sqr);
-        st.start(env.act.sqr);
-        sub.start(env.act.sqr);
+        fork
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin
+                wr.start(env.act.sqr);
+                mn1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                mn2.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                mn1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                mn2.start(env.act.sqr);
+                st.start(env.act.sqr);
+                sub.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
-
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
+        join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
