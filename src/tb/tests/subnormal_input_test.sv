@@ -48,24 +48,30 @@ class subnormal_input_test extends uvm_test ;
         inf2=load_0_seq::type_id::create("inf2");
         add=opcode_0_seq::type_id::create("add");
 
-        rst.start(env.rst_ag.sqr);
-        wr.start(env.act.sqr);
-        inf1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        inf2.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        st.start(env.act.sqr);
-        add.start(env.act.sqr);
+        fork
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin
+                wr.start(env.act.sqr);
+                inf1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                inf2.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                st.start(env.act.sqr);
+                add.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
        
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
+        join
         
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
