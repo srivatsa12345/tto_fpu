@@ -1,5 +1,5 @@
 class add_sub_zero_operand_test extends uvm_test ;
-  `uvm_component_utils(add_sub_zero_operand_test)
+    `uvm_component_utils(add_sub_zero_operand_test)
     
     tto_fpu_env env;
     tto_fpu_config cfg;
@@ -13,7 +13,7 @@ class add_sub_zero_operand_test extends uvm_test ;
     assert_start_pulse_seq st;
     assert_wr_en_seq wr;
     
-  function new (string name="add_sub_zero_operand_test", uvm_component parent);
+    function new (string name="add_sub_zero_operand_test", uvm_component parent);
         super.new(name, parent);
     endfunction
 
@@ -52,33 +52,35 @@ class add_sub_zero_operand_test extends uvm_test ;
                 rst.start(env.rst_ag.sqr);
             end
             begin
-                wr.start(env.act.sqr);
-                zo1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                zo1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                zo1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                zo1.start(env.act.sqr);
-                st.start(env.act.sqr);
-                add.start(env.act.sqr);
+                repeat(`n) begin
+                    wr.start(env.act.sqr);
+                    zo1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    zo1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    zo1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    zo1.start(env.act.sqr);
+                    st.start(env.act.sqr);
+                    add.start(env.act.sqr);
 
-                repeat(4) no_op.start(env.act.sqr);
+                    repeat(4) no_op.start(env.act.sqr);
 
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
       
-                st.start(env.act.sqr);
-                sub.start(env.act.sqr);
+                    st.start(env.act.sqr);
+                    sub.start(env.act.sqr);
 
-                repeat(4) no_op.start(env.act.sqr);
+                    repeat(4) no_op.start(env.act.sqr);
 
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                end
             end
         join           
         phase.phase_done.set_drain_time(this, 10ns); 
