@@ -5,7 +5,7 @@ class write_read_test extends uvm_test ;
     tto_fpu_config cfg;
 
     reset_seq rst;
-    write_read_simul wr_rd;
+    write_read_simul_seq wr_rd;
     no_op_seq no_op;  
     assert_start_pulse_seq st;
     assert_read_en_seq rd;
@@ -38,7 +38,7 @@ class write_read_test extends uvm_test ;
         phase.raise_objection(this);
         rst=reset_seq::type_id::create("rst");
         no_op=no_op_seq::type_id::create("no");
-        wr_rd=write_read_simul::type_id::create("wr_rd");
+        wr_rd=write_read_simul_seq::type_id::create("wr_rd");
         st=assert_start_pulse_seq::type_id::create("st");
         rd=assert_read_en_seq::type_id::create("rd");
 
