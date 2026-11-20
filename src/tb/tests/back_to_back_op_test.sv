@@ -52,46 +52,52 @@ class back_to_back_op_test extends uvm_test ;
         ma3=mantissa_alignment_load_1_seq::type_id::create("ma3");
         ma4=mantissa_alignment_load_4_seq::type_id::create("ma4");
         add=opcode_0_seq::type_id::create("add");
-	sub=opcode_1_seq::type_id::create("sub");
+	    sub=opcode_1_seq::type_id::create("sub");
 
-        rst.start(env.rst_ag.sqr);
-        repeat(5) begin
-        wr.start(env.act.sqr);
-        ma1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ma2.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ma3.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ma4.start(env.act.sqr);
-        st.start(env.act.sqr);
-        add.start(env.act.sqr);
+		fork
+			begin
+				rst.start(env.rst_ag.sqr);
+			end
+			begin
+				repeat(5) begin
+        			wr.start(env.act.sqr);
+        			ma1.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma2.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma3.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma4.start(env.act.sqr);
+        			st.start(env.act.sqr);
+        			add.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
+        			repeat(4) no_op.start(env.act.sqr);
 
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+        			rd.start(env.act.sqr);
+        			no_op.start(env.act.sqr);
+        			rd.start(env.act.sqr);
+        			no_op.start(env.act.sqr);
 
-        wr.start(env.act.sqr);
-        ma1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ma2.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ma3.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ma4.start(env.act.sqr);
-        st.start(env.act.sqr);
-        sub.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma1.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma2.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma3.start(env.act.sqr);
+        			wr.start(env.act.sqr);
+        			ma4.start(env.act.sqr);
+        			st.start(env.act.sqr);
+        			sub.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
+        			repeat(4) no_op.start(env.act.sqr);
 
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        end        
+        			rd.start(env.act.sqr);
+        			no_op.start(env.act.sqr);
+        			rd.start(env.act.sqr);
+        			no_op.start(env.act.sqr);
+        		end 
+			end
+		join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
