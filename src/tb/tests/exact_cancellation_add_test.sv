@@ -49,25 +49,30 @@ class exact_cancellation_add_test extends uvm_test ;
         ec3=load_2_neg_5_seq::type_id::create("ec3");
         add=opcode_0_seq::type_id::create("add");
         wr=assert_wr_en_seq::type_id::create("wr");
-        
-        rst.start(env.rst_ag.sqr);
-        wr.start(env.act.sqr);
-        ec1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ec2.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ec1.start(env.act.sqr);
-        wr.start(env.act.sqr);
-        ec3.start(env.act.sqr);
-        st.start(env.act.sqr);
-        add.start(env.act.sqr);
+        fork
+            begin
+                rst.start(env.rst_ag.sqr);
+            end
+            begin
+                wr.start(env.act.sqr);
+                ec1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                ec2.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                ec1.start(env.act.sqr);
+                wr.start(env.act.sqr);
+                ec3.start(env.act.sqr);
+                st.start(env.act.sqr);
+                add.start(env.act.sqr);
 
-        repeat(4) no_op.start(env.act.sqr);
+                repeat(4) no_op.start(env.act.sqr);
 
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
-        rd.start(env.act.sqr);
-        no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+                rd.start(env.act.sqr);
+                no_op.start(env.act.sqr);
+            end
+        join
                 
         phase.phase_done.set_drain_time(this, 10ns); 
         phase.drop_objection(this);
