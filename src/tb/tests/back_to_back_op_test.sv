@@ -56,10 +56,12 @@ class back_to_back_op_test extends uvm_test ;
 
 		fork
 			begin
-				rst.start(env.rst_ag.sqr);
+				repeat(`rst_times) begin
+					rst.start(env.rst_ag.sqr);
+				end
 			end
 			begin
-				repeat(5) begin
+				repeat(`n) begin
         			wr.start(env.act.sqr);
         			ma1.start(env.act.sqr);
         			wr.start(env.act.sqr);
