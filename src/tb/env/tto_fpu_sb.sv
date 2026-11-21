@@ -2,8 +2,10 @@ class tto_fpu_sb extends uvm_scoreboard;
 	
     `uvm_component_utils(tto_fpu_sb)
 
-    uvm_tlm_analysis_fifo #(tto_fpu_seq_item) in_fifo;
-    uvm_tlm_analysis_fifo #(tto_fpu_seq_item) out_fifo;
+    uvm_analysis_imp #(tto_fpu_seq_item, tto_fpu_sb) in_mon;
+	uvm_analysis_imp_out #(tto_fpu_seq_item, tto_fpu_sb) out_mon;
+
+    tto_fpu_seq_item in_q[$],out_q[$];
 
     int TOTAL,MISMATCH,MATCH;
     int count;
@@ -13,19 +15,37 @@ class tto_fpu_sb extends uvm_scoreboard;
 
     function new(string name="tto_fpu_sb", uvm_component parent);
         super.new(name,parent);
-        in_fifo=new("in_fifo",this);
-        out_fifo=new("out_fifo",this);
+        in_mon=new("in_mon",this);
+        out_mon=new("out_mon",this);
     endfunction
     
+    virtual function void write(tto_fpu_seq_item tx);
+		in_q.push_back(tx);
+	endfunction
+
+    virtual function void write_out(tto_fpu_seq_item tx);
+		out_q.push_back(tx);
+	endfunction
+
     task run_phase(uvm_phase phase);
     	tto_fpu_seq_item inp_mon_xn;
 		tto_fpu_seq_item out_mon_xn;
         tto_fpu_seq_item exp=tto_fpu_seq_item::type_id::create("exp");
 		forever begin
-			in_fifo.get(inp_mon_xn);
-			out_fifo.get(out_mon_xn);
-			predictor(inp_mon_xn, exp);
-			validate_outputs(out_mon_xn, exp);
+            wait((in_q.size()!=0)&&(out_q.size()!=0)) begin
+                if (inp_mon_xn==null) begin
+					inp_mon_xn=in_q.pop_front();
+					void'(out_q.pop_front());
+                end else begin
+					out_mon_xn=out_q.pop_front();
+                    predictor(inp_mon_xn, exp);
+                    inp_mon_xn=in_q.pop_front();
+                    if (!inp_mon_xn.rst_n) begin
+                        reset_values(exp);
+                    end
+                    validate_outputs(out_mon_xn, exp);
+                end				
+			end
 		end
     endtask
 
@@ -52,21 +72,7 @@ class tto_fpu_sb extends uvm_scoreboard;
 
 	task predictor(tto_fpu_seq_item inp, tto_fpu_seq_item tr);
 		if(!inp.rst_n) begin
-            tr.uio_oe=0;
-            tr.uio_out=0;
-            tr.uo_out=0;
-            prev_wr_en=0;
-			prev_prev_wr_en=0;
-            prev_rd_en=0;
-			prev_prev_rd_en=0;
-            prev_start=0;
-			prev_prev_start=0;
-            prev_op=0;
-            rd_pt=0;
-            count=0;
-            opa=0;
-            opb=0;
-            result=0;
+            reset_values(tr);
         end else begin
             tr.uio_oe=0;
 			if ((!tr.uo_out[0])&&(!prev_prev_start)&&(prev_start)&&(tr.uo_out[3])) begin
@@ -116,6 +122,24 @@ class tto_fpu_sb extends uvm_scoreboard;
             prev_rd_en=inp.ui_in[1];
             prev_start=inp.ui_in[2];
         end
+    endtask
+
+    task reset_values(tto_fpu_seq_item txn);
+        txn.uio_oe=0;
+        txn.uio_out=0;
+        txn.uo_out=0;
+        prev_wr_en=0;
+		prev_prev_wr_en=0;
+        prev_rd_en=0;
+		prev_prev_rd_en=0;
+        prev_start=0;
+		prev_prev_start=0;
+        prev_op=0;
+        rd_pt=0;
+        count=0;
+        opa=0;
+        opb=0;
+        result=0;
     endtask
 
     task check_latency();
