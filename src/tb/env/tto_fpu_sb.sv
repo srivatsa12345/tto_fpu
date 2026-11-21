@@ -8,7 +8,6 @@ class tto_fpu_sb extends uvm_scoreboard;
     int TOTAL,MISMATCH,MATCH;
     int count;
     bit [(1+`EXP_W+`MAN_W)-1:0] opa, opb, result;
-    real a, b, inter;
     bit prev_wr_en, prev_prev_wr_en, prev_rd_en, prev_prev_rd_en, prev_prev_start, prev_start, prev_op;
     bit [($clog2((1+`EXP_W+`MAN_W)/8))-1:0] rd_pt;
 
@@ -32,13 +31,23 @@ class tto_fpu_sb extends uvm_scoreboard;
 
 	task validate_outputs(tto_fpu_seq_item inp, tto_fpu_seq_item out);
     	++TOTAL;
-		if(inp.compare(out)) begin
-			++MATCH;
-			`uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n", inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_MEDIUM)
-		end else begin
-			++MISMATCH;
-			`uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n_______________________________________________________________________________________________________________________________________",inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_NONE)
-		end
+		if((out.uio_oe==8'hFF)&&(out.uio_oe==inp.uio_oe)) begin
+            if(inp.compare(out)) begin
+	    		++MATCH;
+		    	`uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n", inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_MEDIUM)
+		    end else begin
+			    ++MISMATCH;
+			    `uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n_______________________________________________________________________________________________________________________________________",inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_NONE)
+            end
+        end else begin
+            if((inp.uio_oe==out.uio_oe)&&(inp.uo_out==out.uo_out)) begin
+	    		++MATCH;
+		    	`uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n", inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_MEDIUM)
+		    end else begin
+			    ++MISMATCH;
+			    `uvm_info("SCOREBOARD",$sformatf("\nDUT: uio_oe:%0h, uio_out:%0h, uo_out:%0h\nREF: uio_oe:%0h, uio_out:%0h, uo_out:%0h\n_______________________________________________________________________________________________________________________________________",inp.uio_oe, inp.uio_out, inp.uo_out, out.uio_oe, out.uio_out, out.uo_out),UVM_NONE)
+            end
+        end
     endtask
 
 	task predictor(tto_fpu_seq_item inp, tto_fpu_seq_item tr);
@@ -58,17 +67,18 @@ class tto_fpu_sb extends uvm_scoreboard;
             opa=0;
             opb=0;
             result=0;
-            a=0; 
-            b=0;
-            inter=0;
         end else begin
             tr.uio_oe=0;
-			if ((!tr.uo_out[0])&&(!prev_prev_start)&&(prev_start)) begin
+			if ((!tr.uo_out[0])&&(!prev_prev_start)&&(prev_start)&&(tr.uo_out[3])) begin
 				tr.uo_out[2:0]=3'b001;
 				prev_op=inp.ui_in[3];
 			end
             if (!tr.uo_out[0]) begin
+                if ((prev_prev_rd_en)&&(!prev_rd_en)) begin
+                    rd_pt++;
+                end 
                 if ((inp.ui_in[2])&&(tr.uo_out[3])&&(!prev_start)) begin
+                    rd_pt=0;
 					check_latency();
                     tr.uio_oe=8'h00;
 				end else if ((!prev_prev_wr_en)&&(prev_wr_en)) begin
@@ -87,13 +97,10 @@ class tto_fpu_sb extends uvm_scoreboard;
                     end
                 end else if(inp.ui_in[1]) begin
                     tr.uio_oe=8'hFF;
+                    tr.uio_out=result[rd_pt*8+:8];
                 end else if (!inp.ui_in[1]) begin
                     tr.uio_oe=8'h00;
                 end
-				if ((prev_prev_rd_en)&&(!prev_rd_en)) begin
-                    rd_pt++;
-                end 
-				tr.uio_out=result[rd_pt*8+:8];
             end else begin
                 tr.uio_oe=8'h00;
                 if (count!=0) begin
@@ -120,71 +127,82 @@ class tto_fpu_sb extends uvm_scoreboard;
     endtask
 
 	task perform_operation(tto_fpu_seq_item txn);
-        if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}}) begin
+        bit opa_sign=opa[(`EXP_W+`MAN_W)];
+        bit opb_sign=opb[(`EXP_W+`MAN_W)];
+        bit [`MAN_W:0] man_opa={1'b1, opa[(`MAN_W-1):0]};
+        bit [`MAN_W:0] man_opb={1'b1, opb[(`MAN_W-1):0]};
+        bit [`MAN_W:0] man_l, man_s;
+        bit [`EXP_W-1:0] exp_opa=opa[(`EXP_W+`MAN_W)-1:`MAN_W];
+        bit [`EXP_W-1:0] exp_opb=opb[(`EXP_W+`MAN_W)-1:`MAN_W];
+        bit eff_op;
+        int exp_diff;
+        bit res_sign;
+        bit signed [`EXP_W:0] res_exp;
+        bit [`MAN_W+1:0] res_man;
+        if ((exp_opa=={`EXP_W{1'b1}})||(exp_opb=={`EXP_W{1'b1}})||((exp_opa==0)&&(opa[`MAN_W-1:0]!=0))||((exp_opb==0)&&(opb[`MAN_W-1:0]!=0))) begin
             txn.uo_out[2:0]=3'b110;
             result=0;
-        end else if (opb[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}}) begin
-            txn.uo_out[2:0]=3'b110;
-            result=0;
-        end else if (opa[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
-            if (opa[`MAN_W-1:0]=={`MAN_W{1'b0}}) begin
-                txn.uo_out[2:0]=3'b010;
-                result=opb;
-            end else begin
-                txn.uo_out[2:0]=3'b110;
-                result=0;
-            end
-		end else if (opb[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
-			if (opb[`MAN_W-1:0]=={`MAN_W{1'b0}}) begin
-                txn.uo_out[2:0]=3'b010;
-                result=opa;
-            end else begin
-                txn.uo_out[2:0]=3'b110;
-                result=0;
-            end
+        end else if (exp_opb == 0) begin
+            txn.uo_out[2:0]=3'b010;
+            result=opa;
+        end else if (exp_opa==0) begin
+            txn.uo_out[2:0]=3'b010;
+            result=(prev_op)?{~opb_sign,opb[`EXP_W+`MAN_W-1:0]}:opb;
         end else begin
             txn.uo_out[2:0]=3'b010;
-            a=convertfp16toreal(opa);
-            b=convertfp16toreal(opb);
             if (prev_op) begin
-                inter=a-b;
-            end else begin
-                inter=a+b;
+                opb_sign=~opb_sign;
             end
-            result=convertrealtofp16(inter);
-            if (result[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b1}}) begin
-				result={result[(1+`EXP_W+`MAN_W)-1], {`EXP_W{1'b1}}, {`MAN_W{1'b0}}};
-            end else if (result[(`EXP_W+`MAN_W)-1:`MAN_W]=={`EXP_W{1'b0}}) begin
-				result={result[(1+`EXP_W+`MAN_W)-1],{`EXP_W{1'b0}},{`MAN_W{1'b0}}};
-            end 
+            if (opa_sign==opb_sign) begin
+                eff_op=0;
+            end else begin
+                eff_op=1;
+            end
+            if(opa[(`EXP_W+`MAN_W)-1:0]>opb[(`EXP_W+`MAN_W)-1:0]) begin
+                res_sign=opa_sign;
+                exp_diff=exp_opa-exp_opb;
+                man_opb=(man_opb)>>exp_diff;
+                res_exp=exp_opa;
+            end else begin
+                res_sign=opb_sign;
+                exp_diff=exp_opb-exp_opa;
+                man_opa=(man_opa)>>exp_diff;
+                res_exp=exp_opb;
+            end
+            if (man_opa<man_opb) begin
+                man_s=man_opa;
+                man_l=man_opb;
+            end else begin
+                man_s=man_opb;
+                man_l=man_opa;
+            end
+            if (eff_op) begin
+                res_man=man_l-man_s;
+            end else begin
+                res_man=man_l+man_s;
+            end
+            if (res_man[`MAN_W+1]) begin
+                res_exp=res_exp+1;
+                res_man=res_man>>1;
+            end else begin
+                if (res_man!=0) begin
+                    while (res_man[`MAN_W]==0) begin
+                        res_man=res_man<<1;
+                        res_exp=res_exp-1;
+                    end
+                end 
+            end
+            if (res_exp>((1<<(`EXP_W))-2)) begin
+                result={res_sign, {`EXP_W{1'b1}}, {`MAN_W{1'b0}}};
+            end else if (res_man==0) begin
+                result={1'b0, {`EXP_W{1'b0}}, {`MAN_W{1'b0}}};
+            end else if (res_exp<1) begin
+                result={res_sign, {`EXP_W{1'b0}}, {`MAN_W{1'b0}}};
+            end else begin
+                result={res_sign, res_exp[`EXP_W-1:0], res_man[`MAN_W-1:0]};
+            end
         end
-		txn.uio_out=result[rd_pt*8+:8];
     endtask
-
-    function bit [(1+`EXP_W+`MAN_W)-1:0] convertrealtofp16(real num);
-        bit [63:0] fp64;
-        int bias;
-        fp64 = $realtobits(num);
-        if (num == 0.0) return '0;                                    
-        bias = (int'(fp64[62:52]) - 1023) + ((1 << (`EXP_W-1)) - 1);  
-        if (bias > (1 << `EXP_W) - 2)                                
-            return {fp64[63], {`EXP_W{1'b1}}, {`MAN_W{1'b0}}};
-        if (bias <= 0)                                            
-            return {fp64[63], {(`EXP_W+`MAN_W){1'b0}}};
-        return {fp64[63], (`EXP_W)'(bias), fp64[51 -: `MAN_W]};     
-    endfunction
-    
-    function real convertfp16toreal(bit [(1+`EXP_W+`MAN_W)-1:0] fp16);
-        int bias = (1 << (`EXP_W-1)) - 1;
-        int exp_val = fp16[`EXP_W+`MAN_W-1:`MAN_W] - bias;
-        real mant_val = 1.0 + (real'(fp16[`MAN_W-1:0]) / (2.0**`MAN_W));
-        real final_val = mant_val * (2.0**exp_val);
-        if (fp16[`EXP_W+`MAN_W]) begin
-            return -final_val;
-        end else begin
-            return final_val;
-        end
-    endfunction
 
     function void report_phase(uvm_phase phase);
         super.report_phase(phase);
