@@ -9,7 +9,7 @@ interface tto_fpu_if (input logic clk);
         output ui_in, uio_in;
     endclocking
 
-    clocking rst_drv_cb @(posedge clk);
+    clocking rst_drv_cb @(negedge clk);
     endclocking
     
     clocking in_mon_cb @(posedge clk);
