@@ -23,7 +23,7 @@ class tto_fpu_env extends uvm_env;
         super.connect_phase(phase);
         act.mon.mon_port.connect(scb.analysis_export);
         act.mon.mon_port.connect(sub.analysis_export);
-        rst_ag.mon.mon_port.connect(scb.output_imp);
+        rst_ag.mon.mon_port.connect(scb.out_mon);
         rst_ag.mon.mon_port.connect(sub.output_imp);
     endfunction
 
