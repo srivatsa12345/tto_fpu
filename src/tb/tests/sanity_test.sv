@@ -43,10 +43,12 @@ class sanity_test extends uvm_test;
         rd=assert_read_en_seq::type_id::create("rd");
         fork
             begin
-		        rst.start(env.rst_ag.sqr);
+				repeat(`rst_times) begin
+		        	rst.start(env.rst_ag.sqr);
+				end
             end
             begin
-				repeat(6) begin
+				repeat(`n) begin
 					repeat(4) begin
 						wr.start(env.act.sqr);
 						no.start(env.act.sqr);
