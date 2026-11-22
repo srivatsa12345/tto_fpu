@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l read_write_in_between_test_3456_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name read_write_in_between_test_3456 -cm_log read_write_in_between_test_3456_cm.log -key read_write_in_between_test_3456_ucli.key +fsdbfile+read_write_in_between_test_3456.fsdb +UVM_TESTNAME=read_write_in_between_test +ntb_random_seed=3456
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 18:32 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 19:06 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -16912,7 +16912,7 @@ DUT: uio_oe:0, uio_out:38, uo_out:32
 REF: uio_oe:0, uio_out:38, uo_out:32
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 84190000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(233) @ 84190000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(237) @ 84190000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:2104
 Total testcases passed:2004
 Total testcases failed:100
@@ -16962,5 +16962,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 84190000 ps
-CPU Time:      2.050 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 18:32:10 2026
+CPU Time:      2.160 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 19:06:44 2026

@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l start_busy_test_7890_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name start_busy_test_7890 -cm_log start_busy_test_7890_cm.log -key start_busy_test_7890_ucli.key +fsdbfile+start_busy_test_7890.fsdb +UVM_TESTNAME=start_busy_test +ntb_random_seed=7890
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 18:32 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 19:07 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -483,33 +483,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 2020000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f8, uio_in:49
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:6a, uio_in:b0
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2060000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:69, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:69, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:98, uio_in:56, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:6a, uio_in:b0
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:98, uio_in:56
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2100000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:69, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:69, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 2100000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b9, uio_in:e3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:56
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b9, uio_in:e3
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 2140000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:69, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 2140000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b8, uio_in:e3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b9, uio_in:e3
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b8, uio_in:e3
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:69, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 2180000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:31, uio_in:2b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b8, uio_in:e3
@@ -517,7 +517,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2220000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:31, uio_in:2b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:69, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 2220000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:30, uio_in:2b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:31, uio_in:2b
@@ -525,7 +525,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2260000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:30, uio_in:2b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:69, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 2260000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:9, uio_in:b0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:2b
@@ -533,7 +533,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2300000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9, uio_in:b0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:69, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 2300000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:8, uio_in:b0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9, uio_in:b0
@@ -541,7 +541,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2340000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:b0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:69, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 2340000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:1, uio_in:6b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:b0
@@ -549,7 +549,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2380000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:1, uio_in:6b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:69, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 2380000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:0, uio_in:6b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:1, uio_in:6b
@@ -557,7 +557,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2420000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:6b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:69, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2420000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:10, uio_in:b9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:6b
@@ -565,7 +565,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2460000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:b9
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:69, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 2460000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:bc, uio_in:61, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:b9
@@ -573,7 +573,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2500000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:bc, uio_in:61
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:69, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:99, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:bc, uio_in:61
@@ -581,7 +581,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2540000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:99
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:69, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:99
@@ -589,7 +589,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2580000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:69, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 2580000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:34, uio_in:e0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:b
@@ -597,7 +597,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2620000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:34, uio_in:e0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:69, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 2620000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:12, uio_in:f5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:34, uio_in:e0
@@ -605,7 +605,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2660000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:12, uio_in:f5
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:69, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2660000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:b3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:12, uio_in:f5
@@ -613,7 +613,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2700000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:b3
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:69, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 2700000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:6a, uio_in:5b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:b3
@@ -621,7 +621,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2740000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:6a, uio_in:5b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:b0, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:69, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:28, uio_in:5b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:6a, uio_in:5b
@@ -629,7 +629,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2780000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:5b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:b0, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:69, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 2780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:29, uio_in:26, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:5b
@@ -1163,33 +1163,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 5420000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:ea
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f2, uio_in:35
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 5460000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:27, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:27, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 5460000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:38, uio_in:b8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f2, uio_in:35
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:38, uio_in:b8
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 5500000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:27, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:27, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 5500000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:69, uio_in:7c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:38, uio_in:b8
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:69, uio_in:7c
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 5540000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 5540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:27, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 5540000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:68, uio_in:7c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:69, uio_in:7c
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:68, uio_in:7c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:27, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 5580000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:c9, uio_in:53, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:68, uio_in:7c
@@ -1197,7 +1197,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5620000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c9, uio_in:53
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:27, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 5620000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:c8, uio_in:53, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c9, uio_in:53
@@ -1205,7 +1205,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5660000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c8, uio_in:53
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:27, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 5660000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:91, uio_in:1e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c8, uio_in:53
@@ -1213,7 +1213,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5700000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:91, uio_in:1e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:27, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 5700000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:90, uio_in:1e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:91, uio_in:1e
@@ -1221,7 +1221,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5740000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:90, uio_in:1e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:27, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 5740000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:d9, uio_in:ae, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:1e
@@ -1229,7 +1229,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5780000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d9, uio_in:ae
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:27, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 5780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:d8, uio_in:ae, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d9, uio_in:ae
@@ -1237,7 +1237,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5820000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:ae
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:27, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 5820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:a7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:ae
@@ -1245,7 +1245,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5860000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:a7
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:27, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 5860000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:dc, uio_in:ac, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:a7
@@ -1253,7 +1253,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5900000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:dc, uio_in:ac
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:27, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 5900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:70, uio_in:8b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:dc, uio_in:ac
@@ -1261,7 +1261,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5940000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:8b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:27, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 5940000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:98, uio_in:b0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:8b
@@ -1269,7 +1269,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5980000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:98, uio_in:b0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:27, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 5980000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:d4, uio_in:f8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:b0
@@ -1277,7 +1277,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6020000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d4, uio_in:f8
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:27, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 6020000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:42, uio_in:cc, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d4, uio_in:f8
@@ -1285,7 +1285,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6060000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:42, uio_in:cc
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:27, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 6060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:90, uio_in:e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:42, uio_in:cc
@@ -1293,7 +1293,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6100000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:90, uio_in:e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:27, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 6100000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:4a, uio_in:1a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:e
@@ -1301,7 +1301,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6140000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:4a, uio_in:1a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 6140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:79, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:27, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 6140000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:7f, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:4a, uio_in:1a
@@ -1309,7 +1309,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6180000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:7f
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:79, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:27, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 6180000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:41, uio_in:59, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:7f
@@ -1571,33 +1571,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 7460000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:40, uio_in:d1
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:22, uio_in:d9
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 7500000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:42, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:42, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 7500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:80, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:22, uio_in:d9
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:80
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 7540000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:42, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:42, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 7540000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:79, uio_in:e7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:80
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:79, uio_in:e7
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 7580000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 7580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:42, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 7580000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:78, uio_in:e7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:79, uio_in:e7
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:78, uio_in:e7
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:42, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 7620000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a1, uio_in:b6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:78, uio_in:e7
@@ -1605,7 +1605,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7660000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a1, uio_in:b6
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:42, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 7660000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a0, uio_in:b6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a1, uio_in:b6
@@ -1613,7 +1613,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7700000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:b6
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:42, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 7700000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:9, uio_in:b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:b6
@@ -1621,7 +1621,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7740000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9, uio_in:b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:42, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 7740000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:8, uio_in:b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9, uio_in:b
@@ -1629,7 +1629,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7780000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:42, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 7780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a1, uio_in:13, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:b
@@ -1637,7 +1637,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7820000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a1, uio_in:13
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:42, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 7820000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a0, uio_in:13, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a1, uio_in:13
@@ -1645,7 +1645,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7860000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:13
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:42, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 7860000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:b2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:13
@@ -1653,7 +1653,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7900000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:b2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:42, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 7900000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:44, uio_in:56, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:b2
@@ -1661,7 +1661,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7940000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:44, uio_in:56
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:42, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 7940000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:90, uio_in:67, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:44, uio_in:56
@@ -1669,7 +1669,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7980000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:90, uio_in:67
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:42, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 7980000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:67
@@ -1677,7 +1677,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8020000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 8020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:42, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 8020000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:a4, uio_in:6e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:e
@@ -1685,7 +1685,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8060000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 8060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a4, uio_in:6e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:42, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 8060000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:42, uio_in:32, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../sequences/reset_seq.sv(13) @ 8080000: uvm_test_top.env.rst_ag.sqr@@rst [reset_seq] RESET:0
@@ -2411,33 +2411,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 11660000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:d1
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:22, uio_in:4a
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 11700000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:f4, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:f4, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 11700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:68, uio_in:ab, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:22, uio_in:4a
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:68, uio_in:ab
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 11740000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:f4, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:f4, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 11740000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:71, uio_in:ba, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:68, uio_in:ab
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:71, uio_in:ba
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 11780000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 11780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:f4, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 11780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:70, uio_in:ba, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:71, uio_in:ba
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:ba
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f4, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 11820000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a9, uio_in:7b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:ba
@@ -2445,7 +2445,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11860000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a9, uio_in:7b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f4, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 11860000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a8, uio_in:7b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a9, uio_in:7b
@@ -2453,7 +2453,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11900000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:7b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:f4, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 11900000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b9, uio_in:11, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:7b
@@ -2461,7 +2461,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11940000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b9, uio_in:11
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:f4, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 11940000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b8, uio_in:11, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b9, uio_in:11
@@ -2469,7 +2469,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11980000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 11980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b8, uio_in:11
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:f4, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 11980000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a9, uio_in:6c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b8, uio_in:11
@@ -2477,7 +2477,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12020000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a9, uio_in:6c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:f4, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 12020000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a8, uio_in:6c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a9, uio_in:6c
@@ -2485,7 +2485,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12060000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:6c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:f4, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 12060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:e0, uio_in:4b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:6c
@@ -2493,7 +2493,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12100000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e0, uio_in:4b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:f4, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 12100000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:44, uio_in:4c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:4b
@@ -2501,7 +2501,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12140000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:44, uio_in:4c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f4, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 12140000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:40, uio_in:3b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:44, uio_in:4c
@@ -2509,7 +2509,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12180000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:40, uio_in:3b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f4, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 12180000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:80, uio_in:7f, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:40, uio_in:3b
@@ -2517,7 +2517,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12220000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:7f
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f4, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 12220000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:b4, uio_in:88, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:7f
@@ -2525,7 +2525,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12260000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b4, uio_in:88
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f4, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 12260000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:22, uio_in:3e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b4, uio_in:88
@@ -2533,7 +2533,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:22, uio_in:3e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f4, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 12300000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:80, uio_in:c2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:22, uio_in:3e
@@ -2541,7 +2541,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:c2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f4, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 12340000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:5a, uio_in:3a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:c2
@@ -2549,7 +2549,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:5a, uio_in:3a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 12380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:f4, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 12380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:78, uio_in:34, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:5a, uio_in:3a
@@ -2557,7 +2557,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 12420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:78, uio_in:34
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:f4, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 12420000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:59, uio_in:89, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:78, uio_in:34
@@ -4315,33 +4315,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 21180000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:d5
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:62, uio_in:8b
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 21220000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:d3, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:d3, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 21220000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:40, uio_in:9f, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:62, uio_in:8b
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:40, uio_in:9f
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 21260000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:d3, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:d3, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 21260000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:81, uio_in:a7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:40, uio_in:9f
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:81, uio_in:a7
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 21300000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 21300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:d3, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 21300000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:80, uio_in:a7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:81, uio_in:a7
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:a7
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 21340000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b1, uio_in:fe, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:a7
@@ -4349,7 +4349,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b1, uio_in:fe
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 21380000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b0, uio_in:fe, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b1, uio_in:fe
@@ -4357,7 +4357,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:fe
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:d3, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 21420000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:51, uio_in:cb, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:fe
@@ -4365,7 +4365,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21460000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:51, uio_in:cb
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:d3, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 21460000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:50, uio_in:cb, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:51, uio_in:cb
@@ -4373,7 +4373,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21500000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:50, uio_in:cb
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:d3, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 21500000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:61, uio_in:6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:cb
@@ -4381,7 +4381,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21540000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:61, uio_in:6
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:d3, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 21540000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:60, uio_in:6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:61, uio_in:6
@@ -4389,7 +4389,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21580000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:6
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:d3, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 21580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:58, uio_in:b9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:6
@@ -4397,7 +4397,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21620000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:b9
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:d3, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 21620000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:2c, uio_in:14, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:b9
@@ -4405,7 +4405,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21660000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:2c, uio_in:14
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 21660000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:10, uio_in:10, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:2c, uio_in:14
@@ -4413,7 +4413,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21700000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:10
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 21700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b8, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:10
@@ -4421,7 +4421,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21740000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b8, uio_in:f3
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 21740000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:34, uio_in:d3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b8, uio_in:f3
@@ -4429,7 +4429,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21780000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:34, uio_in:d3
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:d3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 21780000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:c2, uio_in:60, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:34, uio_in:d3
@@ -4437,7 +4437,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21820000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c2, uio_in:60
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:d3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 21820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:20, uio_in:bf, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c2, uio_in:60
@@ -4445,39 +4445,39 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21860000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:20, uio_in:bf
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 21860000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:1a, uio_in:12, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:bf
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:1a, uio_in:12
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 21900000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:d3, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 21900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:a3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:1a, uio_in:12
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:a3
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 21940000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 21940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:d3, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 21940000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:61, uio_in:8c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 21980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:a3
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 21980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 21980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:61, uio_in:8c
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 21980000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 21980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:d3, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 21980000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:60, uio_in:8c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:61, uio_in:8c
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:8c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 22020000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:51, uio_in:a5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:8c
@@ -4485,7 +4485,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22060000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:51, uio_in:a5
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 22060000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:50, uio_in:a5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:51, uio_in:a5
@@ -4493,7 +4493,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22100000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:50, uio_in:a5
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:d3, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 22100000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:49, uio_in:81, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:a5
@@ -4501,7 +4501,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22140000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:49, uio_in:81
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:d3, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 22140000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:48, uio_in:81, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:49, uio_in:81
@@ -4509,7 +4509,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22180000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:48, uio_in:81
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:d3, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 22180000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:71, uio_in:ce, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:48, uio_in:81
@@ -4517,7 +4517,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22220000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:71, uio_in:ce
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:d3, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 22220000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:70, uio_in:ce, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:71, uio_in:ce
@@ -4525,7 +4525,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22260000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:ce
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:d3, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 22260000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:98, uio_in:c0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:ce
@@ -4533,7 +4533,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:98, uio_in:c0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:d3, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 22300000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:34, uio_in:7a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:c0
@@ -4541,7 +4541,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:34, uio_in:7a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 22340000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:f4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:34, uio_in:7a
@@ -4549,7 +4549,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:f4
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 22380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:ef, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:f4
@@ -4557,7 +4557,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:ef
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:d3, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 22420000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:74, uio_in:d2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:ef
@@ -4565,7 +4565,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22460000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:74, uio_in:d2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:d3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 22460000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:8a, uio_in:bc, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:74, uio_in:d2
@@ -4573,7 +4573,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22500000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8a, uio_in:bc
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:d3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 22500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:58, uio_in:3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8a, uio_in:bc
@@ -4581,7 +4581,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22540000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:3
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:d3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 22540000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:a, uio_in:87, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:3
@@ -4589,7 +4589,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22580000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a, uio_in:87
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 22580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:80, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:d3, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 22580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:88, uio_in:1d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a, uio_in:87
@@ -4597,7 +4597,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 22620000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 22620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:1d
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 22620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:80, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:d3, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 22620000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b1, uio_in:6b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 22660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:1d
@@ -8803,33 +8803,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 43620000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:f0
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c2, uio_in:d2
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 43660000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:b7, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:b7, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 43660000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:5c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c2, uio_in:d2
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:5c
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 43700000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:b7, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:b7, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 43700000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:c9, uio_in:49, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:5c
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c9, uio_in:49
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 43740000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 43740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:b7, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 43740000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:c8, uio_in:49, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c9, uio_in:49
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c8, uio_in:49
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b7, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 43780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:9, uio_in:1b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c8, uio_in:49
@@ -8837,7 +8837,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43820000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9, uio_in:1b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b7, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 43820000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:8, uio_in:1b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9, uio_in:1b
@@ -8845,7 +8845,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43860000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:1b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:b7, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 43860000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a1, uio_in:54, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:1b
@@ -8853,7 +8853,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43900000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a1, uio_in:54
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:b7, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 43900000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a0, uio_in:54, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a1, uio_in:54
@@ -8861,7 +8861,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43940000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:54
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:b7, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 43940000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:89, uio_in:3c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 43980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:54
@@ -8869,7 +8869,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 43980000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 43980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:89, uio_in:3c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 43980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:b7, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 43980000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:88, uio_in:3c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:89, uio_in:3c
@@ -8877,7 +8877,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44020000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:3c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:b7, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 44020000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:0, uio_in:c9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:3c
@@ -8885,7 +8885,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44060000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:c9
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:b7, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 44060000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:74, uio_in:95, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:c9
@@ -8893,7 +8893,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44100000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:74, uio_in:95
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b7, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 44100000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:58, uio_in:ec, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:74, uio_in:95
@@ -8901,7 +8901,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44140000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:ec
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b7, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 44140000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d0, uio_in:11, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:ec
@@ -8909,7 +8909,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44180000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:11
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b7, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 44180000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:7c, uio_in:f2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:11
@@ -8917,7 +8917,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44220000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:7c, uio_in:f2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:b7, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 44220000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:22, uio_in:44, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:7c, uio_in:f2
@@ -8925,7 +8925,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44260000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:22, uio_in:44
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:b7, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 44260000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:49, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:22, uio_in:44
@@ -8933,7 +8933,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:49
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:b7, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 44300000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:5a, uio_in:e5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:49
@@ -8941,7 +8941,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:5a, uio_in:e5
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 44340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:51, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:b7, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 44340000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:0, uio_in:68, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:5a, uio_in:e5
@@ -8949,7 +8949,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 44380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 44380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:68
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 44380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:51, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:b7, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 44380000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:51, uio_in:97, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 44420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:68
@@ -9619,33 +9619,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 47700000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:48
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c2, uio_in:76
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 47740000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 47740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:68, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:68, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 47740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:1d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c2, uio_in:76
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:1d
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 47780000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 47780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:68, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:68, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 47780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a9, uio_in:64, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:1d
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a9, uio_in:64
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 47820000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 47820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:68, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 47820000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a8, uio_in:64, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a9, uio_in:64
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:64
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 47860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:68, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 47860000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:1, uio_in:ae, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:64
@@ -9653,7 +9653,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47900000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:1, uio_in:ae
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 47900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:68, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 47900000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:0, uio_in:ae, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:1, uio_in:ae
@@ -9661,7 +9661,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47940000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:ae
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 47940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:68, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 47940000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:61, uio_in:1a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 47980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:ae
@@ -9669,7 +9669,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 47980000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 47980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:61, uio_in:1a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 47980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:68, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 47980000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:60, uio_in:1a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:61, uio_in:1a
@@ -9677,7 +9677,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48020000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:1a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:68, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 48020000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:81, uio_in:4f, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:1a
@@ -9685,7 +9685,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48060000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:81, uio_in:4f
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:68, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 48060000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:80, uio_in:4f, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:81, uio_in:4f
@@ -9693,7 +9693,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48100000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:4f
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:68, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 48100000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:f8, uio_in:c6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:4f
@@ -9701,7 +9701,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48140000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f8, uio_in:c6
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:68, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 48140000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:84, uio_in:8a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f8, uio_in:c6
@@ -9709,7 +9709,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48180000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:84, uio_in:8a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:68, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 48180000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:8, uio_in:2c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:84, uio_in:8a
@@ -9717,7 +9717,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48220000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:2c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:68, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 48220000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:f7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:2c
@@ -9725,7 +9725,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48260000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:f7
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:68, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 48260000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:9c, uio_in:50, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:f7
@@ -9733,7 +9733,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9c, uio_in:50
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:68, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 48300000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:62, uio_in:f4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9c, uio_in:50
@@ -9741,7 +9741,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:62, uio_in:f4
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:68, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 48340000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:88, uio_in:73, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:62, uio_in:f4
@@ -9749,7 +9749,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:73
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:68, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 48380000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:a2, uio_in:48, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:73
@@ -9757,7 +9757,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a2, uio_in:48
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 48420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:20, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:68, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 48420000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b8, uio_in:5b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a2, uio_in:48
@@ -9765,7 +9765,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 48460000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 48460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b8, uio_in:5b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 48460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:20, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:68, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 48460000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:d1, uio_in:40, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 48500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b8, uio_in:5b
@@ -9891,33 +9891,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 49060000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:44
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:da, uio_in:87
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 49100000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:cf, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:cf, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 49100000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:60, uio_in:8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:da, uio_in:87
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:8
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 49140000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:cf, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:cf, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 49140000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b1, uio_in:22, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:8
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b1, uio_in:22
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 49180000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 49180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:cf, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 49180000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b0, uio_in:22, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b1, uio_in:22
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:22
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:cf, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 49220000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:d1, uio_in:37, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:22
@@ -9925,7 +9925,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49260000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d1, uio_in:37
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:cf, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 49260000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:d0, uio_in:37, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d1, uio_in:37
@@ -9933,7 +9933,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:37
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:cf, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 49300000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:21, uio_in:14, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:37
@@ -9941,7 +9941,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:21, uio_in:14
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:cf, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 49340000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:20, uio_in:14, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:21, uio_in:14
@@ -9949,7 +9949,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:20, uio_in:14
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:cf, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 49380000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:61, uio_in:f2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:14
@@ -9957,7 +9957,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:61, uio_in:f2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:cf, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 49420000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:60, uio_in:f2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:61, uio_in:f2
@@ -9965,7 +9965,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49460000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:f2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:cf, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 49460000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:8, uio_in:16, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:f2
@@ -9973,7 +9973,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49500000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:16
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:cf, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 49500000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:ac, uio_in:e1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:16
@@ -9981,7 +9981,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49540000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ac, uio_in:e1
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:cf, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 49540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:3a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ac, uio_in:e1
@@ -9989,7 +9989,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49580000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:3a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:cf, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 49580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:60, uio_in:ab, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:3a
@@ -9997,7 +9997,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49620000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:ab
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:cf, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 49620000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:a4, uio_in:ee, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:ab
@@ -10005,7 +10005,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49660000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a4, uio_in:ee
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:cf, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 49660000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:72, uio_in:98, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a4, uio_in:ee
@@ -10013,7 +10013,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49700000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:72, uio_in:98
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:cf, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 49700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c8, uio_in:94, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:72, uio_in:98
@@ -10021,7 +10021,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49740000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c8, uio_in:94
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:cf, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 49740000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:92, uio_in:f2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c8, uio_in:94
@@ -10029,7 +10029,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49780000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:92, uio_in:f2
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 49780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:14, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:cf, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 49780000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:5a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:92, uio_in:f2
@@ -10037,7 +10037,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 49820000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 49820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:5a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 49820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:14, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:cf, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 49820000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:69, uio_in:ed, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 49860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:5a
@@ -10163,33 +10163,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 50420000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:97
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:12, uio_in:2a
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 50460000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:f2, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:f2, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 50460000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:ba, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:12, uio_in:2a
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:ba
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 50500000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:f2, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:f2, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 50500000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a1, uio_in:b4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:ba
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a1, uio_in:b4
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 50540000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 50540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:f2, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 50540000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:a0, uio_in:b4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a1, uio_in:b4
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:b4
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 50580000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:99, uio_in:0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:b4
@@ -10197,7 +10197,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50620000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:99, uio_in:0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 50620000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:98, uio_in:0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:99, uio_in:0
@@ -10205,7 +10205,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50660000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:98, uio_in:0
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:f2, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 50660000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:9, uio_in:27, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:0
@@ -10213,7 +10213,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50700000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9, uio_in:27
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:f2, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 50700000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:8, uio_in:27, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9, uio_in:27
@@ -10221,7 +10221,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50740000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:27
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:f2, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 50740000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:1, uio_in:a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:27
@@ -10229,7 +10229,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50780000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:1, uio_in:a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:f2, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 50780000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:0, uio_in:a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:1, uio_in:a
@@ -10237,7 +10237,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50820000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:f2, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 50820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:10, uio_in:3b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:a
@@ -10245,7 +10245,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50860000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:3b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:f2, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 50860000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:6c, uio_in:1e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:3b
@@ -10253,7 +10253,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50900000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:6c, uio_in:1e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 50900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:0, uio_in:3a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:6c, uio_in:1e
@@ -10261,7 +10261,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50940000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:3a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 50940000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:93, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 50980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:3a
@@ -10269,7 +10269,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 50980000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 50980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:93
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 50980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 50980000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:ac, uio_in:44, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:93
@@ -10277,7 +10277,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51020000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ac, uio_in:44
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f2, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 51020000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:c2, uio_in:cc, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ac, uio_in:44
@@ -10285,7 +10285,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51060000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c2, uio_in:cc
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f2, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:a9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c2, uio_in:cc
@@ -10293,39 +10293,39 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51100000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:a9
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 51100000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:ca, uio_in:d7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:a9
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ca, uio_in:d7
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 51140000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:f2, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51140000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:60, uio_in:54, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ca, uio_in:d7
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:60, uio_in:54
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 51180000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:f2, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 51180000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:31, uio_in:59, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:60, uio_in:54
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:31, uio_in:59
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 51220000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 51220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:f2, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 51220000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:30, uio_in:59, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:31, uio_in:59
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:30, uio_in:59
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 51260000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e9, uio_in:55, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:59
@@ -10333,7 +10333,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e9, uio_in:55
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 51300000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e8, uio_in:55, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e9, uio_in:55
@@ -10341,7 +10341,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e8, uio_in:55
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:f2, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 51340000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:19, uio_in:4c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e8, uio_in:55
@@ -10349,7 +10349,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:19, uio_in:4c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:f2, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 51380000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:18, uio_in:4c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:19, uio_in:4c
@@ -10357,7 +10357,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:18, uio_in:4c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:f2, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 51420000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e1, uio_in:84, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:18, uio_in:4c
@@ -10365,7 +10365,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51460000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e1, uio_in:84
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:f2, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 51460000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e0, uio_in:84, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e1, uio_in:84
@@ -10373,7 +10373,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51500000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e0, uio_in:84
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:f2, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:0, uio_in:14, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:84
@@ -10381,7 +10381,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51540000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:14
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:f2, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 51540000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:f4, uio_in:fd, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:14
@@ -10389,7 +10389,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51580000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f4, uio_in:fd
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:63, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f4, uio_in:fd
@@ -10397,7 +10397,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51620000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:63
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51620000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:28, uio_in:59, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:63
@@ -10405,7 +10405,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51660000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:59
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:f2, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 51660000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:d4, uio_in:5d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:59
@@ -10413,7 +10413,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51700000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d4, uio_in:5d
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f2, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 51700000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:ea, uio_in:a9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d4, uio_in:5d
@@ -10421,7 +10421,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51740000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ea, uio_in:a9
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f2, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:70, uio_in:9c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ea, uio_in:a9
@@ -10429,7 +10429,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51780000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:9c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:f2, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 51780000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:5a, uio_in:9c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:9c
@@ -10437,7 +10437,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51820000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:5a, uio_in:9c
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 51820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:59, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:f2, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 51820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:0, uio_in:cb, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:5a, uio_in:9c
@@ -10445,7 +10445,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 51860000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 51860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:0, uio_in:cb
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 51860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:59, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:f2, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 51860000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:31, uio_in:69, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 51900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:0, uio_in:cb
@@ -11251,33 +11251,33 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 55860000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 55900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:a4
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 55900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 55900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:2a, uio_in:52
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 55900000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 55900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:b5, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:b5, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 55900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:20, uio_in:cc, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 55940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:2a, uio_in:52
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 55940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 55940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:20, uio_in:cc
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 55940000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 55940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:b5, uo_out:e
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:0, uio_out:b5, uo_out:9
+
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 55940000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b1, uio_in:a1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 55980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:cc
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 55980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 55980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b1, uio_in:a1
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 55980000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 55980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:0, uo_out:e
-REF: uio_oe:ff, uio_out:0, uo_out:e
-
+REF: uio_oe:0, uio_out:b5, uo_out:e
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 55980000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:b0, uio_in:a1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b1, uio_in:a1
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:e
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:a1
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b5, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 56020000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:59, uio_in:2d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:a1
@@ -11285,7 +11285,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56060000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:59, uio_in:2d
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b5, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 56060000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:58, uio_in:2d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:59, uio_in:2d
@@ -11293,7 +11293,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56100000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:2d
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:b5, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 56100000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e1, uio_in:d1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:2d
@@ -11301,7 +11301,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56140000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e1, uio_in:d1
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:16
-REF: uio_oe:0, uio_out:0, uo_out:16
+REF: uio_oe:0, uio_out:b5, uo_out:16
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 56140000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e0, uio_in:d1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e1, uio_in:d1
@@ -11309,7 +11309,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56180000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e0, uio_in:d1
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:b5, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 56180000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:91, uio_in:53, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:d1
@@ -11317,7 +11317,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56220000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:91, uio_in:53
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:26
-REF: uio_oe:0, uio_out:0, uo_out:26
+REF: uio_oe:0, uio_out:b5, uo_out:26
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(21) @ 56220000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:90, uio_in:53, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:91, uio_in:53
@@ -11325,7 +11325,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56260000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:90, uio_in:53
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:b5, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 56260000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:88, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:53
@@ -11333,7 +11333,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56300000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:88
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:36
-REF: uio_oe:0, uio_out:0, uo_out:36
+REF: uio_oe:0, uio_out:b5, uo_out:36
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 56300000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:54, uio_in:75, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:88
@@ -11341,7 +11341,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56340000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:54, uio_in:75
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b5, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 56340000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:10, uio_in:9f, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:54, uio_in:75
@@ -11349,7 +11349,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56380000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:9f
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b5, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 56380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:48, uio_in:ab, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:9f
@@ -11357,7 +11357,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56420000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:48, uio_in:ab
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:e
-REF: uio_oe:0, uio_out:0, uo_out:e
+REF: uio_oe:0, uio_out:b5, uo_out:e
 
 UVM_INFO src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 56420000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:2c, uio_in:a5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:48, uio_in:ab
@@ -11365,7 +11365,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56460000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:2c, uio_in:a5
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:b5, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 56460000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:22, uio_in:bb, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:2c, uio_in:a5
@@ -11373,7 +11373,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56500000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:22, uio_in:bb
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:b5, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 56500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:80, uio_in:e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:22, uio_in:bb
@@ -11381,7 +11381,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56540000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:e
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:0, uo_out:9
-REF: uio_oe:0, uio_out:0, uo_out:9
+REF: uio_oe:0, uio_out:b5, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 56540000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:ba, uio_in:f5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:e
@@ -11389,7 +11389,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56580000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ba, uio_in:f5
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 56580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:d3, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:b5, uo_out:a
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 56580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:80, uio_in:59, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ba, uio_in:f5
@@ -11397,7 +11397,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 56620000: uvm_
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 56620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:59
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 56620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:d3, uo_out:a
-REF: uio_oe:0, uio_out:0, uo_out:a
+REF: uio_oe:0, uio_out:b5, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/write_one_byte_seq.sv(15) @ 56620000: uvm_test_top.env.act.sqr@@wr [write_one_byte_seq] ui_in:e1, uio_in:42, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 56660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:59
@@ -13712,10 +13712,10 @@ DUT: uio_oe:0, uio_out:fb, uo_out:a
 REF: uio_oe:0, uio_out:b7, uo_out:a
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 68190000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(233) @ 68190000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(237) @ 68190000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:1704
-Total testcases passed:1593
-Total testcases failed:111
+Total testcases passed:1605
+Total testcases failed:99
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 68190000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
@@ -13761,5 +13761,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 68190000 ps
-CPU Time:      1.630 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 18:32:26 2026
+CPU Time:      1.750 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 19:07:03 2026
