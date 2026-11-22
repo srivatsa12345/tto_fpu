@@ -60,30 +60,39 @@ class back_to_back_op_test extends uvm_test ;
 			end
 			begin
 				repeat(`n) begin
-        			wr.start(env.act.sqr);
-        			ma1.start(env.act.sqr);
+					repeat((`FP/8)-1) begin
+        				wr.start(env.act.sqr);
+        				ma1.start(env.act.sqr);
+					end
         			wr.start(env.act.sqr);
         			ma2.start(env.act.sqr);
-        			wr.start(env.act.sqr);
-        			ma1.start(env.act.sqr);
+					repeat((`FP/8)-1) begin
+        				wr.start(env.act.sqr);
+        				ma1.start(env.act.sqr);
+					end
         			wr.start(env.act.sqr);
         			ma4.start(env.act.sqr);
+					
         			st.start(env.act.sqr);
         			add.start(env.act.sqr);
 
         			repeat(4) no_op.start(env.act.sqr);
 
-        			rd.start(env.act.sqr);
-        			no_op.start(env.act.sqr);
-        			rd.start(env.act.sqr);
-        			no_op.start(env.act.sqr);
+					repeat(`FP/8) begin
+        				rd.start(env.act.sqr);
+        				no_op.start(env.act.sqr);
+					end
 
-        			wr.start(env.act.sqr);
-        			ma1.start(env.act.sqr);
+        			repeat((`FP/8)-1) begin
+        				wr.start(env.act.sqr);
+        				ma1.start(env.act.sqr);
+					end
         			wr.start(env.act.sqr);
         			ma2.start(env.act.sqr);
-        			wr.start(env.act.sqr);
-        			ma1.start(env.act.sqr);
+					repeat((`FP/8)-1) begin
+        				wr.start(env.act.sqr);
+        				ma1.start(env.act.sqr);
+					end
         			wr.start(env.act.sqr);
         			ma4.start(env.act.sqr);
 					
@@ -92,10 +101,10 @@ class back_to_back_op_test extends uvm_test ;
 
         			repeat(4) no_op.start(env.act.sqr);
 
-        			rd.start(env.act.sqr);
-        			no_op.start(env.act.sqr);
-        			rd.start(env.act.sqr);
-        			no_op.start(env.act.sqr);
+        			repeat(`FP/8) begin
+        				rd.start(env.act.sqr);
+        				no_op.start(env.act.sqr);
+					end
         		end 
 			end
 		join
