@@ -71,10 +71,10 @@ class back_to_back_read_test extends uvm_test ;
         			repeat(4) no_op.start(env.act.sqr);
         
 					repeat(5) begin
-	      				rd.start(env.act.sqr);
-        				no_op.start(env.act.sqr);
-        				rd.start(env.act.sqr);
-        				no_op.start(env.act.sqr);
+	      				repeat(`FP/8) begin
+        					rd.start(env.act.sqr);
+        					no_op.start(env.act.sqr);
+						end
         			end
 				end
 			end
