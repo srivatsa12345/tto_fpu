@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l start_busy_test_9012_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name start_busy_test_9012 -cm_log start_busy_test_9012_cm.log -key start_busy_test_9012_ucli.key +fsdbfile+start_busy_test_9012.fsdb +UVM_TESTNAME=start_busy_test +ntb_random_seed=9012
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 20:16 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 22:02 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -13712,7 +13712,7 @@ DUT: uio_oe:0, uio_out:30, uo_out:a
 REF: uio_oe:0, uio_out:30, uo_out:a
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 68190000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(256) @ 68190000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(261) @ 68190000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:1704
 Total testcases passed:1704
 Total testcases failed:0
@@ -13761,5 +13761,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 68190000 ps
-CPU Time:      1.720 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 20:16:34 2026
+CPU Time:      1.630 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 22:02:07 2026

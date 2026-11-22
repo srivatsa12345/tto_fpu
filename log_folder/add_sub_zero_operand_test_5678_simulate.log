@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l add_sub_zero_operand_test_5678_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name add_sub_zero_operand_test_5678 -cm_log add_sub_zero_operand_test_5678_cm.log -key add_sub_zero_operand_test_5678_ucli.key +fsdbfile+add_sub_zero_operand_test_5678.fsdb +UVM_TESTNAME=add_sub_zero_operand_test +ntb_random_seed=5678
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 20:14 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 21:59 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -22512,7 +22512,7 @@ DUT: uio_oe:0, uio_out:0, uo_out:a
 REF: uio_oe:0, uio_out:0, uo_out:a
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 112190000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(256) @ 112190000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(261) @ 112190000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:2804
 Total testcases passed:2804
 Total testcases failed:0
@@ -22564,5 +22564,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 112190000 ps
-CPU Time:      2.460 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 20:14:23 2026
+CPU Time:      2.370 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 21:59:34 2026
