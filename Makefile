@@ -32,7 +32,8 @@ TEST_LIST = \
 	sub_zero_invalid_operand_test \
 	sub_zero_operand_A_test \
 	sub_zero_operand_B_test \
-	write_busy_test \ sanity2
+	write_busy_test \ 
+	sanity2
 
 # ==============================================================================
 # Regression Variables
