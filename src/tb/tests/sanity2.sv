@@ -53,7 +53,9 @@ class sanity2 extends uvm_test;
         op=opcode_0_seq::type_id::create("op");
         fork
             begin
-		        rst.start(env.rst_ag.sqr);
+				repeat(`rst_times) begin
+		        	rst.start(env.rst_ag.sqr);
+				end
             end
             begin
 				repeat(6) begin
