@@ -50,26 +50,30 @@ class overflow_neg_max_test extends uvm_test ;
 
         fork
             begin
-                rst.start(env.rst_ag.sqr);
+                repeat(`rst_times) begin
+                    rst.start(env.rst_ag.sqr);
+                end
             end
             begin
-                wr.start(env.act.sqr);
-                mx1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                mx2.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                mx1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                mx2.start(env.act.sqr);
-                st.start(env.act.sqr);
-                add.start(env.act.sqr);
+                repeat(`n) begin
+                    wr.start(env.act.sqr);
+                    mx1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    mx2.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    mx1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    mx2.start(env.act.sqr);
+                    st.start(env.act.sqr);
+                    add.start(env.act.sqr);
 
-                repeat(4) no_op.start(env.act.sqr);
+                    repeat(4) no_op.start(env.act.sqr);
        
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                end
             end
         join
         
