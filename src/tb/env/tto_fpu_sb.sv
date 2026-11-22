@@ -134,6 +134,11 @@ class tto_fpu_sb extends uvm_scoreboard;
                     	tr.uio_oe=8'h00;
 					end else if ((!prev_wr_en)&&(inp.ui_in[0])) begin
                     	next_wr=1;
+					end else if ((!next_wr)&&(inp.ui_in[1])) begin
+                	    tr.uio_oe=8'hFF;
+                	    tr.uio_out=result[rd_pt*8+:8];
+					end else if ((!next_wr)&&(!inp.ui_in[1])) begin
+                	    tr.uio_oe=8'h00;
                 	end
                 end
             end
