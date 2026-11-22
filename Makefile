@@ -5,10 +5,8 @@ TESTNAME ?= sanity2
 COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
 OUT_DIR = log_folder
 
-# List of tests to run in a regression
+# List of tests to run in a regression (35 tests)
 TEST_LIST = \
-	tto_base_test \
-	sanity_test \
 	add_sub_zero_operand_test \
 	add_zero_invalid_operand_test \
 	add_zero_operand_test \
@@ -28,12 +26,22 @@ TEST_LIST = \
 	overflow_max_test \
 	overflow_neg_max_test \
 	read_before_op_test \
+	read_pointer_reset_test \
+	read_write_in_between_test \
+	sanity2 \
+	sanity_test \
+	shift_out_test \
+	start_busy_test \
+	start_high_test \
 	subnormal_input_test \
 	sub_zero_invalid_operand_test \
 	sub_zero_operand_A_test \
 	sub_zero_operand_B_test \
-	write_busy_test \ 
-	sanity2
+	tto_base_test \
+	underflow_min_test \
+	write_busy_test \
+	write_read_in_between_test \
+	write_read_test
 
 # ==============================================================================
 # Regression Variables
