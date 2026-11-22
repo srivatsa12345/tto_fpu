@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l sanity2_3456_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name sanity2_3456 -cm_log sanity2_3456_cm.log -key sanity2_3456_ucli.key +fsdbfile+sanity2_3456.fsdb +UVM_TESTNAME=sanity2 +ntb_random_seed=3456
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 10:41 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 11:24 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -999,13 +999,1750 @@ UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4620000: uvm_test_top.env.scb
 DUT: uio_oe:0, uio_out:f3, uo_out:a
 REF: uio_oe:0, uio_out:f3, uo_out:a
 
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 4630000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(233) @ 4630000: uvm_test_top.env.scb [SCOREBOARD] 
-Total Test cases ran:115
-Total testcases passed:115
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:57, uo_out:a
+REF: uio_oe:0, uio_out:f3, uo_out:a
+
+UVM_INFO src/tb/globals/../sequences/reset_seq.sv(13) @ 8080000: uvm_test_top.env.rst_ag.sqr@@rst [reset_seq] RESET:0
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_rst_driver.sv(27) @ 8080000: uvm_test_top.env.rst_ag.drv [RST_DRV] RESET ASSERTED
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:0, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:0, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:0, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_rst_driver.sv(30) @ 8200000: uvm_test_top.env.rst_ag.drv [RST_DRV] RESET DE-ASSERTED
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 8980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 8980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 9980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 9980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 9980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 10980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 10980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 10980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 11980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 11980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 11980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 12980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 12980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 12980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 13980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 13980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 13980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 14980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 14980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 14980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15220000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15260000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15300000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15340000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15380000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15420000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15460000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15500000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15540000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15580000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15620000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15660000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15700000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15740000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15780000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15820000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15860000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15900000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15940000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 15980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 15980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 15980000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 16020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 16020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 16020000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 16060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 16060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 16060000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 16100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 16100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 16100000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 16140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 16140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 16140000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 16180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:a8
+UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 16180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:0
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 16180000: uvm_test_top.env.scb [SCOREBOARD] 
+DUT: uio_oe:0, uio_out:0, uo_out:0
+REF: uio_oe:0, uio_out:0, uo_out:0
+
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 16210000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(233) @ 16210000: uvm_test_top.env.scb [SCOREBOARD] 
+Total Test cases ran:404
+Total testcases passed:404
 Total testcases failed:0
 
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 4630000: reporter [UVM/REPORT/CATCHER] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 16210000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -1016,21 +2753,21 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 4630000: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 16210000: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :  586
+UVM_INFO : 1456
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
 [DRV]   116
-[INPUT_MON]   116
-[OUT_MON]   116
+[INPUT_MON]   405
+[OUT_MON]   405
 [RNTST]     1
-[RST_DRV]     2
-[SCOREBOARD]   116
+[RST_DRV]     4
+[SCOREBOARD]   405
 [TEST_DONE]     1
 [UVM/RELNOTES]     1
 [UVM/REPORT/CATCHER]     1
@@ -1044,15 +2781,15 @@ UVM_FATAL :    0
 [load_11110011_seq]     6
 [no_op_seq]    42
 [opcode_0_seq]     6
-[reset_seq]     1
+[reset_seq]     2
 
 $finish called from file "/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh", line 527.
-$finish at simulation time              4630000
+$finish at simulation time             16210000
 
 ---------------------------------------------------------------------------
 VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 4630000 ps
-CPU Time:      1.030 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 10:41:22 2026
+Time: 16210000 ps
+CPU Time:      0.950 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 11:24:42 2026
