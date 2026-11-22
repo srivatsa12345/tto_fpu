@@ -68,10 +68,10 @@ class exact_cancellation_test extends uvm_test ;
 
                     repeat(4) no_op.start(env.act.sqr);
 
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
+                    repeat(`FP/8) begin
+        				rd.start(env.act.sqr);
+        				no_op.start(env.act.sqr);
+					end
                 end
             end
         join
