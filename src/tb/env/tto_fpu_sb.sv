@@ -116,21 +116,7 @@ class tto_fpu_sb extends uvm_scoreboard;
 					if ((inp.ui_in[2])&&(tr.uo_out[3])&&(!prev_start)) begin
 						check_latency();
                     	tr.uio_oe=8'h00;
-					end else if ((!prev_wr_en)&&(inp.ui_in[0])) begin
-                    	tr.uio_oe=8'h00;
-                    	if (tr.uo_out[7:4]<((1+`EXP_W+`MAN_W)/8)) begin
-                    	    opa[((tr.uo_out[7:4])%((1+`EXP_W+`MAN_W)/8))*8+:8]=inp.uio_in;
-                    	end else begin
-                    	     opb[((tr.uo_out[7:4])%((1+`EXP_W+`MAN_W)/8))*8+:8]=inp.uio_in;
-                    	end
-                    	if (tr.uo_out[7:4]<(((2*(1+`EXP_W+`MAN_W)/8))-1)) begin
-                    	    tr.uo_out[7:4]=tr.uo_out[7:4]+1;
-                    	    tr.uo_out[3]=1'b0;
-                    	end else begin
-                    	    tr.uo_out[7:4]=4'h0;
-                    	    tr.uo_out[3]=1'b1;
-                    	end
-                	end else if(inp.ui_in[1]) begin
+					end else if(inp.ui_in[1]) begin
                     	tr.uio_oe=8'hFF;
                     	tr.uio_out=result[rd_pt*8+:8];
                 	end else if (!inp.ui_in[1]) begin
