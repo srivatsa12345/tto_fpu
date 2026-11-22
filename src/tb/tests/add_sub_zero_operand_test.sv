@@ -55,33 +55,29 @@ class add_sub_zero_operand_test extends uvm_test ;
             end
             begin
                 repeat(`n) begin
-                    wr.start(env.act.sqr);
-                    zo1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    zo1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    zo1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    zo1.start(env.act.sqr);
+                    repeat(2*`FP/8) begin
+                        wr.start(env.act.sqr);
+                        zo1.start(env.act.sqr);
+                    end
                     st.start(env.act.sqr);
                     add.start(env.act.sqr);
 
                     repeat(4) no_op.start(env.act.sqr);
 
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
+                    repeat(`FP/8) begin
+                        rd.start(env.act.sqr);
+                        no_op.start(env.act.sqr);
+                    end
       
                     st.start(env.act.sqr);
                     sub.start(env.act.sqr);
 
                     repeat(4) no_op.start(env.act.sqr);
 
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
+                    repeat(`FP/8) begin
+                        rd.start(env.act.sqr);
+                        no_op.start(env.act.sqr);
+                    end
                 end
             end
         join           
