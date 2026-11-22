@@ -57,12 +57,14 @@ class add_zero_invalid_operand_test extends uvm_test ;
             end
             begin
                 repeat(`n) begin
-                    wr.start(env.act.sqr);
-                    zo1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    zo1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    zo2.start(env.act.sqr);    
+                    repeat(`FP/8) begin
+                        wr.start(env.act.sqr);
+                        zo1.start(env.act.sqr);
+                    end
+                    repeat((`FP/8)-1) begin
+                        wr.start(env.act.sqr);
+                        zo2.start(env.act.sqr);    
+                    end
                     wr.start(env.act.sqr);
                     zo3.start(env.act.sqr);
                     
