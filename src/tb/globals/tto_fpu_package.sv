@@ -31,6 +31,8 @@ package tto_fpu_package;
     `include "../sequences/load_4_5_val_1_seq.sv"
     `include "../sequences/load_5_seq.sv"
     `include "../sequences/load_exp_28_seq.sv"
+    `include "../sequences/load_shift_1_seq.sv"
+    `include "../sequences/load_shift_2_seq.sv"
     `include "../sequences/mantissa_alignment_load_1_seq.sv"
     `include "../sequences/mantissa_alignment_load_2_seq.sv"
     `include "../sequences/mantissa_alignment_load_4_seq.sv"
@@ -59,6 +61,7 @@ package tto_fpu_package;
     // Tests
     `include "../tests/tto_base_test.sv"
     `include "../tests/sanity_test.sv"
+    `include "../tests/sanity2.sv"
     `include "../tests/add_sub_zero_operand_test.sv"
     `include "../tests/add_zero_invalid_operand_test.sv"
     `include "../tests/add_zero_operand_test.sv"
@@ -78,12 +81,19 @@ package tto_fpu_package;
     `include "../tests/overflow_max_test.sv"
     `include "../tests/overflow_neg_max_test.sv"
     `include "../tests/read_before_op_test.sv"
+    `include "../tests/read_pointer_reset_test.sv"
+    `include "../tests/read_write_in_between_test.sv"
+    `include "../tests/shift_out_test.sv"
+    `include "../tests/start_busy_test.sv"
+    `include "../tests/start_high_test.sv"
     `include "../tests/subnormal_input_test.sv"
     `include "../tests/sub_zero_invalid_operand_test.sv"
     `include "../tests/sub_zero_operand_A_test.sv"
     `include "../tests/sub_zero_operand_B_test.sv"
+    `include "../tests/underflow_min_test.sv"
     `include "../tests/write_busy_test.sv"
-    `include "../tests/sanity2.sv"
+    `include "../tests/write_read_in_between_test.sv"
+    `include "../tests/write_read_test.sv"
 endpackage : tto_fpu_package
 
 // DUT
