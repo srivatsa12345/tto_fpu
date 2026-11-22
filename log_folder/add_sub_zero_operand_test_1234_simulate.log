@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l add_sub_zero_operand_test_1234_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name add_sub_zero_operand_test_1234 -cm_log add_sub_zero_operand_test_1234_cm.log -key add_sub_zero_operand_test_1234_ucli.key +fsdbfile+add_sub_zero_operand_test_1234.fsdb +UVM_TESTNAME=add_sub_zero_operand_test +ntb_random_seed=1234
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 19:56 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 20:14 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -22564,5 +22564,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 112190000 ps
-CPU Time:      2.340 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 19:56:44 2026
+CPU Time:      2.420 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 20:14:23 2026

@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l inf_input_test_7890_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name inf_input_test_7890 -cm_log inf_input_test_7890_cm.log -key inf_input_test_7890_ucli.key +fsdbfile+inf_input_test_7890.fsdb +UVM_TESTNAME=inf_input_test +ntb_random_seed=7890
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 19:57 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 20:15 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -14564,5 +14564,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 72190000 ps
-CPU Time:      1.880 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 19:57:20 2026
+CPU Time:      1.770 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 20:15:04 2026

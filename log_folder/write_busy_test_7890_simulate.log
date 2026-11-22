@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -l write_busy_test_7890_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir simv.vdb -cm_name write_busy_test_7890 -cm_log write_busy_test_7890_cm.log -key write_busy_test_7890_ucli.key +fsdbfile+write_busy_test_7890.fsdb +UVM_TESTNAME=write_busy_test +ntb_random_seed=7890
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 19:59 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 22 20:17 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -243,11 +243,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 820000: uvm_tes
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:18
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:52, uio_in:cb
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 860000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 860000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 860000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@1437
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 860000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:30, uio_in:cf, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:52, uio_in:cb
@@ -255,7 +255,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 900000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:30, uio_in:cf
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 900000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:79, uio_in:11, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:cf
@@ -415,11 +415,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 1660000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 1700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:b3
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:4a, uio_in:c
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 1700000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 1700000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 1700000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@1949
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 1700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 1700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:28, uio_in:5b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 1740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:4a, uio_in:c
@@ -427,7 +427,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1740000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:5b
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 1740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1740000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:a1, uio_in:15, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 1780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:5b
@@ -587,11 +587,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 2500000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:40, uio_in:34
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:6a, uio_in:b0
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 2540000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 2540000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 2540000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@2461
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 2540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:18, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:6a, uio_in:b0
@@ -599,7 +599,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2580000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:18
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 2580000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:b9, uio_in:e3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 2620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:18
@@ -759,11 +759,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 3340000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 3380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:ea
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:6a, uio_in:5b
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 3380000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 3380000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 3380000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@2973
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 3380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:38, uio_in:b8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 3420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:6a, uio_in:5b
@@ -771,7 +771,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3420000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:38, uio_in:b8
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3420000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:29, uio_in:26, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 3460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:38, uio_in:b8
@@ -931,11 +931,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 4180000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:ad
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:72, uio_in:3d
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 4220000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 4220000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 4220000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@3485
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 4220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 4220000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:38, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:72, uio_in:3d
@@ -943,7 +943,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4260000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:38
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 4260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4260000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:e1, uio_in:27, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 4300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:38
@@ -1103,11 +1103,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 5020000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:70
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:aa, uio_in:1
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 5060000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 5060000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 5060000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@3997
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 5060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 5060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:28, uio_in:48, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:aa, uio_in:1
@@ -1115,7 +1115,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5100000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:48
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 5100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 5100000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:f9, uio_in:f0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:48
@@ -1275,11 +1275,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 5860000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:b0
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9a, uio_in:10
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 5900000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 5900000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 5900000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@4509
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 5900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 5900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:38, uio_in:d7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9a, uio_in:10
@@ -1287,7 +1287,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5940000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:38, uio_in:d7
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 5940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 5940000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:9, uio_in:41, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 5980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:38, uio_in:d7
@@ -1447,11 +1447,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 6700000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:83
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f2, uio_in:35
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 6740000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 6740000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 6740000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@5021
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 6740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 6740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:50, uio_in:c9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f2, uio_in:35
@@ -1459,7 +1459,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6780000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:50, uio_in:c9
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 6780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6780000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:69, uio_in:7c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 6820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:c9
@@ -1619,11 +1619,11 @@ UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 7540000: uvm_te
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:c2
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:a, uo_out:22
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:4a, uio_in:1a
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 7580000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'ha : rhs = 'h6e
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 7580000: reporter [MISCMP] Miscompare for tr.uo_out: lhs = 'h22 : rhs = 'h32
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 7580000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@5533
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(60) @ 7580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:a, uo_out:22
-REF: uio_oe:ff, uio_out:6e, uo_out:32
+REF: uio_oe:ff, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 7580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:78, uio_in:34, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:4a, uio_in:1a
@@ -1631,7 +1631,7 @@ UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7620000: uvm_t
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:78, uio_in:34
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 7620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:a, uo_out:22
-REF: uio_oe:0, uio_out:6e, uo_out:32
+REF: uio_oe:0, uio_out:a, uo_out:32
 _______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 7620000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:41, uio_in:59, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(33) @ 7660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:78, uio_in:34
@@ -16998,5 +16998,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 84190000 ps
-CPU Time:      1.860 seconds;       Data structure size:   0.7Mb
-Sun Nov 22 19:59:12 2026
+CPU Time:      1.990 seconds;       Data structure size:   0.7Mb
+Sun Nov 22 20:17:22 2026
