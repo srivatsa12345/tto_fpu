@@ -112,6 +112,7 @@ class tto_fpu_sb extends uvm_scoreboard;
                 if (count!=0) begin
                      count--;
                 end else begin
+					perform_operation(tr);
 					if ((inp.ui_in[2])&&(tr.uo_out[3])&&(!prev_start)) begin
 						check_latency();
                     	tr.uio_oe=8'h00;
@@ -135,7 +136,6 @@ class tto_fpu_sb extends uvm_scoreboard;
                 	end else if (!inp.ui_in[1]) begin
                     	tr.uio_oe=8'h00;
                 	end
-                    perform_operation(tr);
                 end
             end
 			prev_prev_wr_en=prev_wr_en;
