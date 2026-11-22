@@ -1,7 +1,7 @@
 # Variables for easy modification
 MASTER_FILE = src/tb/globals/tto_fpu_package.sv
 INCDIRS = +incdir+src/tb/globals
-TESTNAME ?= sanity_test
+TESTNAME ?= sanity2
 COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
 OUT_DIR = log_folder
 
@@ -32,7 +32,7 @@ TEST_LIST = \
 	sub_zero_invalid_operand_test \
 	sub_zero_operand_A_test \
 	sub_zero_operand_B_test \
-	write_busy_test
+	write_busy_test \ sanity2
 
 # ==============================================================================
 # Regression Variables
