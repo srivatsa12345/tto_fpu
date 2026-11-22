@@ -49,25 +49,29 @@ class mantissa_normalization_sub_test extends uvm_test ;
         wr=assert_wr_en_seq::type_id::create("wr");
         fork
             begin
-                rst.start(env.rst_ag.sqr);
+                repeat(`rst_times) begin
+                    rst.start(env.rst_ag.sqr);
+                end
             end
             begin
-                wr.start(env.act.sqr);
-                mn1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                mn2.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                mn1.start(env.act.sqr);
-                wr.start(env.act.sqr);
-                mn2.start(env.act.sqr);
-                st.start(env.act.sqr);
-                sub.start(env.act.sqr);
-                repeat(4) no_op.start(env.act.sqr);
+                repeat(`n) begin
+                    wr.start(env.act.sqr);
+                    mn1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    mn2.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    mn1.start(env.act.sqr);
+                    wr.start(env.act.sqr);
+                    mn2.start(env.act.sqr);
+                    st.start(env.act.sqr);
+                    sub.start(env.act.sqr);
+                    repeat(4) no_op.start(env.act.sqr);
 
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                end
             end
         join
                 
