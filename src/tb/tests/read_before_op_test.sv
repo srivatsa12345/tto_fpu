@@ -39,11 +39,15 @@ class read_before_op_test extends uvm_test;
         rd=assert_read_en_seq::type_id::create("rd");
         fork
             begin
-                rst.start(env.rst_ag.sqr);
+                repeat(`rst_times) begin
+                    rst.start(env.rst_ag.sqr);
+                end
             end
             begin
-                rd.start(env.act.sqr);
-                no_op.start(env.act.sqr);
+                repeat(`n) begin
+                    rd.start(env.act.sqr);
+                    no_op.start(env.act.sqr);
+                end
             end
         join
                 
