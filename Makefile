@@ -5,7 +5,11 @@ TESTNAME ?= flag_test
 COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
 OUT_DIR = log_folder
 
-# List of tests to run in a regression (35 tests)
+# Wait in queue if Synopsys licenses are busy (applies to vcs, simv, urg, verdi)
+export SNPSLMD_QUEUE := 1
+LIC_FLAGS = -licqueue
+
+# List of tests to run in a regression
 TEST_LIST = \
 	add_sub_zero_operand_test \
 	add_zero_invalid_operand_test \
@@ -65,7 +69,7 @@ start:
 compile:
 	mkdir -p $(OUT_DIR)
 	vcs -full64 -sverilog -timescale=1ns/1ps -ntb_opts uvm-1.2 \
-	-debug_access+all -kdb $(COV_FLAGS) $(INCDIRS) \
+	$(LIC_FLAGS) -debug_access+all -kdb $(COV_FLAGS) $(INCDIRS) \
 	-Mdir=$(OUT_DIR)/csrc -o $(OUT_DIR)/simv -cm_dir $(OUT_DIR)/simv.vdb \
 	-cm_log $(OUT_DIR)/cm_compile.log \
 	-l $(OUT_DIR)/compile.log $(MASTER_FILE)
@@ -73,7 +77,7 @@ compile:
 # 3. Run the Simulation (Used for standalone / single test runs)
 # Note: Changing into the log folder first forces all hardcoded logs to drop there
 sim:
-	cd $(OUT_DIR) && ./simv -l $(TESTNAME)_simulate.log $(COV_FLAGS) \
+	cd $(OUT_DIR) && ./simv $(LIC_FLAGS) -l $(TESTNAME)_simulate.log $(COV_FLAGS) \
 	-cm_dir simv.vdb -cm_name $(TESTNAME) \
 	-cm_log cm_sim.log -key ucli.key \
 	+fsdbfile+dump.fsdb \
@@ -100,7 +104,7 @@ $(REGRESS_TARGETS): regress_run_%:
 	@TNAME=$$(echo $* | cut -d'.' -f1); \
 	SEED=$$(echo $* | cut -d'.' -f2); \
 	echo "-> Running $$TNAME [Seed: $$SEED]"; \
-	cd $(OUT_DIR) && ./simv -l $${TNAME}_$${SEED}_simulate.log $(COV_FLAGS) \
+	cd $(OUT_DIR) && ./simv $(LIC_FLAGS) -l $${TNAME}_$${SEED}_simulate.log $(COV_FLAGS) \
 	-cm_dir simv.vdb -cm_name $${TNAME}_$${SEED} \
 	-cm_log $${TNAME}_$${SEED}_cm.log \
 	-key $${TNAME}_$${SEED}_ucli.key \
@@ -117,10 +121,10 @@ clean:
 	$(OUT_DIR)/*.fsdb $(OUT_DIR)/*.vdb $(OUT_DIR)/*ucli.key $(OUT_DIR)/verdiLog \
 	$(OUT_DIR)/novas* $(OUT_DIR)/covReport DVEfiles
 
-# 8. Git automation
+# 8. Git automation (stages all directories, excluding log_folder)
 git:
 	@echo "Enter your git commit message:"; \
 	read msg; \
-	git add src/ Makefile *.md; \
+	git add -A -- . ':!$(OUT_DIR)'; \
 	git commit -m "$$msg"; \
 	git push
