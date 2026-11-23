@@ -83,9 +83,10 @@ sim:
 	+fsdbfile+dump.fsdb \
 	+UVM_TESTNAME=$(TESTNAME)
 
-# 4. Generate the HTML Coverage Report
+# 4. Generate the Merged HTML Coverage Report
 cov:
-	cd $(OUT_DIR) && urg -full64 -dir simv.vdb -report covReport -log urg.log
+	cd $(OUT_DIR) && rm -rf merged.vdb covReport && \
+	urg -full64 -dir *.vdb -dbname merged.vdb -report covReport -log urg.log
 
 # 5. Run Regression (Compiles once, runs all tests x all seeds in parallel)
 regression: compile
@@ -105,7 +106,7 @@ $(REGRESS_TARGETS): regress_run_%:
 	SEED=$$(echo $* | cut -d'.' -f2); \
 	echo "-> Running $$TNAME [Seed: $$SEED]"; \
 	cd $(OUT_DIR) && ./simv $(LIC_FLAGS) -l $${TNAME}_$${SEED}_simulate.log $(COV_FLAGS) \
-	-cm_dir simv.vdb -cm_name $${TNAME}_$${SEED} \
+	-cm_dir $${TNAME}_$${SEED}.vdb -cm_name $${TNAME}_$${SEED} \
 	-cm_log $${TNAME}_$${SEED}_cm.log \
 	-key $${TNAME}_$${SEED}_ucli.key \
 	+fsdbfile+$${TNAME}_$${SEED}.fsdb \
