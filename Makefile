@@ -18,6 +18,7 @@ TEST_LIST = \
 	back_to_back_read_test \
 	exact_cancellation_add_test \
 	exact_cancellation_test \
+	flag_test \
 	inf_input_test \
 	load_incomplete_test \
 	mantissa_alignment_test \
@@ -45,8 +46,8 @@ TEST_LIST = \
 	underflow_min_test \
 	write_busy_test \
 	write_read_in_between_test \
-	write_read_test \
-	flag_test
+	write_read_test 
+	
 
 # ==============================================================================
 # Regression Variables
