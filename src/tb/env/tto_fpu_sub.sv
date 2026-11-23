@@ -49,7 +49,7 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
         }
         wr_ptr: coverpoint mon.uo_out[7:4]{
             bins val_ptr[]={[0:((2*(`FP/8))-1)]};
-            illegal_bins bins val_ptr_other_val={[((2*(`FP/8))):15]};
+            illegal_bins val_ptr_other_val={[((2*(`FP/8))):15]};
         }
         uio_oe: coverpoint mon.uio_oe{
             bins input_enable={8'h00};
