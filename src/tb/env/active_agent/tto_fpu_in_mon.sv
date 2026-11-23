@@ -30,6 +30,7 @@ class tto_fpu_in_mon extends uvm_monitor;
             tr.rst_n=vif.rst_n;
             tr.ui_in=vif.in_mon_cb.ui_in;
             tr.uio_in=vif.in_mon_cb.uio_in;
+            tr.uo_out=vif.in_mon_cb.uo_out;
             `uvm_info("INPUT_MON", $sformatf("Sampled data:RESET:%0b, ui_in:%0h, uio_in:%0h", tr.rst_n, tr.ui_in, tr.uio_in), UVM_LOW)
             mon_port.write(tr);
         end
