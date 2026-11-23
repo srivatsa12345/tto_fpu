@@ -1,7 +1,7 @@
-Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l start_high_test_3456_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir start_high_test_3456.vdb -cm_name start_high_test_3456 -cm_log start_high_test_3456_cm.log -key start_high_test_3456_ucli.key +fsdbfile+start_high_test_3456.fsdb +UVM_TESTNAME=start_high_test +ntb_random_seed=3456
+Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l start_high_test_3456_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir start_high_test_3456.vdb -cm_name start_high_test_3456 -cm_log start_high_test_3456_cm.log -key start_high_test_3456_ucli.key +fsdbfile+start_high_test_3456.fsdb +VCDFILE=start_high_test_3456.vcd +UVM_TESTNAME=start_high_test +ntb_random_seed=3456
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 14:24 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 15:45 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -27,6 +27,7 @@ UVM-1.2.Synopsys
 *Verdi* Loading libsscore_vcs202003.so
 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
 (C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'start_high_test_3456.fsdb'
 *Verdi* : Begin traversing the scope (tto_fpu_top), layer (0).
 *Verdi* : End of traversing.
@@ -17868,5 +17869,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 68310000 ps
-CPU Time:      1.610 seconds;       Data structure size:   0.7Mb
-Mon Nov 23 14:24:32 2026
+CPU Time:      1.640 seconds;       Data structure size:   0.7Mb
+Mon Nov 23 15:45:04 2026

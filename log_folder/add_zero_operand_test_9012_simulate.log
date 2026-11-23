@@ -1,7 +1,7 @@
-Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l add_zero_operand_test_9012_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir add_zero_operand_test_9012.vdb -cm_name add_zero_operand_test_9012 -cm_log add_zero_operand_test_9012_cm.log -key add_zero_operand_test_9012_ucli.key +fsdbfile+add_zero_operand_test_9012.fsdb +UVM_TESTNAME=add_zero_operand_test +ntb_random_seed=9012
+Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l add_zero_operand_test_9012_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir add_zero_operand_test_9012.vdb -cm_name add_zero_operand_test_9012 -cm_log add_zero_operand_test_9012_cm.log -key add_zero_operand_test_9012_ucli.key +fsdbfile+add_zero_operand_test_9012.fsdb +VCDFILE=add_zero_operand_test_9012.vcd +UVM_TESTNAME=add_zero_operand_test +ntb_random_seed=9012
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 14:22 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 15:33 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -27,6 +27,7 @@ UVM-1.2.Synopsys
 *Verdi* Loading libsscore_vcs202003.so
 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
 (C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'add_zero_operand_test_9012.fsdb'
 *Verdi* : Begin traversing the scope (tto_fpu_top), layer (0).
 *Verdi* : End of traversing.
@@ -18890,5 +18891,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 72310000 ps
-CPU Time:      1.750 seconds;       Data structure size:   0.7Mb
-Mon Nov 23 14:22:08 2026
+CPU Time:      1.680 seconds;       Data structure size:   0.7Mb
+Mon Nov 23 15:33:54 2026
