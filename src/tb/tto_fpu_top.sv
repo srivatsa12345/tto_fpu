@@ -14,8 +14,10 @@ module tto_fpu_top;
         $fsdbDumpvars(0, tto_fpu_top);
         $fsdbDumpSVA;
 
-        $dumpfile("dump.vcd");
-        $dumpvars(0, tto_fpu_top);     
+        if ($test$plusargs("DUMP_VCD")) begin
+            $dumpfile("dump.vcd");
+            $dumpvars(0, tto_fpu_top);
+        end
     end
 
     initial begin
