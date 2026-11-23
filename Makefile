@@ -76,12 +76,11 @@ compile:
 	-l $(OUT_DIR)/compile.log $(MASTER_FILE)
 
 # 3. Run the Simulation (Used for standalone / single test runs)
-# Note: Changing into the log folder first forces all hardcoded logs to drop there
 sim:
 	cd $(OUT_DIR) && ./simv $(LIC_FLAGS) -l $(TESTNAME)_simulate.log $(COV_FLAGS) \
 	-cm_dir simv.vdb -cm_name $(TESTNAME) \
 	-cm_log cm_sim.log -key ucli.key \
-	+fsdbfile+dump.fsdb +DUMP_VCD \
+	+fsdbfile+dump.fsdb +VCDFILE=$(TESTNAME).vcd \
 	+UVM_TESTNAME=$(TESTNAME)
 
 # 4. Generate the Merged HTML Coverage Report
