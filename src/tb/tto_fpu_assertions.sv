@@ -40,12 +40,12 @@ module tto_fpu_assertion(input logic clk, input logic rst_n, input logic [7:0]ui
 	assert property(check_start_clears_done_error)
 	else $error("Check start clears done failed");
 
-	property check_done_assertion_in_3_4_clk_cycles;
+	property check_done_assertion_in_4_5_clk_cycles;
 	    @(posedge clk) disable iff(!rst_n) 
-	    ui_in[2] && uo_out[3] |-> ##[3:4] uo_out[1];
+		ui_in[2] && uo_out[3] |-> ##[4:5] uo_out[1];
 	endproperty
-	assert property(check_done_assertion_in_3_4_clk_cycles)
-	else $error("Check done assertion in 3 4 clk cycles");
+		assert property(check_done_assertion_in_4_5_clk_cycles)
+			else $error("Check done assertion in 4 5 clk cycles");
 
 	property check_wr_ptr_increment;
 	    @(posedge clk) disable iff(!rst_n)
