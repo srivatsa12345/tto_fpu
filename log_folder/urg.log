@@ -1,8 +1,0 @@
-Command: urg -full64 -dir simv.vdb -report covReport -log urg.log
-Date: Mon Nov 23 11:25:56 2026
-
-URG Version Q-2020.03-SP2-8 Copyright (c) 1991-2020 by Synopsys Inc.
-
-Note-[URG-RDG] Report directory generated
-  Report written to directory covReport
-
