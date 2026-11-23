@@ -10,9 +10,12 @@ module tto_fpu_top;
     bind tto_fpu_top tto_fpu_assertions tfa(.clk(clk),.rst_n(intrf.rst_n),.ui_in(intrf.ui_in),.uio_in(intrf.uio_in),.uio_oe(intrf.uio_oe),.uio_out(intrf.uio_out),.uo_out(intrf.uo_out));
     
     initial begin
-        $fsdbDumpfile("dump.fsdb");    
-        $fsdbDumpvars(0, tto_fpu_top);   
-        $fsdbDumpSVA;                   
+        $fsdbDumpfile("dump.fsdb");
+        $fsdbDumpvars(0, tto_fpu_top);
+        $fsdbDumpSVA;
+
+        $dumpfile("dump.vcd");
+        $dumpvars(0, tto_fpu_top);     
     end
 
     initial begin
