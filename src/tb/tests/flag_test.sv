@@ -46,6 +46,7 @@ class flag_test extends uvm_test;
         rd=assert_read_en_seq::type_id::create("rd");
         swr=assert_start_write_read_simul_seq::type_id::create("swr");
         rw=assert_start_write_read_simul_seq::type_id::create("rw");
+		sr=assert_start_read_simul_seq::type_id::create("sr");
         fork
             begin
 				repeat(`rst_times) begin
