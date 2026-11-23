@@ -121,10 +121,10 @@ clean:
 	$(OUT_DIR)/*.fsdb $(OUT_DIR)/*.vdb $(OUT_DIR)/*ucli.key $(OUT_DIR)/verdiLog \
 	$(OUT_DIR)/novas* $(OUT_DIR)/covReport DVEfiles
 
-# 8. Git automation (stages all directories, excluding log_folder)
+# 8. Git automation (stages all files across all directories, including log_folder)
 git:
 	@echo "Enter your git commit message:"; \
 	read msg; \
-	git add -A -- . ':!$(OUT_DIR)'; \
+	git add -A; \
 	git commit -m "$$msg"; \
 	git push
