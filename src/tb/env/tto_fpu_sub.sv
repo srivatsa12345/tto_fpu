@@ -6,27 +6,27 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
     tto_fpu_seq_item mon;
     covergroup input_cg;
   
-        write_en: coverpoint drv.ui_in[0]{
+        write_en: coverpoint drv.ui_in[0] iff (!drv.uo_out[0]) {
             bins write_0={0};
             bins write_1={1};
         }
-        read_en: coverpoint drv.ui_in[1]{
+        read_en: coverpoint drv.ui_in[1] iff ((!drv.uo_out[0])&&(!drv.ui_in[0])){
             bins read_0={0};
             bins read_1={1};
         }
-        start: coverpoint drv.ui_in[2]{
+        start: coverpoint drv.ui_in[2] iff (!drv.uo_out[0]) {
             bins start_0={0};
             bins start_1={1};
         }
-        opcode: coverpoint drv.ui_in[3]{
+        opcode: coverpoint drv.ui_in[3] iff (!drv.uo_out[0]) {
             bins add={0};
             bins subtract={1};
         }
-        uio_in_byte: coverpoint drv.uio_in{
+        uio_in_byte: coverpoint drv.uio_in iff (!drv.uo_out[0]) {
             bins zero={8'h00};
             bins non_zero={[8'h01:8'hFF]};
         }
-        unused_pins: coverpoint drv.ui_in[7:4]{
+        unused_pins: coverpoint drv.ui_in[7:4] iff (!drv.uo_out[0]) {
             bins val={[0:15]};
         }
     endgroup
@@ -48,8 +48,8 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
             bins ready_1={1};
         }
         wr_ptr: coverpoint mon.uo_out[7:4]{
-            bins val_ptr[4]={[0:3]};
-            bins val_ptr_other_val={[4:15]};
+            bins val_ptr[]={[0:((2*(`FP/8))-1)]};
+            illegal_bins bins val_ptr_other_val={[((2*(`FP/8))):15]};
         }
         uio_oe: coverpoint mon.uio_oe{
             bins input_enable={8'h00};
@@ -73,11 +73,18 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
             `uvm_fatal(get_type_name(), "Casting failed from input monitor");
         input_cg.sample();
     endfunction
+    
     virtual function void write_out(tto_fpu_seq_item t);
         if(!$cast(mon,t))
             `uvm_fatal(get_type_name(), "Casting failed from output monitor");
         output_cg.sample();
     endfunction
+
+    function void report_phase(uvm_phase phase);
+        super.report_phase(phase);
+    	`uvm_info(get_name,$sformatf("INPUT COVERAGE = %0f\n",input_cg.get_coverage()),UVM_NONE);
+    	`uvm_info(get_name,$sformatf("OUTPUT COVERAGE = %0f\n",output_cg.get_coverage()),UVM_NONE);
+  	endfunction
 endclass
 
   
