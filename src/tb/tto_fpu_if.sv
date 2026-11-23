@@ -14,7 +14,7 @@ interface tto_fpu_if (input logic clk);
     
     clocking in_mon_cb @(posedge clk);
         default input #1;
-        input ui_in, uio_in;
+        input ui_in, uio_in, uo_out;
     endclocking
 
     clocking out_mon_cb @(posedge clk);
