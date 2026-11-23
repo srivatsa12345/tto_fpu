@@ -81,7 +81,7 @@ sim:
 	cd $(OUT_DIR) && ./simv $(LIC_FLAGS) -l $(TESTNAME)_simulate.log $(COV_FLAGS) \
 	-cm_dir simv.vdb -cm_name $(TESTNAME) \
 	-cm_log cm_sim.log -key ucli.key \
-	+fsdbfile+dump.fsdb \
+	+fsdbfile+dump.fsdb +DUMP_VCD \
 	+UVM_TESTNAME=$(TESTNAME)
 
 # 4. Generate the Merged HTML Coverage Report
