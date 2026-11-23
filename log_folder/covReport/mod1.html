@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: fpu_core</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_fpu_core'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_fpu_core')">fpu_core</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 96.87</td>
+<td class="s10 cl rt"><a href="mod1.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod1.html#Cond" > 86.21</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 98.16</a></td>
+<td class="s10 cl rt"><a href="mod1.html#FSM" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod1.html#Branch" >100.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../../dut/fpu_core.v')">/fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../../dut/fpu_core.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod1.html#inst_tag_1"  onclick="showContent('inst_tag_1')">tto_fpu_top.m1.u_fpu</a></td>
+<td class="s9 cl rt"> 96.87</td>
+<td class="s10 cl rt"><a href="mod1.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod1.html#Cond" > 86.21</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 98.16</a></td>
+<td class="s10 cl rt"><a href="mod1.html#FSM" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod1.html#Branch" >100.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_fpu_core'>
+<hr>
+<a name="inst_tag_1"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_1" >tto_fpu_top.m1.u_fpu</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 96.87</td>
+<td class="s10 cl rt"><a href="mod1.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod1.html#Cond" > 86.21</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 98.16</a></td>
+<td class="s10 cl rt"><a href="mod1.html#FSM" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod1.html#Branch" >100.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 96.87</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 86.21</td>
+<td class="s9 cl rt"> 98.16</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 97.19</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt"> 91.67</td>
+<td class="s9 cl rt"> 97.10</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td><a href="mod9.html#inst_tag_9" >m1</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_fpu_core'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod1.html" >fpu_core</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>39</td><td>39</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>66</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>86</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>92</td><td>32</td><td>32</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+65                              begin
+66         1/1                      leading_zeroes = MAN_W[LZ_W-1:0];          // default: all zeros
+67         1/1                      for (i = 0; i &lt; MAN_FULL; i = i + 1)
+68         2/2                          if (x[i]) leading_zeroes = MAN_W[LZ_W-1:0] - i[LZ_W-1:0];
+                        MISSING_ELSE
+69                              end
+70                          endfunction
+71                      
+72                          wire [LZ_W-1:0]    lz = leading_zeroes(mant_sum[MAN_FULL-1:0]);
+73                      
+74                          /* verilator lint_off UNUSEDSIGNAL */
+75                          wire [MAN_FULL-1:0] mant_norm = mant_sum[MAN_FULL-1:0] &lt;&lt; lz;
+76                          /* verilator lint_on UNUSEDSIGNAL */
+77                      
+78                          // Extend lz to exponent width for safe comparison and subtraction
+79                          wire [EXP_W-1:0] lz_ext = {{(EXP_W-LZ_W){1'b0}}, lz};
+80                      
+81                          // FSM
+82                          reg [1:0] ps, ns;
+83                      
+84                          // Present-state register
+85                          always @(posedge clk or negedge rst_n) begin
+86         2/2                  if (!rst_n) ps &lt;= S_IDLE;
+87         1/1                  else        ps &lt;= ns;
+88                          end
+89                      
+90                          // Next-state + output logic (combinational)
+91                          always @(*) begin
+92         1/1                  ns     = ps;
+93         1/1                  result = {WIDTH{1'b0}};
+94         1/1                  done   = 1'b0;
+95         1/1                  err    = 1'b0;
+96                      
+97         1/1                  case (ps)
+98                                  S_IDLE: begin
+99         2/2                          if (start) ns = S_SPECIAL;
+                        MISSING_ELSE
+100                                 end
+101                     
+102                                 S_SPECIAL: begin
+103                                     // --- Infinity / NaN (exponent = all ones) ---
+104        1/1                          if ((exp_big == EXP_INF) || (exp_small == EXP_INF)) begin
+105        1/1                              err  = 1'b1;
+106        1/1                              done = 1'b1;
+107        1/1                              ns   = S_IDLE;
+108                                     end
+109                                     // --- Denormalized numbers → error ---
+110        1/1                          else if (((exp_big   == {EXP_W{1'b0}}) &amp;&amp; (mant_big   != {MAN_W{1'b0}})) ||
+111                                              ((exp_small == {EXP_W{1'b0}}) &amp;&amp; (mant_small != {MAN_W{1'b0}}))) begin
+112        1/1                              err  = 1'b1;
+113        1/1                              done = 1'b1;
+114        1/1                              ns   = S_IDLE;
+115                                     end
+116                                     // --- Smaller operand is zero ---
+117        1/1                          else if ((exp_small == {EXP_W{1'b0}}) &amp;&amp; (mant_small == {MAN_W{1'b0}})) begin
+118        1/1                              result = {sign_big, exp_big, mant_big};
+119        1/1                              done   = 1'b1;
+120        1/1                              ns     = S_IDLE;
+121                                     end
+122                                     else begin
+123        1/1                              ns = S_OPERATION;
+124                                     end
+125                                 end
+126                     
+127                                 S_OPERATION: begin
+128        1/1                          done = 1'b1;
+129        1/1                          ns   = S_IDLE;
+130                     
+131                                     // Carry-out from addition → shift right 1, exponent + 1
+132        1/1                          if (mant_sum[SUM_W-1]) begin
+133        1/1                              if (exp_big == EXP_MAX)
+134        1/1                                  result = {sign_big, EXP_INF, {MAN_W{1'b0}}};       // overflow
+135                                         else
+136        1/1                                  result = {sign_big, exp_big + 1'b1, mant_sum[MAN_FULL-1:1]};
+137                                     end
+138                                     // Exact cancellation → +0
+139        1/1                          else if (mant_sum[MAN_FULL-1:0] == {MAN_FULL{1'b0}})
+140        1/1                              result = {WIDTH{1'b0}};
+141                                     // Underflow — lz exceeds available exponent room
+142        1/1                          else if (lz_ext &gt;= exp_big)
+143        1/1                              result = {sign_big, {(WIDTH-1){1'b0}}};
+144                                     // Left-normalise
+145                                     else
+146        1/1                              result = {sign_big, exp_big - lz_ext, mant_norm[MAN_W-1:0]};
+147                                 end
+148                     
+149        1/1                      default: ns = S_IDLE;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod1.html" >fpu_core</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>29</td><td>25</td><td>86.21</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>29</td><td>25</td><td>86.21</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       36
+ EXPRESSION (a_bigger ? op_a[(WIDTH - 1)] : sign_eff)
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       37
+ EXPRESSION (a_bigger ? sign_eff : op_a[(WIDTH - 1)])
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       39
+ EXPRESSION (a_bigger ? op_a[(WIDTH - 2):MAN_W] : op_b[(WIDTH - 2):MAN_W])
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       40
+ EXPRESSION (a_bigger ? op_b[(WIDTH - 2):MAN_W] : op_a[(WIDTH - 2):MAN_W])
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       41
+ EXPRESSION (a_bigger ? op_a[(MAN_W - 1):0] : op_b[(MAN_W - 1):0])
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       42
+ EXPRESSION (a_bigger ? op_b[(MAN_W - 1):0] : op_a[(MAN_W - 1):0])
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       56
+ EXPRESSION (sub_operation ? (({1'b0, m_big} - {1'b0, m_small_aligned})) : (({1'b0, m_big} + {1'b0, m_small_aligned})))
+             ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       104
+ EXPRESSION ((exp_big == EXP_INF) || (exp_small == EXP_INF))
+             ----------1---------    -----------2----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       110
+ EXPRESSION (((exp_big == {EXP_W {1'b0}}) &amp;&amp; (mant_big != {MAN_W {1'b0}})) || ((exp_small == {EXP_W {1'b0}}) &amp;&amp; (mant_small != {MAN_W {1'b0}})))
+             ------------------------------1------------------------------    --------------------------------2--------------------------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       110
+ SUB-EXPRESSION ((exp_big == {EXP_W {1'b0}}) &amp;&amp; (mant_big != {MAN_W {1'b0}}))
+                 -------------1-------------    --------------2-------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       110
+ SUB-EXPRESSION ((exp_small == {EXP_W {1'b0}}) &amp;&amp; (mant_small != {MAN_W {1'b0}}))
+                 --------------1--------------    ---------------2--------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       117
+ EXPRESSION ((exp_small == {EXP_W {1'b0}}) &amp;&amp; (mant_small == {MAN_W {1'b0}}))
+             --------------1--------------    ---------------2--------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod1.html" >fpu_core</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Totals</td>
+<td class="rt">28</td>
+<td class="rt">25</td>
+<td class="rt">89.29 </td>
+</tr><tr class="s9">
+<td>Total Bits</td>
+<td class="rt">326</td>
+<td class="rt">320</td>
+<td class="rt">98.16 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">163</td>
+<td class="rt">160</td>
+<td class="rt">98.16 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">163</td>
+<td class="rt">160</td>
+<td class="rt">98.16 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Ports</td>
+<td class="rt">9</td>
+<td class="rt">9</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Port Bits</td>
+<td class="rt">108</td>
+<td class="rt">108</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">54</td>
+<td class="rt">54</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">54</td>
+<td class="rt">54</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">19</td>
+<td class="rt">16</td>
+<td class="rt">84.21 </td>
+</tr><tr class="s9">
+<td>Signal Bits</td>
+<td class="rt">218</td>
+<td class="rt">212</td>
+<td class="rt">97.25 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">109</td>
+<td class="rt">106</td>
+<td class="rt">97.25 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">109</td>
+<td class="rt">106</td>
+<td class="rt">97.25 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst_n</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>start</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>op</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>op_a[15:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>op_b[15:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>result[15:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>done</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>err</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>sign_eff</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a_bigger</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sign_big</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sign_small</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_big[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>exp_small[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mant_big[9:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mant_small[9:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sub_operation</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>m_big[9:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>m_big[10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>m_small[9:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>m_small[10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>exp_diff[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>m_small_aligned[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mant_sum[11:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>lz[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mant_norm[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>lz_ext[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>lz_ext[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ps[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ns[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod1.html" >fpu_core</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: ps</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+<td>(Not included in score)</td>
+</tr><tr class="s10">
+<td>Transitions</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: ps</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>S_IDLE</td>
+<td class="rt">86</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>S_OPERATION</td>
+<td class="rt">123</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>S_SPECIAL</td>
+<td class="rt">99</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>S_IDLE->S_SPECIAL</td>
+<td class="rt">99</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>S_OPERATION->S_IDLE</td>
+<td class="rt">86</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>S_SPECIAL->S_IDLE</td>
+<td class="rt">86</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>S_SPECIAL->S_OPERATION</td>
+<td class="rt">123</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod1.html" >fpu_core</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>Branches</td>
+<td></td>
+<td class="rt">28</td>
+<td class="rt">28</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">36</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">37</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">39</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">40</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">41</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">42</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">56</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">86</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>CASE</td>
+<td class="rt">97</td>
+<td class="rt">12</td>
+<td class="rt">12</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+36             wire sign_big   = a_bigger ? op_a[WIDTH-1] : sign_eff;
+                                          <font color = "green">-1-</font>  
+                                          <font color = "green">==></font>  
+                                          <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+37             wire sign_small = a_bigger ? sign_eff      : op_a[WIDTH-1];
+                                          <font color = "green">-1-</font>  
+                                          <font color = "green">==></font>  
+                                          <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+39             wire [EXP_W-1:0] exp_big   = a_bigger ? op_a[WIDTH-2:MAN_W] : op_b[WIDTH-2:MAN_W];
+                                                     <font color = "green">-1-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+40             wire [EXP_W-1:0] exp_small = a_bigger ? op_b[WIDTH-2:MAN_W] : op_a[WIDTH-2:MAN_W];
+                                                     <font color = "green">-1-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+41             wire [MAN_W-1:0] mant_big   = a_bigger ? op_a[MAN_W-1:0] : op_b[MAN_W-1:0];
+                                                      <font color = "green">-1-</font>  
+                                                      <font color = "green">==></font>  
+                                                      <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+42             wire [MAN_W-1:0] mant_small = a_bigger ? op_b[MAN_W-1:0] : op_a[MAN_W-1:0];
+                                                      <font color = "green">-1-</font>  
+                                                      <font color = "green">==></font>  
+                                                      <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+56             wire [SUM_W-1:0] mant_sum = sub_operation
+                                                        
+57                 ? {1'b0, m_big} - {1'b0, m_small_aligned}
+                   <font color = "green">-1-</font>  
+                   <font color = "green">==></font>  
+                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+86                 if (!rst_n) ps <= S_IDLE;
+                   <font color = "green">-1-</font>  
+           <font color = "green">        ==></font>
+87                 else        ps <= ns;
+           <font color = "green">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+97                 case (ps)
+                   <font color = "green">-1-</font>  
+98                     S_IDLE: begin
+99                         if (start) ns = S_SPECIAL;
+                           <font color = "green">-2-</font>  
+           <font color = "green">                ==></font>
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+100                    end
+101        
+102                    S_SPECIAL: begin
+103                        // --- Infinity / NaN (exponent = all ones) ---
+104                        if ((exp_big == EXP_INF) || (exp_small == EXP_INF)) begin
+                           <font color = "green">-3-</font>  
+105                            err  = 1'b1;
+           <font color = "green">                    ==></font>
+106                            done = 1'b1;
+107                            ns   = S_IDLE;
+108                        end
+109                        // --- Denormalized numbers → error ---
+110                        else if (((exp_big   == {EXP_W{1'b0}}) && (mant_big   != {MAN_W{1'b0}})) ||
+                                <font color = "green">-4-</font>  
+111                                 ((exp_small == {EXP_W{1'b0}}) && (mant_small != {MAN_W{1'b0}}))) begin
+112                            err  = 1'b1;
+           <font color = "green">                    ==></font>
+113                            done = 1'b1;
+114                            ns   = S_IDLE;
+115                        end
+116                        // --- Smaller operand is zero ---
+117                        else if ((exp_small == {EXP_W{1'b0}}) && (mant_small == {MAN_W{1'b0}})) begin
+                                <font color = "green">-5-</font>  
+118                            result = {sign_big, exp_big, mant_big};
+           <font color = "green">                    ==></font>
+119                            done   = 1'b1;
+120                            ns     = S_IDLE;
+121                        end
+122                        else begin
+123                            ns = S_OPERATION;
+           <font color = "green">                    ==></font>
+124                        end
+125                    end
+126        
+127                    S_OPERATION: begin
+128                        done = 1'b1;
+129                        ns   = S_IDLE;
+130        
+131                        // Carry-out from addition → shift right 1, exponent + 1
+132                        if (mant_sum[SUM_W-1]) begin
+                           <font color = "green">-6-</font>  
+133                            if (exp_big == EXP_MAX)
+                               <font color = "green">-7-</font>  
+134                                result = {sign_big, EXP_INF, {MAN_W{1'b0}}};       // overflow
+           <font color = "green">                        ==></font>
+135                            else
+136                                result = {sign_big, exp_big + 1'b1, mant_sum[MAN_FULL-1:1]};
+           <font color = "green">                        ==></font>
+137                        end
+138                        // Exact cancellation → +0
+139                        else if (mant_sum[MAN_FULL-1:0] == {MAN_FULL{1'b0}})
+                                <font color = "green">-8-</font>  
+140                            result = {WIDTH{1'b0}};
+           <font color = "green">                    ==></font>
+141                        // Underflow — lz exceeds available exponent room
+142                        else if (lz_ext >= exp_big)
+                                <font color = "green">-9-</font>  
+143                            result = {sign_big, {(WIDTH-1){1'b0}}};
+           <font color = "green">                    ==></font>
+144                        // Left-normalise
+145                        else
+146                            result = {sign_big, exp_big - lz_ext, mant_norm[MAN_W-1:0]};
+           <font color = "green">                    ==></font>
+147                    end
+148        
+149                    default: ns = S_IDLE;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>S_IDLE </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_SPECIAL </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_SPECIAL </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_SPECIAL </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_SPECIAL </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_OPERATION </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_OPERATION </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_OPERATION </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_OPERATION </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>S_OPERATION </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_1">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_fpu_core">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

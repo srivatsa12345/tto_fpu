@@ -3,4 +3,4 @@
 `define FP 16
 `define n 100
 `define rst 200
-`define rst_times 2
+`define rst_times 3
