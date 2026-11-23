@@ -68,6 +68,7 @@ start:
 # 2. Compile the design
 compile:
 	mkdir -p $(OUT_DIR)
+	rm -rf $(OUT_DIR)/*.vdb
 	vcs -full64 -sverilog -timescale=1ns/1ps -ntb_opts uvm-1.2 \
 	$(LIC_FLAGS) -debug_access+all -kdb $(COV_FLAGS) $(INCDIRS) \
 	-Mdir=$(OUT_DIR)/csrc -o $(OUT_DIR)/simv -cm_dir $(OUT_DIR)/simv.vdb \
