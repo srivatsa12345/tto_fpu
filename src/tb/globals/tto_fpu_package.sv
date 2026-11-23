@@ -40,6 +40,10 @@ package tto_fpu_package;
     `include "../sequences/load_11110011_seq.sv"
     `include "../sequences/load_01111001_seq.sv"
     `include "../sequences/load_00011100_seq.sv"
+    `include "../sequences/assert_start_read_simul_seq.sv"
+    `include "../sequences/assert_read_write_simul_seq.sv"
+    `include "../sequences/assert_start_write_read_simul_seq.sv"
+    `include "../sequences/assert_start_write_simul_seq.sv"
 
     // Active Agent 
     `include "../env/active_agent/tto_fpu_sequencer.sv"
@@ -69,6 +73,7 @@ package tto_fpu_package;
     `include "../tests/back_to_back_read_test.sv"
     `include "../tests/exact_cancellation_add_test.sv"
     `include "../tests/exact_cancellation_test.sv"
+    `include "../tests/flag_test.sv"
     `include "../tests/inf_input_test.sv"
     `include "../tests/load_incomplete_test.sv"
     `include "../tests/mantissa_alignment_test.sv"
