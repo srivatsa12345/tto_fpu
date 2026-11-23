@@ -109,7 +109,7 @@ $(REGRESS_TARGETS): regress_run_%:
 	-cm_dir $${TNAME}_$${SEED}.vdb -cm_name $${TNAME}_$${SEED} \
 	-cm_log $${TNAME}_$${SEED}_cm.log \
 	-key $${TNAME}_$${SEED}_ucli.key \
-	+fsdbfile+$${TNAME}_$${SEED}.fsdb \
+	+fsdbfile+$${TNAME}_$${SEED}.fsdb +VCDFILE=$${TNAME}_$${SEED}.vcd \
 	+UVM_TESTNAME=$$TNAME +ntb_random_seed=$$SEED > /dev/null
 
 # 6. Open the Waveform in Verdi
