@@ -1,4 +1,4 @@
-module tto_fpu_assertion(input logic clk, input logic rst_n, input logic [7:0]ui_in, input logic [7:0]uio_in, input logic [7:0]uio_oe, input logic [7:0]uio_out, input logic [7:0]uo_out);
+module tto_fpu_assertions(input logic clk, input logic rst_n, input logic [7:0]ui_in, input logic [7:0]uio_in, input logic [7:0]uio_oe, input logic [7:0]uio_out, input logic [7:0]uo_out);
     property check_reset;
 		@(posedge clk) !rst_n |-> (uo_out==8'h00 && uio_out==8'h00 && uio_oe==8'h00);
 	endproperty
