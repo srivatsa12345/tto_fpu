@@ -1,35 +1,26 @@
-class overflow_diff_exp_test extends uvm_test ;
+class overflow_diff_exp_test extends uvm_test;
     `uvm_component_utils(overflow_diff_exp_test)
-    
+
     tto_fpu_env env;
     tto_fpu_config cfg;
+    overflow_diff_exp_vseq v_seq;
 
-    reset_seq rst;
-    assert_wr_en_seq wr;
-    mantissa_alignment_load_1_seq mx1;
-    load_2_max_seq mx2;
-    load_exp_28_seq mx3;
-    no_op_seq no_op;  
-    assert_read_en_seq rd;
-    assert_start_pulse_seq st;
-    opcode_0_seq add;
-    
-    function new (string name="overflow_diff_exp_test", uvm_component parent);
+    function new(string name="overflow_diff_exp_test", uvm_component parent);
         super.new(name, parent);
     endfunction
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-    
-        cfg = tto_fpu_config::type_id::create("cfg");
-        env = tto_fpu_env::type_id::create("env", this);
-    
+
+        cfg=tto_fpu_config::type_id::create("cfg");
+        env=tto_fpu_env::type_id::create("env", this);
+
         if(!uvm_config_db#(virtual tto_fpu_if)::get(this, "", "Virtual Interface", cfg.vif))
             `uvm_fatal(get_type_name(), "Failed to get Virtual interface")
-      
-        cfg.tto_act_agent = UVM_ACTIVE;
-        cfg.tto_rst_agent = UVM_ACTIVE;
-    
+
+        cfg.tto_act_agent=UVM_ACTIVE;
+        cfg.tto_rst_agent=UVM_ACTIVE;
+
         uvm_config_db#(tto_fpu_config)::set(this, "*", "Config Object", cfg);
     endfunction
 
@@ -40,46 +31,9 @@ class overflow_diff_exp_test extends uvm_test ;
 
     task run_phase(uvm_phase phase);
         phase.raise_objection(this);
-        rst=reset_seq::type_id::create("rst");
-        no_op=no_op_seq::type_id::create("no");
-        st=assert_start_pulse_seq::type_id::create("st");
-        wr=assert_wr_en_seq::type_id::create("wr");
-        rd=assert_read_en_seq::type_id::create("rd");
-        mx1=mantissa_alignment_load_1_seq::type_id::create("mx1");
-        mx2=load_2_max_seq::type_id::create("mx2");
-        mx3=load_exp_28_seq::type_id::create("mx3");
-        add=opcode_0_seq::type_id::create("add");
-
-        fork
-            begin
-                repeat(`rst_times) begin
-                    rst.start(env.rst_ag.sqr);
-                end
-            end
-            begin
-                repeat(`n) begin
-                    wr.start(env.act.sqr);
-                    mx1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    mx2.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    mx1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    mx3.start(env.act.sqr);
-                    st.start(env.act.sqr);
-                    add.start(env.act.sqr);
-
-                    repeat(4) no_op.start(env.act.sqr);
-       
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                end
-            end
-        join
-        
-        phase.phase_done.set_drain_time(this, 10ns); 
+        v_seq=overflow_diff_exp_vseq::type_id::create("v_seq");
+        v_seq.start(env.v_sqr);
+        phase.phase_done.set_drain_time(this, 10ns);
         phase.drop_objection(this);
     endtask
 
