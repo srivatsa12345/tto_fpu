@@ -76,6 +76,11 @@ class flag_test extends uvm_test;
                 	    rd.start(env.act.sqr);
                     	no.start(env.act.sqr);
                 	end
+					wr.start(env.act.sqr);
+					no.start(env.act.sqr);
+					swr.start(env.act.sqr);
+					no.start(env.act.sqr);
+					swr.start(env.act.sqr);
 					repeat(2) no.start(env.act.sqr);
 				end
             end
