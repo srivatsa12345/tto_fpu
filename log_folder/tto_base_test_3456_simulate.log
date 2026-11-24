@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l tto_base_test_3456_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir tto_base_test_3456.vdb -cm_name tto_base_test_3456 -cm_log tto_base_test_3456_cm.log -key tto_base_test_3456_ucli.key +fsdbfile+tto_base_test_3456.fsdb +VCDFILE=tto_base_test_3456.vcd +UVM_TESTNAME=tto_base_test +ntb_random_seed=3456
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 24 10:49 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 24 15:45 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -27,6 +27,7 @@ UVM-1.2.Synopsys
 *Verdi* Loading libsscore_vcs202003.so
 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
 (C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'tto_base_test_3456.fsdb'
 *Verdi* : Begin traversing the scope (tto_fpu_top), layer (0).
 *Verdi* : End of traversing.
@@ -75,14 +76,14 @@ uvm_test_top               tto_base_test           -     @343
 --------------------------------------------------------------
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 10000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(266) @ 10000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(266) @ 10000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:0
 Total testcases passed:0
 Total testcases failed:0
 
-UVM_INFO src/tb/globals/../env/tto_fpu_sub.sv(85) @ 10000: uvm_test_top.env.sub [sub] INPUT COVERAGE = 0.000000
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sub.sv(85) @ 10000: uvm_test_top.env.sub [sub] INPUT COVERAGE = 0.000000
 
-UVM_INFO src/tb/globals/../env/tto_fpu_sub.sv(86) @ 10000: uvm_test_top.env.sub [sub] OUTPUT COVERAGE = 0.000000
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sub.sv(86) @ 10000: uvm_test_top.env.sub [sub] OUTPUT COVERAGE = 0.000000
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 10000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
@@ -120,5 +121,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 10000 ps
-CPU Time:      0.880 seconds;       Data structure size:   0.6Mb
-Tue Nov 24 10:49:12 2026
+CPU Time:      0.870 seconds;       Data structure size:   0.6Mb
+Tue Nov 24 15:45:31 2026
