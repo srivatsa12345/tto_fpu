@@ -21,4 +21,37 @@ class read_write_in_between_vseq extends uvm_sequence;
         wr_1=assert_wr_en_seq::type_id::create("wr_1");
         wr_rd=write_read_simul_seq::type_id::create("wr_rd");
         st=assert_start_pulse_seq::type_id::create("st");
-        rd=assert_read_en_seq::type_id::create
+        rd=assert_read_en_seq::type_id::create("rd");
+
+        fork
+            begin
+                repeat(`rst_times) begin
+                    rst.start(p_sequencer.rst_sqr);
+                end
+            end
+            begin
+                repeat(`n) begin
+                    wr.start(p_sequencer.act_sqr);
+                    //no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    //no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    //no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    rd.start(p_sequencer.act_sqr);
+                    repeat(2) wr_rd.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
