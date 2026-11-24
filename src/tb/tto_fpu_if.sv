@@ -5,7 +5,7 @@ interface tto_fpu_if (input logic clk);
     logic [7:0] uio_oe, uio_out, uo_out;
 
     clocking drv_cb @(posedge clk);
-        default output #1;
+        default output #5;
         output ui_in, uio_in;
     endclocking
 
