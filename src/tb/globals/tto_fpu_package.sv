@@ -36,10 +36,6 @@ package tto_fpu_package;
     `include "../sequences/mantissa_alignment_load_1_seq.sv"
     `include "../sequences/mantissa_alignment_load_2_seq.sv"
     `include "../sequences/mantissa_alignment_load_4_seq.sv"
-    `include "../sequences/load_01010111_seq.sv"
-    `include "../sequences/load_11110011_seq.sv"
-    `include "../sequences/load_01111001_seq.sv"
-    `include "../sequences/load_00011100_seq.sv"
     `include "../sequences/assert_start_read_simul_seq.sv"
     `include "../sequences/assert_read_write_simul_seq.sv"
     `include "../sequences/assert_start_write_read_simul_seq.sv"
@@ -58,14 +54,51 @@ package tto_fpu_package;
     `include "../env/rst_agent/tto_fpu_rst_agent.sv"
 
     // Environment
+    `include "../env/tto_fpu_virtual_sequencer.sv"
     `include "../env/tto_fpu_sub.sv"
     `include "../env/tto_fpu_sb.sv"
     `include "../env/tto_fpu_env.sv"
 
+    // Virtual Sequences
+    `include "../env/virtual_sequences/sanity_vseq.sv"
+    `include "../env/virtual_sequences/add_sub_zero_operand_vseq.sv"
+    `include "../env/virtual_sequences/add_zero_invalid_operand_vseq.sv"
+    `include "../env/virtual_sequences/add_zero_operand_vseq.sv"
+    `include "../env/virtual_sequences/back_to_back_op_vseq.sv"
+    `include "../env/virtual_sequences/back_to_back_read_vseq.sv"
+    `include "../env/virtual_sequences/exact_cancellation_add_vseq.sv"
+    `include "../env/virtual_sequences/exact_cancellation_vseq.sv"
+    `include "../env/virtual_sequences/flag_vseq.sv"
+    `include "../env/virtual_sequences/inf_input_vseq.sv"
+    `include "../env/virtual_sequences/load_incomplete_vseq.sv"
+    `include "../env/virtual_sequences/mantissa_alignment_vseq.sv"
+    `include "../env/virtual_sequences/mantissa_normalization_sub_vseq.sv"
+    `include "../env/virtual_sequences/mantissa_normalization_vseq.sv"
+    `include "../env/virtual_sequences/nan_input_vseq.sv"
+    `include "../env/virtual_sequences/normal_addition_vseq.sv"
+    `include "../env/virtual_sequences/normal_subtraction_vseq.sv"
+    `include "../env/virtual_sequences/overflow_diff_exp_vseq.sv"
+    `include "../env/virtual_sequences/overflow_max_vseq.sv"
+    `include "../env/virtual_sequences/overflow_neg_max_vseq.sv"
+    `include "../env/virtual_sequences/read_before_op_vseq.sv"
+    `include "../env/virtual_sequences/read_in_between_vseq.sv"
+    `include "../env/virtual_sequences/read_pointer_reset_vseq.sv"
+    `include "../env/virtual_sequences/read_write_in_between_vseq.sv"
+    `include "../env/virtual_sequences/shift_out_vseq.sv"
+    `include "../env/virtual_sequences/start_busy_vseq.sv"
+    `include "../env/virtual_sequences/start_high_vseq.sv"
+    `include "../env/virtual_sequences/subnormal_input_vseq.sv"
+    `include "../env/virtual_sequences/sub_zero_invalid_operand_vseq.sv"
+    `include "../env/virtual_sequences/sub_zero_operand_A_vseq.sv"
+    `include "../env/virtual_sequences/sub_zero_operand_B_vseq.sv"
+    `include "../env/virtual_sequences/underflow_min_vseq.sv"
+    `include "../env/virtual_sequences/write_busy_vseq.sv"
+    `include "../env/virtual_sequences/write_read_in_between_vseq.sv"
+    `include "../env/virtual_sequences/write_read_vseq.sv"
+
     // Tests
     `include "../tests/tto_base_test.sv"
     `include "../tests/sanity_test.sv"
-    `include "../tests/sanity2.sv"
     `include "../tests/add_sub_zero_operand_test.sv"
     `include "../tests/add_zero_invalid_operand_test.sv"
     `include "../tests/add_zero_operand_test.sv"
@@ -86,6 +119,7 @@ package tto_fpu_package;
     `include "../tests/overflow_max_test.sv"
     `include "../tests/overflow_neg_max_test.sv"
     `include "../tests/read_before_op_test.sv"
+    `include "../tests/read_in_between_test.sv"
     `include "../tests/read_pointer_reset_test.sv"
     `include "../tests/read_write_in_between_test.sv"
     `include "../tests/shift_out_test.sv"
@@ -97,17 +131,4 @@ package tto_fpu_package;
     `include "../tests/sub_zero_operand_B_test.sv"
     `include "../tests/underflow_min_test.sv"
     `include "../tests/write_busy_test.sv"
-    `include "../tests/write_read_in_between_test.sv"
-    `include "../tests/write_read_test.sv"
-endpackage : tto_fpu_package
-
-// DUT
-`include "../../dut/fpu_core.v"
-`include "../../dut/tt_um_project_fpu.v"
-
-// Interface & Assertions
-`include "../tto_fpu_if.sv"
-`include "../tto_fpu_assertions.sv"
-
-// Top-level Module
-`include "../tto_fpu_top.sv"
+    `include "../tests/write_read
