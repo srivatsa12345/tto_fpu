@@ -41,4 +41,18 @@ class mantissa_normalization_vseq extends uvm_sequence;
                     mn1.start(p_sequencer.act_sqr);
                     wr.start(p_sequencer.act_sqr);
                     mn2.start(p_sequencer.act_sqr);
-                    st.start(p_sequencer.act_sqr
+                    st.start(p_sequencer.act_sqr);
+                    add.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
