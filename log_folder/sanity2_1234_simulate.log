@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l sanity2_1234_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir sanity2_1234.vdb -cm_name sanity2_1234 -cm_log sanity2_1234_cm.log -key sanity2_1234_ucli.key +fsdbfile+sanity2_1234.fsdb +VCDFILE=sanity2_1234.vcd +UVM_TESTNAME=sanity2 +ntb_random_seed=1234
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 15:42 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 24 10:48 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -27,7 +27,6 @@ UVM-1.2.Synopsys
 *Verdi* Loading libsscore_vcs202003.so
 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
 (C) 1996 - 2021 by Synopsys, Inc.
-*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'sanity2_1234.fsdb'
 *Verdi* : Begin traversing the scope (tto_fpu_top), layer (0).
 *Verdi* : End of traversing.
@@ -157,10 +156,6 @@ UVM_INFO src/tb/globals/../sequences/load_00011100_seq.sv(13) @ 340000: uvm_test
 	Offending '(uo_out[7:4] == ($past(uo_out[7:4]) + 1))'
 Error: "src/tb/globals/../tto_fpu_assertions.sv", 54: tto_fpu_top.tfa.unnamed$$_7: at time 340000 ps
 Check wr_ptr increment failed
-"src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: started at 300000ps failed at 340000ps
-	Offending 'uo_out[3]'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: at time 340000 ps
-Check ready assertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:81, uio_in:53
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:0, uo_out:30
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:78, uio_in:1c
@@ -244,10 +239,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:7c
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:2, uio_in:23
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 700000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:57, uo_out:a
-REF: uio_oe:ff, uio_out:57, uo_out:a
-
+REF: uio_oe:0, uio_out:0, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:10, uio_in:71, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 700000ps failed at 700000ps
 	Offending '(uio_oe == 8'b0)'
@@ -256,10 +251,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:2, uio_in:23
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:71
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 740000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:57, uo_out:a
-REF: uio_oe:0, uio_out:57, uo_out:a
-
+REF: uio_oe:ff, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:80, uio_in:30, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 82: tto_fpu_top.tfa.unnamed$$_11: started at 740000ps failed at 740000ps
 	Offending '(uio_oe == 8'hff)'
@@ -268,10 +263,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:71
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:30
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 780000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:f3, uo_out:a
-REF: uio_oe:ff, uio_out:f3, uo_out:a
-
+REF: uio_oe:0, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 780000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:78, uio_in:37, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 780000ps failed at 780000ps
 	Offending '(uio_oe == 8'b0)'
@@ -280,10 +275,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:30
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:78, uio_in:37
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 820000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:f3, uo_out:a
-REF: uio_oe:0, uio_out:f3, uo_out:a
-
+REF: uio_oe:ff, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 820000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:21, uio_in:b5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:78, uio_in:37
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
@@ -309,10 +304,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:a
 REF: uio_oe:0, uio_out:f3, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/load_11110011_seq.sv(13) @ 940000: uvm_test_top.env.act.sqr@@opam [load_11110011_seq] ui_in:8, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 900000ps failed at 940000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 940000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:81, uio_in:7
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:12
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:f3
@@ -353,10 +344,6 @@ UVM_INFO src/tb/globals/../sequences/load_00011100_seq.sv(13) @ 1100000: uvm_tes
 	Offending '(uo_out[7:4] == ($past(uo_out[7:4]) + 1))'
 Error: "src/tb/globals/../tto_fpu_assertions.sv", 54: tto_fpu_top.tfa.unnamed$$_7: at time 1100000 ps
 Check wr_ptr increment failed
-"src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: started at 1060000ps failed at 1100000ps
-	Offending 'uo_out[3]'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: at time 1100000 ps
-Check ready assertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:69, uio_in:50
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:32
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b8, uio_in:1c
@@ -440,10 +427,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:fc
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1460000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:62, uio_in:ce
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 1460000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 1460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:57, uo_out:a
-REF: uio_oe:ff, uio_out:57, uo_out:a
-
+REF: uio_oe:0, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 1460000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:75, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 1460000ps failed at 1460000ps
 	Offending '(uio_oe == 8'b0)'
@@ -452,10 +439,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:62, uio_in:ce
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:75
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1500000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 1500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:57, uo_out:a
-REF: uio_oe:0, uio_out:57, uo_out:a
-
+REF: uio_oe:ff, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 1500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:e0, uio_in:ea, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 82: tto_fpu_top.tfa.unnamed$$_11: started at 1500000ps failed at 1500000ps
 	Offending '(uio_oe == 8'hff)'
@@ -464,10 +451,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:75
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e0, uio_in:ea
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 1540000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 1540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:f3, uo_out:a
-REF: uio_oe:ff, uio_out:f3, uo_out:a
-
+REF: uio_oe:0, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 1540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:66, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 1540000ps failed at 1540000ps
 	Offending '(uio_oe == 8'b0)'
@@ -476,10 +463,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:ea
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:66
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1580000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 1580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:f3, uo_out:a
-REF: uio_oe:0, uio_out:f3, uo_out:a
-
+REF: uio_oe:ff, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1580000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:59, uio_in:1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:66
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
@@ -505,10 +492,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:a
 REF: uio_oe:0, uio_out:f3, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/load_11110011_seq.sv(13) @ 1700000: uvm_test_top.env.act.sqr@@opam [load_11110011_seq] ui_in:c0, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 1660000ps failed at 1700000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 1700000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:79, uio_in:2a
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:12
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:f3
@@ -549,10 +532,6 @@ UVM_INFO src/tb/globals/../sequences/load_00011100_seq.sv(13) @ 1860000: uvm_tes
 	Offending '(uo_out[7:4] == ($past(uo_out[7:4]) + 1))'
 Error: "src/tb/globals/../tto_fpu_assertions.sv", 54: tto_fpu_top.tfa.unnamed$$_7: at time 1860000 ps
 Check wr_ptr increment failed
-"src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: started at 1820000ps failed at 1860000ps
-	Offending 'uo_out[3]'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: at time 1860000 ps
-Check ready assertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c9, uio_in:c7
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:32
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:1c
@@ -636,10 +615,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:48, uio_in:e8
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2220000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ea, uio_in:24
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 2220000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:57, uo_out:a
-REF: uio_oe:ff, uio_out:57, uo_out:a
-
+REF: uio_oe:0, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2220000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d0, uio_in:aa, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 2220000ps failed at 2220000ps
 	Offending '(uio_oe == 8'b0)'
@@ -648,10 +627,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ea, uio_in:24
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:aa
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2260000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:57, uo_out:a
-REF: uio_oe:0, uio_out:57, uo_out:a
-
+REF: uio_oe:ff, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2260000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:70, uio_in:9e, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 82: tto_fpu_top.tfa.unnamed$$_11: started at 2260000ps failed at 2260000ps
 	Offending '(uio_oe == 8'hff)'
@@ -660,10 +639,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:aa
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:9e
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 2300000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:f3, uo_out:a
-REF: uio_oe:ff, uio_out:f3, uo_out:a
-
+REF: uio_oe:0, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2300000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:38, uio_in:2a, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 2300000ps failed at 2300000ps
 	Offending '(uio_oe == 8'b0)'
@@ -672,10 +651,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:9e
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:38, uio_in:2a
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2340000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:f3, uo_out:a
-REF: uio_oe:0, uio_out:f3, uo_out:a
-
+REF: uio_oe:ff, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 2340000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:49, uio_in:25, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:38, uio_in:2a
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
@@ -701,10 +680,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:a
 REF: uio_oe:0, uio_out:f3, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/load_11110011_seq.sv(13) @ 2460000: uvm_test_top.env.act.sqr@@opam [load_11110011_seq] ui_in:10, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 2420000ps failed at 2460000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 2460000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:21, uio_in:62
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:12
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:f3
@@ -745,10 +720,6 @@ UVM_INFO src/tb/globals/../sequences/load_00011100_seq.sv(13) @ 2620000: uvm_tes
 	Offending '(uo_out[7:4] == ($past(uo_out[7:4]) + 1))'
 Error: "src/tb/globals/../tto_fpu_assertions.sv", 54: tto_fpu_top.tfa.unnamed$$_7: at time 2620000 ps
 Check wr_ptr increment failed
-"src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: started at 2580000ps failed at 2620000ps
-	Offending 'uo_out[3]'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: at time 2620000 ps
-Check ready assertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:29, uio_in:78
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:32
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:40, uio_in:1c
@@ -797,10 +768,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:9
 REF: uio_oe:0, uio_out:f3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:e8, uio_in:67, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 2780000ps failed at 2820000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 2820000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:a4
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e8, uio_in:67
@@ -809,6 +776,10 @@ DUT: uio_oe:0, uio_out:57, uo_out:9
 REF: uio_oe:0, uio_out:f3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 2860000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:ea, uio_in:73, uio_oe:xx, uio_out:xx, uo_out:xx
+"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 2780000ps failed at 2860000ps
+	Offending '(!uo_out[3])'
+Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 2860000 ps
+Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e8, uio_in:67
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ea, uio_in:73
@@ -832,10 +803,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:44
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:ea, uio_in:9c
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 2980000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 2980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:57, uo_out:a
-REF: uio_oe:ff, uio_out:57, uo_out:a
-
+REF: uio_oe:0, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 2980000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:e0, uio_in:65, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 2980000ps failed at 2980000ps
 	Offending '(uio_oe == 8'b0)'
@@ -844,10 +815,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:ea, uio_in:9c
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e0, uio_in:65
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3020000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:57, uo_out:a
-REF: uio_oe:0, uio_out:57, uo_out:a
-
+REF: uio_oe:ff, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3020000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:8, uio_in:78, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 82: tto_fpu_top.tfa.unnamed$$_11: started at 3020000ps failed at 3020000ps
 	Offending '(uio_oe == 8'hff)'
@@ -856,10 +827,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:65
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:78
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 3060000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:f3, uo_out:a
-REF: uio_oe:ff, uio_out:f3, uo_out:a
-
+REF: uio_oe:0, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c8, uio_in:37, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 3060000ps failed at 3060000ps
 	Offending '(uio_oe == 8'b0)'
@@ -868,10 +839,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:78
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c8, uio_in:37
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3100000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:f3, uo_out:a
-REF: uio_oe:0, uio_out:f3, uo_out:a
-
+REF: uio_oe:ff, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3100000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:e1, uio_in:1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c8, uio_in:37
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3140000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
@@ -897,10 +868,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:a
 REF: uio_oe:0, uio_out:f3, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/load_11110011_seq.sv(13) @ 3220000: uvm_test_top.env.act.sqr@@opam [load_11110011_seq] ui_in:8, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 3180000ps failed at 3220000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 3220000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:71, uio_in:8e
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3260000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:12
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:f3
@@ -941,10 +908,6 @@ UVM_INFO src/tb/globals/../sequences/load_00011100_seq.sv(13) @ 3380000: uvm_tes
 	Offending '(uo_out[7:4] == ($past(uo_out[7:4]) + 1))'
 Error: "src/tb/globals/../tto_fpu_assertions.sv", 54: tto_fpu_top.tfa.unnamed$$_7: at time 3380000 ps
 Check wr_ptr increment failed
-"src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: started at 3340000ps failed at 3380000ps
-	Offending 'uo_out[3]'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: at time 3380000 ps
-Check ready assertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:21, uio_in:f3
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:32
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:1c
@@ -993,10 +956,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:9
 REF: uio_oe:0, uio_out:f3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:98, uio_in:d7, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 3540000ps failed at 3580000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 3580000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f0, uio_in:bd
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:98, uio_in:d7
@@ -1005,6 +964,10 @@ DUT: uio_oe:0, uio_out:57, uo_out:9
 REF: uio_oe:0, uio_out:f3, uo_out:9
 
 UVM_INFO src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 3620000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:fa, uio_in:b, uio_oe:xx, uio_out:xx, uo_out:xx
+"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 3540000ps failed at 3620000ps
+	Offending '(!uo_out[3])'
+Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 3620000 ps
+Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:98, uio_in:d7
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:9
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:fa, uio_in:b
@@ -1028,10 +991,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:2a
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:42, uio_in:e9
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 3740000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:57, uo_out:a
-REF: uio_oe:ff, uio_out:57, uo_out:a
-
+REF: uio_oe:0, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:90, uio_in:1, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 3740000ps failed at 3740000ps
 	Offending '(uio_oe == 8'b0)'
@@ -1040,10 +1003,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:42, uio_in:e9
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:90, uio_in:1
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3780000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:57, uo_out:a
-REF: uio_oe:0, uio_out:57, uo_out:a
-
+REF: uio_oe:ff, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3780000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:18, uio_in:48, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 82: tto_fpu_top.tfa.unnamed$$_11: started at 3780000ps failed at 3780000ps
 	Offending '(uio_oe == 8'hff)'
@@ -1052,10 +1015,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:1
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3820000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:18, uio_in:48
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 3820000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:f3, uo_out:a
-REF: uio_oe:ff, uio_out:f3, uo_out:a
-
+REF: uio_oe:0, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 3820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c8, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 3820000ps failed at 3820000ps
 	Offending '(uio_oe == 8'b0)'
@@ -1064,10 +1027,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:18, uio_in:48
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3860000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c8, uio_in:f3
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3860000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 3860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:f3, uo_out:a
-REF: uio_oe:0, uio_out:f3, uo_out:a
-
+REF: uio_oe:ff, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3860000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:c1, uio_in:26, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c8, uio_in:f3
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3900000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
@@ -1093,10 +1056,6 @@ DUT: uio_oe:0, uio_out:57, uo_out:a
 REF: uio_oe:0, uio_out:f3, uo_out:a
 
 UVM_INFO src/tb/globals/../sequences/load_11110011_seq.sv(13) @ 3980000: uvm_test_top.env.act.sqr@@opam [load_11110011_seq] ui_in:80, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
-"src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: started at 3940000ps failed at 3980000ps
-	Offending '(!uo_out[3])'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 75: tto_fpu_top.tfa.unnamed$$_10: at time 3980000 ps
-Check ready deassertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:19, uio_in:d
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:12
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:f3
@@ -1137,10 +1096,6 @@ UVM_INFO src/tb/globals/../sequences/load_00011100_seq.sv(13) @ 4140000: uvm_tes
 	Offending '(uo_out[7:4] == ($past(uo_out[7:4]) + 1))'
 Error: "src/tb/globals/../tto_fpu_assertions.sv", 54: tto_fpu_top.tfa.unnamed$$_7: at time 4140000 ps
 Check wr_ptr increment failed
-"src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: started at 4100000ps failed at 4140000ps
-	Offending 'uo_out[3]'
-Error: "src/tb/globals/../tto_fpu_assertions.sv", 68: tto_fpu_top.tfa.unnamed$$_9: at time 4140000 ps
-Check ready assertion failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:51, uio_in:ba
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4180000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:32
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:1c
@@ -1220,10 +1175,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b8, uio_in:8b
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4500000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:da, uio_in:a
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 4500000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 4500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:57, uo_out:a
-REF: uio_oe:ff, uio_out:57, uo_out:a
-
+REF: uio_oe:0, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 4500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:50, uio_in:93, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 4500000ps failed at 4500000ps
 	Offending '(uio_oe == 8'b0)'
@@ -1232,10 +1187,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:da, uio_in:a
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4540000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:50, uio_in:93
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4540000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 4540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:57, uo_out:a
-REF: uio_oe:0, uio_out:57, uo_out:a
-
+REF: uio_oe:ff, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 4540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:30, uio_in:51, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 82: tto_fpu_top.tfa.unnamed$$_11: started at 4540000ps failed at 4540000ps
 	Offending '(uio_oe == 8'hff)'
@@ -1244,10 +1199,10 @@ Check uio_oe failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:93
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4580000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:30, uio_in:51
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(57) @ 4580000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 4580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:f3, uo_out:a
-REF: uio_oe:ff, uio_out:f3, uo_out:a
-
+REF: uio_oe:0, uio_out:57, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../sequences/no_op_seq.sv(13) @ 4580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:90, uio_oe:xx, uio_out:xx, uo_out:xx
 "src/tb/globals/../tto_fpu_assertions.sv", 89: tto_fpu_top.tfa.unnamed$$_12: started at 4580000ps failed at 4580000ps
 	Offending '(uio_oe == 8'b0)'
@@ -1256,10 +1211,10 @@ Check uio_oe 0 failed
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:30, uio_in:51
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:f3, uo_out:a
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:90
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4620000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(68) @ 4620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:f3, uo_out:a
-REF: uio_oe:0, uio_out:f3, uo_out:a
-
+REF: uio_oe:ff, uio_out:f3, uo_out:a
+_______________________________________________________________________________________________________________________________________
 UVM_INFO src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:90
 UVM_INFO src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:57, uo_out:a
 UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4660000: uvm_test_top.env.scb [SCOREBOARD] 
@@ -4219,10 +4174,10 @@ DUT: uio_oe:0, uio_out:0, uo_out:0
 REF: uio_oe:0, uio_out:0, uo_out:0
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 24330000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(261) @ 24330000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO src/tb/globals/../env/tto_fpu_sb.sv(266) @ 24330000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:607
-Total testcases passed:607
-Total testcases failed:0
+Total testcases passed:583
+Total testcases failed:24
 
 UVM_INFO src/tb/globals/../env/tto_fpu_sub.sv(85) @ 24330000: uvm_test_top.env.sub [sub] INPUT COVERAGE = 100.000000
 
@@ -4278,5 +4233,5 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
 ---------------------------------------------------------------------------
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 24330000 ps
-CPU Time:      0.940 seconds;       Data structure size:   0.7Mb
-Mon Nov 23 15:42:38 2026
+CPU Time:      1.150 seconds;       Data structure size:   0.7Mb
+Tue Nov 24 10:48:24 2026

@@ -1,5 +1,5 @@
 $date
-	Mon Nov 23 15:46:34 2026
+	Tue Nov 24 10:49:09 2026
 $end
 
 $version
@@ -41,63 +41,62 @@ $var reg 2 * wr_s [1:0] $end
 $var reg 2 + rd_s [1:0] $end
 $var reg 2 , st_s [1:0] $end
 $var wire 1 - wr_pulse $end
-$var wire 1 . wr_level $end
-$var wire 1 / start_pulse $end
-$var wire 1 0 rd_fall $end
-$var wire 1 1 rd_level $end
-$var reg 16 2 a_reg [15:0] $end
-$var reg 16 3 b_reg [15:0] $end
-$var reg 16 4 result_reg [15:0] $end
-$var reg 2 5 wr_ptr [1:0] $end
-$var reg 1 6 rd_ptr [0:0] $end
-$var reg 1 7 op_reg $end
-$var reg 1 8 busy $end
-$var reg 1 9 done_l $end
-$var reg 1 : err_l $end
-$var reg 1 ; ready $end
-$var reg 1 < core_start $end
-$var wire 16 = core_result [15:0] $end
-$var wire 1 > core_done $end
-$var wire 1 ? core_err $end
-$var integer 32 @ wi $end
-$var reg 8 A rd_byte [7:0] $end
-$var integer 32 B ri $end
-$var wire 1 C _unused $end
+$var wire 1 . start_pulse $end
+$var wire 1 / rd_fall $end
+$var wire 1 0 rd_level $end
+$var reg 16 1 a_reg [15:0] $end
+$var reg 16 2 b_reg [15:0] $end
+$var reg 16 3 result_reg [15:0] $end
+$var reg 2 4 wr_ptr [1:0] $end
+$var reg 1 5 rd_ptr [0:0] $end
+$var reg 1 6 op_reg $end
+$var reg 1 7 busy $end
+$var reg 1 8 done_l $end
+$var reg 1 9 err_l $end
+$var reg 1 : ready $end
+$var reg 1 ; core_start $end
+$var wire 16 < core_result [15:0] $end
+$var wire 1 = core_done $end
+$var wire 1 > core_err $end
+$var integer 32 ? wi $end
+$var reg 8 @ rd_byte [7:0] $end
+$var integer 32 A ri $end
+$var wire 1 B _unused $end
 
 $scope module u_fpu $end
 $var wire 1 " clk $end
 $var wire 1 # rst_n $end
-$var wire 1 D start $end
-$var wire 1 E op $end
-$var wire 16 F op_a [15:0] $end
-$var wire 16 G op_b [15:0] $end
-$var reg 16 H result [15:0] $end
-$var reg 1 I done $end
-$var reg 1 J err $end
-$var wire 1 K sign_eff $end
-$var wire 1 L a_bigger $end
-$var wire 1 M sign_big $end
-$var wire 1 N sign_small $end
-$var wire 5 O exp_big [4:0] $end
-$var wire 5 P exp_small [4:0] $end
-$var wire 10 Q mant_big [9:0] $end
-$var wire 10 R mant_small [9:0] $end
-$var wire 1 S sub_operation $end
-$var wire 11 T m_big [10:0] $end
-$var wire 11 U m_small [10:0] $end
-$var wire 5 V exp_diff [4:0] $end
-$var wire 11 W m_small_aligned [10:0] $end
-$var wire 12 X mant_sum [11:0] $end
-$var wire 4 Y lz [3:0] $end
-$var wire 11 Z mant_norm [10:0] $end
-$var wire 5 [ lz_ext [4:0] $end
-$var reg 2 \ ps [1:0] $end
-$var reg 2 ] ns [1:0] $end
+$var wire 1 C start $end
+$var wire 1 D op $end
+$var wire 16 E op_a [15:0] $end
+$var wire 16 F op_b [15:0] $end
+$var reg 16 G result [15:0] $end
+$var reg 1 H done $end
+$var reg 1 I err $end
+$var wire 1 J sign_eff $end
+$var wire 1 K a_bigger $end
+$var wire 1 L sign_big $end
+$var wire 1 M sign_small $end
+$var wire 5 N exp_big [4:0] $end
+$var wire 5 O exp_small [4:0] $end
+$var wire 10 P mant_big [9:0] $end
+$var wire 10 Q mant_small [9:0] $end
+$var wire 1 R sub_operation $end
+$var wire 11 S m_big [10:0] $end
+$var wire 11 T m_small [10:0] $end
+$var wire 5 U exp_diff [4:0] $end
+$var wire 11 V m_small_aligned [10:0] $end
+$var wire 12 W mant_sum [11:0] $end
+$var wire 4 X lz [3:0] $end
+$var wire 11 Y mant_norm [10:0] $end
+$var wire 5 Z lz_ext [4:0] $end
+$var reg 2 [ ps [1:0] $end
+$var reg 2 \ ns [1:0] $end
 
 $scope function leading_zeroes $end
-$var reg 4 ^ leading_zeroes [3:0] $end
-$var reg 11 _ x [10:0] $end
-$var integer 32 ` i $end
+$var reg 4 ] leading_zeroes [3:0] $end
+$var reg 11 ^ x [10:0] $end
+$var integer 32 _ i $end
 $upscope $end
 
 $upscope $end
@@ -106,24 +105,24 @@ $upscope $end
 
 
 $scope module intrf $end
-$var reg 1 a rst_n $end
-$var reg 8 b ui_in [7:0] $end
-$var reg 8 c uio_in [7:0] $end
-$var reg 8 d uio_oe [7:0] $end
-$var reg 8 e uio_out [7:0] $end
-$var reg 8 f uo_out [7:0] $end
-$var reg 1 g clk $end
+$var reg 1 ` rst_n $end
+$var reg 8 a ui_in [7:0] $end
+$var reg 8 b uio_in [7:0] $end
+$var reg 8 c uio_oe [7:0] $end
+$var reg 8 d uio_out [7:0] $end
+$var reg 8 e uo_out [7:0] $end
+$var reg 1 f clk $end
 $upscope $end
 
 
 $scope module tfa $end
-$var reg 1 h rst_n $end
-$var reg 8 i ui_in [7:0] $end
-$var reg 8 j uio_oe [7:0] $end
-$var reg 8 k uio_out [7:0] $end
-$var reg 8 l uo_out [7:0] $end
-$var reg 1 m clk $end
-$var reg 8 n uio_in [7:0] $end
+$var reg 1 g rst_n $end
+$var reg 8 h ui_in [7:0] $end
+$var reg 8 i uio_oe [7:0] $end
+$var reg 8 j uio_out [7:0] $end
+$var reg 8 k uo_out [7:0] $end
+$var reg 1 l clk $end
+$var reg 8 m uio_in [7:0] $end
 
 $scope task _$$txp______assert_unnamed$$_0 $end
 $upscope $end
@@ -209,75 +208,74 @@ $enddefinitions $end
 #0
 $dumpvars
 0!
-0C
-xL
-0>
-0?
-x<
-0I
-0J
-xE
-x7
-x0
-x1
-x6
-xM
+0B
 xK
-xN
-xD
-x/
-xS
+0=
+0>
 x;
+0H
+0I
+xD
+x6
+x/
+x0
+x5
+xL
+xJ
+xM
+xC
+x.
+xR
 x:
 x9
 x8
-x.
+x7
 x-
+bxxxxxxxxxxxxxxxx 1
 bxxxxxxxxxxxxxxxx 2
-bxxxxxxxxxxxxxxxx 3
-b0000000000000000 =
-bxxxxx V
-bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx `
-bxxxx ^
-bxxxxxxxxxxx _
-bxxxx Y
-b0xxxx [
+b0000000000000000 <
+bxxxxx U
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx _
+bxxxx ]
+bxxxxxxxxxxx ^
+bxxxx X
+b0xxxx Z
+b1xxxxxxxxxx S
 b1xxxxxxxxxx T
-b1xxxxxxxxxx U
-bxxxxxxxxxxx W
-bxxxxxxxxxxx Z
-bxxxxxxxxxxxx X
-b00 ]
+bxxxxxxxxxxx V
+bxxxxxxxxxxx Y
+bxxxxxxxxxxxx W
+b00 \
+bxxxxxxxxxxxxxxxx E
 bxxxxxxxxxxxxxxxx F
-bxxxxxxxxxxxxxxxx G
-bxx \
-bxxxxxxxx A
+bxx [
+bxxxxxxxx @
 bxx +
-b0000000000000000 H
-bxxxxxxxxxxxxxxxx 4
-bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx B
+b0000000000000000 G
+bxxxxxxxxxxxxxxxx 3
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx A
 bxx ,
+bxxxxx N
+bxxxxxxxxxx P
 bxxxxx O
 bxxxxxxxxxx Q
-bxxxxx P
-bxxxxxxxxxx R
-bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx @
-bxx 5
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ?
+bxx 4
 bxx *
-b00xxxxxx f
-bxxxxxxxx e
+b00xxxxxx e
 bxxxxxxxx d
 bxxxxxxxx c
 bxxxxxxxx b
+bxxxxxxxx a
+bxxxxxxxx h
+bxxxxxxxx m
 bxxxxxxxx i
-bxxxxxxxx n
 bxxxxxxxx j
-bxxxxxxxx k
-b00xxxxxx l
+b00xxxxxx k
 0"
-0g
-0m
-xh
+0f
+0l
+xg
 bxxxxxxxx $
 bxxxxxxxx %
 bxxxxxxxx &
@@ -285,5 +283,5 @@ bxxxxxxxx '
 b00xxxxxx )
 x#
 1(
-xa
+x`
 $end
