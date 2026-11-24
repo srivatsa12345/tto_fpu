@@ -40,4 +40,12 @@ class start_busy_vseq extends uvm_sequence;
                     repeat(2) no_op.start(p_sequencer.act_sqr);
                     st.start(p_sequencer.act_sqr);
                     rd.start(p_sequencer.act_sqr);
-                    no_op.start(p_sequencer.
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
