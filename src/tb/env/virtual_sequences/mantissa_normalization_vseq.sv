@@ -1,0 +1,44 @@
+class mantissa_normalization_vseq extends uvm_sequence;
+    `uvm_object_utils(mantissa_normalization_vseq)
+    `uvm_declare_p_sequencer(tto_fpu_virtual_sequencer)
+
+    reset_seq rst;
+    mantissa_alignment_load_1_seq mn1;
+    mantissa_alignment_load_4_seq mn2;
+    assert_wr_en_seq wr;
+    no_op_seq no_op;
+    assert_read_en_seq rd;
+    assert_start_pulse_seq st;
+    opcode_0_seq add;
+
+    function new(string name="mantissa_normalization_vseq");
+        super.new(name);
+    endfunction
+
+    task body();
+        rst=reset_seq::type_id::create("rst");
+        no_op=no_op_seq::type_id::create("no");
+        st=assert_start_pulse_seq::type_id::create("st");
+        rd=assert_read_en_seq::type_id::create("rd");
+        mn1=mantissa_alignment_load_1_seq::type_id::create("mn1");
+        mn2=mantissa_alignment_load_4_seq::type_id::create("mn2");
+        wr=assert_wr_en_seq::type_id::create("wr");
+        add=opcode_0_seq::type_id::create("add");
+
+        fork
+            begin
+                repeat(`rst_times) begin
+                    rst.start(p_sequencer.rst_sqr);
+                end
+            end
+            begin
+                repeat(`n) begin
+                    wr.start(p_sequencer.act_sqr);
+                    mn1.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    mn2.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    mn1.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    mn2.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr
