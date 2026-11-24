@@ -33,4 +33,21 @@ class write_read_vseq extends uvm_sequence;
                     no_op.start(p_sequencer.act_sqr);
                     wr.start(p_sequencer.act_sqr);
                     no_op.start(p_sequencer.act_sqr);
-                    wr.start(p_sequencer
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    wr_rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr_rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
