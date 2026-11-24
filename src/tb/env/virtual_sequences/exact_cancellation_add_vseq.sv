@@ -25,4 +25,35 @@ class exact_cancellation_add_vseq extends uvm_sequence;
         ec2=load_5_seq::type_id::create("ec2");
         ec3=load_2_neg_5_seq::type_id::create("ec3");
         add=opcode_0_seq::type_id::create("add");
-        wr
+        wr=assert_wr_en_seq::type_id::create("wr");
+        fork
+            begin
+                repeat(`rst_times) begin
+                    rst.start(p_sequencer.rst_sqr);
+                end
+            end
+            begin
+                repeat(`n) begin
+                    wr.start(p_sequencer.act_sqr);
+                    ec1.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    ec2.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    ec1.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    ec3.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+                    add.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
