@@ -56,7 +56,7 @@ JOBS ?= 4
 SEED_LIST ?= 1234 5678 9012 3456 7890
 REGRESS_TARGETS = $(foreach t,$(TEST_LIST),$(foreach s,$(SEED_LIST),regress_run_$(t).$(s)))
 
-.PHONY: all start compile sim cov regression wave clean git
+.PHONY: all start compile sim cov regression wave clean git fail
 
 .DEFAULT_GOAL := all
 
@@ -130,3 +130,19 @@ git:
 	git add -A; \
 	git commit -m "$$msg"; \
 	git push
+
+# 9. Print all test cases with scoreboard mismatches
+fail:
+	@echo "=========================================================="
+	@echo " FAILED TEST CASES (Scoreboard Mismatches)"
+	@echo "=========================================================="
+	@files=$$(grep -l "______________________________________________" $(OUT_DIR)/*_simulate.log 2>/dev/null); \
+	if [ -z "$$files" ]; then \
+		echo " None - All test cases passed!"; \
+	else \
+		for f in $$files; do \
+			count=$$(grep -c "______________________________________________" "$$f"); \
+			name=$$(basename "$$f" _simulate.log); \
+			printf " [FAIL] %-45s (%s mismatches)\n" "$$name" "$$count"; \
+		done; \
+	fi
