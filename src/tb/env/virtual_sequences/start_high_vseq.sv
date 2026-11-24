@@ -29,4 +29,24 @@ class start_high_vseq extends uvm_sequence;
                 repeat(`n) begin
                     wr.start(p_sequencer.act_sqr);
                     no_op.start(p_sequencer.act_sqr);
-                    wr.start(p_sequ
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+
+                    repeat(3) st.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
