@@ -48,4 +48,13 @@ class shift_out_vseq extends uvm_sequence;
 
                     repeat(4) no_op.start(p_sequencer.act_sqr);
 
-                    rd
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
