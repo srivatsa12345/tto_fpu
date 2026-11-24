@@ -46,8 +46,7 @@ TEST_LIST = \
 	underflow_min_test \
 	write_busy_test \
 	write_read_in_between_test \
-	write_read_test 
-	
+	write_read_test
 
 # ==============================================================================
 # Regression Variables
@@ -55,8 +54,9 @@ TEST_LIST = \
 JOBS ?= 4
 SEED_LIST ?= 1234 5678 9012 3456 7890
 REGRESS_TARGETS = $(foreach t,$(TEST_LIST),$(foreach s,$(SEED_LIST),regress_run_$(t).$(s)))
+ONCE_TARGETS = $(foreach t,$(TEST_LIST),once_run_$(t))
 
-.PHONY: all start compile sim cov regression wave clean clean_keep git fail
+.PHONY: all start compile sim cov regression regress_once wave clean clean_keep git fail assert_fail
 
 .DEFAULT_GOAL := all
 
@@ -114,6 +114,27 @@ $(REGRESS_TARGETS): regress_run_%:
 	+fsdbfile+$${TNAME}_$${SEED}.fsdb +VCDFILE=$${TNAME}_$${SEED}.vcd \
 	+UVM_TESTNAME=$$TNAME +ntb_random_seed=$$SEED > /dev/null
 
+# 5b. Run all tests once in parallel (auto-generated random seed per test)
+regress_once: compile
+	@echo "=========================================================="
+	@echo " RUNNING $(words $(TEST_LIST)) TESTS ONCE ($(JOBS) parallel jobs)"
+	@echo "=========================================================="
+	-$(MAKE) -k -j$(JOBS) $(ONCE_TARGETS)
+	@echo "=========================================================="
+	@echo " GENERATING MERGED COVERAGE"
+	@echo "=========================================================="
+	$(MAKE) cov
+
+# Pattern rule to execute each test once with an automatic random seed
+$(ONCE_TARGETS): once_run_%:
+	@echo "-> Running $*"
+	@cd $(OUT_DIR) && ./simv $(LIC_FLAGS) -l $*_simulate.log $(COV_FLAGS) \
+	-cm_dir $*.vdb -cm_name $* \
+	-cm_log $*_cm.log \
+	-key $*_ucli.key \
+	+fsdbfile+$*.fsdb +VCDFILE=$*.vcd \
+	+UVM_TESTNAME=$* +ntb_random_seed_automatic > /dev/null
+
 # 6. Open the Waveform in Verdi
 wave:
 	cd $(OUT_DIR) && verdi -ssf dump.fsdb &
@@ -139,7 +160,7 @@ git:
 	git commit -m "$$msg"; \
 	git push
 
-# 9. Print all test cases with scoreboard mismatches
+# 9. Print all test cases with scoreboard mismatches only
 fail:
 	@echo "=========================================================="
 	@echo " FAILED TEST CASES (Scoreboard Mismatches)"
@@ -152,5 +173,21 @@ fail:
 			count=$$(grep -c "______________________________________________" "$$f"); \
 			name=$$(basename "$$f" _simulate.log); \
 			printf " [FAIL] %-45s (%s mismatches)\n" "$$name" "$$count"; \
+		done; \
+	fi
+
+# 10. Print all test cases with SVA assertion failures only
+assert_fail:
+	@echo "=========================================================="
+	@echo " FAILED TEST CASES (Assertion Failures)"
+	@echo "=========================================================="
+	@files=$$(grep -El "Error:.*tto_fpu_top\.tfa|tto_fpu_top\.tfa.*failed at" $(OUT_DIR)/*_simulate.log 2>/dev/null); \
+	if [ -z "$$files" ]; then \
+		echo " None - All assertions passed!"; \
+	else \
+		for f in $$files; do \
+			count=$$(grep -Ec "Error:.*tto_fpu_top\.tfa|tto_fpu_top\.tfa.*failed at" "$$f"); \
+			name=$$(basename "$$f" _simulate.log); \
+			printf " [ASSERT FAIL] %-38s (%s failures)\n" "$$name" "$$count"; \
 		done; \
 	fi
