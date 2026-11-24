@@ -19,4 +19,36 @@ class normal_subtraction_vseq extends uvm_sequence;
         wr=assert_wr_en_seq::type_id::create("wr");
         sub=opcode_1_seq::type_id::create("opcode_1_seq");
         st=assert_start_pulse_seq::type_id::create("st");
-        rd=assert_read_en_seq
+        rd=assert_read_en_seq::type_id::create("rd");
+
+        fork
+            begin
+                repeat(`rst_times) begin
+                    rst.start(p_sequencer.rst_sqr);
+                end
+            end
+            begin
+                repeat(`n) begin
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+                    sub.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
