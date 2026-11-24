@@ -34,4 +34,24 @@ class write_read_in_between_vseq extends uvm_sequence;
                     wr.start(p_sequencer.act_sqr);
                     //no_op.start(p_sequencer.act_sqr);
                     wr.start(p_sequencer.act_sqr);
-                    //no_op.start(p
+                    //no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    //no_op.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    wr_1.start(p_sequencer.act_sqr);
+                    repeat(2) wr_rd.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
