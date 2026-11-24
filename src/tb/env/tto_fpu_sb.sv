@@ -10,7 +10,7 @@ class tto_fpu_sb extends uvm_scoreboard;
     int TOTAL,MISMATCH,MATCH;
     int count;
     bit [(1+`EXP_W+`MAN_W)-1:0] opa, opb, result;
-    bit prev_wr_en, prev_prev_wr_en, prev_rd_en, prev_prev_rd_en, prev_prev_start, prev_start, prev_op, next_wr;
+    bit prev_wr_en, prev_prev_wr_en, prev_rd_en, prev_prev_rd_en, prev_prev_start, prev_start, prev_op, next_wr, nxt_rd_inc;
     bit [($clog2((1+`EXP_W+`MAN_W)/8))-1:0] rd_pt;
 
     function new(string name="tto_fpu_sb", uvm_component parent);
@@ -82,8 +82,8 @@ class tto_fpu_sb extends uvm_scoreboard;
 				prev_op=inp.ui_in[3];
 			end
             if (!tr.uo_out[0]) begin
-				if ((prev_prev_rd_en)&&(!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(!inp.ui_in[1])) begin
-                    rd_pt++;
+				if ((!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(prev_prev_rd_en)&&(!prev_rd_en)) begin
+                    nxt_rd_inc=1;
                 end 
 				if (next_wr) begin
 					tr.uio_oe=8'h00;
@@ -147,6 +147,10 @@ class tto_fpu_sb extends uvm_scoreboard;
                 	end
                 end
             end
+			if (nxt_rd_inc) begin
+				rd_pt++;
+				nxt_rd_inc=0;
+			end
 			prev_prev_wr_en=prev_wr_en;
 			prev_prev_rd_en=prev_rd_en;
 			prev_prev_start=prev_start;
@@ -161,6 +165,7 @@ class tto_fpu_sb extends uvm_scoreboard;
         txn.uio_out=0;
         txn.uo_out=0;
         prev_wr_en=0;
+		nxt_rd_inc=0;
 		prev_prev_wr_en=0;
 		next_wr=0;
         prev_rd_en=0;
