@@ -24,4 +24,36 @@ class sub_zero_invalid_operand_vseq extends uvm_sequence;
         zo1=load_0_seq::type_id::create("zo1");
         zo2=load_1_nan_seq::type_id::create("zo2");
         zo3=load_2_inf_seq::type_id::create("zo3");
-        sub=opcode_1_seq::type
+        sub=opcode_1_seq::type_id::create("sub");
+        wr=assert_wr_en_seq::type_id::create("wr");
+        fork
+            begin
+                repeat(`rst_times) begin
+                    rst.start(p_sequencer.rst_sqr);
+                end
+            end
+            begin
+                repeat(`n) begin
+                    wr.start(p_sequencer.act_sqr);
+                    zo1.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    zo1.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    zo2.start(p_sequencer.act_sqr);
+                    wr.start(p_sequencer.act_sqr);
+                    zo3.start(p_sequencer.act_sqr);
+                    st.start(p_sequencer.act_sqr);
+                    sub.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                    rd.start(p_sequencer.act_sqr);
+                    no_op.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
