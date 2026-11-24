@@ -82,7 +82,7 @@ class tto_fpu_sb extends uvm_scoreboard;
 				prev_op=inp.ui_in[3];
 			end
             if (!tr.uo_out[0]) begin
-                if ((prev_prev_rd_en)&&(!prev_rd_en)) begin
+				if ((prev_prev_rd_en)&&(!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(!prev_rd_en)) begin
                     rd_pt++;
                 end 
 				if (next_wr) begin
@@ -103,7 +103,7 @@ class tto_fpu_sb extends uvm_scoreboard;
                 if ((inp.ui_in[2])&&(tr.uo_out[3])&&(!prev_start)) begin
 					check_latency();
                     tr.uio_oe=8'h00;
-					if ((!next_wr)&&(!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(prev_rd_en)) begin
+					if ((!next_wr)&&(!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(inp.ui_in[1])) begin
                     	tr.uio_oe=8'hFF;
                     	tr.uio_out=result[rd_pt*8+:8];
 					end
@@ -121,7 +121,7 @@ class tto_fpu_sb extends uvm_scoreboard;
                         tr.uo_out[7:4]=4'h0;
                         tr.uo_out[3]=1'b1;
                     end
-				end else if ((!next_wr)&&(!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(prev_rd_en)) begin
+				end else if ((!next_wr)&&(!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(inp.ui_in[1])) begin
                     tr.uio_oe=8'hFF;
                     tr.uio_out=result[rd_pt*8+:8];
 				end else if ((!next_wr)&&(!inp.ui_in[1])) begin
@@ -139,7 +139,7 @@ class tto_fpu_sb extends uvm_scoreboard;
                     	tr.uio_oe=8'h00;
 					end else if ((!prev_wr_en)&&(inp.ui_in[0])) begin
                     	next_wr=1;
-					end else if ((!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(prev_rd_en)) begin
+					end else if ((!(((!prev_prev_wr_en)&&(prev_wr_en))||((!prev_wr_en)&&(inp.ui_in[0]))))&&(inp.ui_in[1])) begin
                 	    tr.uio_oe=8'hFF;
                 	    tr.uio_out=result[rd_pt*8+:8];
 					end else if (!inp.ui_in[1]) begin
