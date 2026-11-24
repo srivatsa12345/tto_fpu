@@ -64,7 +64,7 @@ class read_in_between_test extends uvm_test ;
                     wr_1.start(env.act.sqr);
                     no_op.start(env.act.sqr);
 
-                    st.start(env.act.sqr)
+                    st.start(env.act.sqr);
                
                     repeat(4) no_op.start(env.act.sqr);
 
