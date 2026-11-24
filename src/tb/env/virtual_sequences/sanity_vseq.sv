@@ -30,4 +30,16 @@ class sanity_vseq extends uvm_sequence;
                         wr.start(p_sequencer.act_sqr);
                         no.start(p_sequencer.act_sqr);
                     end
-                    st.start(p_sequ
+                    st.start(p_sequencer.act_sqr);
+                    repeat(4) no.start(p_sequencer.act_sqr);
+                    repeat(2) begin
+                        rd.start(p_sequencer.act_sqr);
+                        no.start(p_sequencer.act_sqr);
+                    end
+                    repeat(2) no.start(p_sequencer.act_sqr);
+                end
+            end
+        join
+    endtask
+
+endclass
