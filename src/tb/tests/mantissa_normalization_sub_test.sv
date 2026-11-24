@@ -1,34 +1,26 @@
-class mantissa_normalization_sub_test extends uvm_test ;
+class mantissa_normalization_sub_test extends uvm_test;
     `uvm_component_utils(mantissa_normalization_sub_test)
-    
+
     tto_fpu_env env;
     tto_fpu_config cfg;
+    mantissa_normalization_sub_vseq v_seq;
 
-    reset_seq rst;
-    mantissa_alignment_load_1_seq mn1;
-    mantissa_alignment_load_2_seq mn2;
-    opcode_1_seq sub;
-    no_op_seq no_op;  
-    assert_read_en_seq rd;
-    assert_start_pulse_seq st;
-    assert_wr_en_seq wr;
-    
-    function new (string name="mantissa_normalization_sub_test", uvm_component parent);
+    function new(string name="mantissa_normalization_sub_test", uvm_component parent);
         super.new(name, parent);
     endfunction
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-    
-        cfg = tto_fpu_config::type_id::create("cfg");
-        env = tto_fpu_env::type_id::create("env", this);
-    
+
+        cfg=tto_fpu_config::type_id::create("cfg");
+        env=tto_fpu_env::type_id::create("env", this);
+
         if(!uvm_config_db#(virtual tto_fpu_if)::get(this, "", "Virtual Interface", cfg.vif))
             `uvm_fatal(get_type_name(), "Failed to get Virtual interface")
-      
-        cfg.tto_act_agent = UVM_ACTIVE;
-        cfg.tto_rst_agent = UVM_ACTIVE;
-    
+
+        cfg.tto_act_agent=UVM_ACTIVE;
+        cfg.tto_rst_agent=UVM_ACTIVE;
+
         uvm_config_db#(tto_fpu_config)::set(this, "*", "Config Object", cfg);
     endfunction
 
@@ -39,43 +31,9 @@ class mantissa_normalization_sub_test extends uvm_test ;
 
     task run_phase(uvm_phase phase);
         phase.raise_objection(this);
-        rst=reset_seq::type_id::create("rst");
-        no_op=no_op_seq::type_id::create("no");
-        st=assert_start_pulse_seq::type_id::create("st");
-        rd=assert_read_en_seq::type_id::create("rd");
-        mn1=mantissa_alignment_load_1_seq::type_id::create("mn1");
-        mn2=mantissa_alignment_load_2_seq::type_id::create("mn2");
-        sub=opcode_1_seq::type_id::create("sub");
-        wr=assert_wr_en_seq::type_id::create("wr");
-        fork
-            begin
-                repeat(`rst_times) begin
-                    rst.start(env.rst_ag.sqr);
-                end
-            end
-            begin
-                repeat(`n) begin
-                    wr.start(env.act.sqr);
-                    mn1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    mn2.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    mn1.start(env.act.sqr);
-                    wr.start(env.act.sqr);
-                    mn2.start(env.act.sqr);
-                    st.start(env.act.sqr);
-                    sub.start(env.act.sqr);
-                    repeat(4) no_op.start(env.act.sqr);
-
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                    rd.start(env.act.sqr);
-                    no_op.start(env.act.sqr);
-                end
-            end
-        join
-                
-        phase.phase_done.set_drain_time(this, 10ns); 
+        v_seq=mantissa_normalization_sub_vseq::type_id::create("v_seq");
+        v_seq.start(env.v_sqr);
+        phase.phase_done.set_drain_time(this, 10ns);
         phase.drop_objection(this);
     endtask
 
