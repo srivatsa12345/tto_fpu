@@ -82,7 +82,7 @@ class tto_fpu_sb extends uvm_scoreboard;
 				prev_op=inp.ui_in[3];
 			end
             if (!tr.uo_out[0]) begin
-				if ((!inp.ui_in[0])&&(prev_rd_en)&&(!(((inp.ui_in[0])&&(!prev_wr_en))||((!prev_prev_wr_en)&&(prev_wr_en))))) begin
+				if ((!inp.ui_in[1])&&(prev_rd_en)&&(!(((inp.ui_in[0])&&(!prev_wr_en))||((!prev_prev_wr_en)&&(prev_wr_en))))) begin
 					rd_pt++;
 				end
 				if (next_wr) begin
