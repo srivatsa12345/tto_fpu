@@ -84,10 +84,11 @@ sim:
 	+fsdbfile+dump.fsdb +VCDFILE=$(TESTNAME).vcd \
 	+UVM_TESTNAME=$(TESTNAME)
 
-# 4. Generate the Merged HTML Coverage Report
+# 4. Generate the Merged HTML Coverage Report (outputs covReport next to the Makefile)
 cov:
-	cd $(OUT_DIR) && rm -rf merged.vdb covReport && \
-	urg -full64 -dir *.vdb -dbname merged.vdb -report covReport -log urg.log
+	rm -rf $(CURDIR)/covReport
+	cd $(OUT_DIR) && rm -rf merged.vdb && \
+	urg -full64 -dir *.vdb -dbname merged.vdb -report $(CURDIR)/covReport -log urg.log
 
 # 5. Run Regression (Compiles once, runs all tests x all seeds in parallel)
 regression: compile
@@ -117,19 +118,16 @@ $(REGRESS_TARGETS): regress_run_%:
 wave:
 	cd $(OUT_DIR) && verdi -ssf dump.fsdb &
 
-# 7. Clean up EVERYTHING inside log_folder (keeps the empty folder)
+# 7. Clean up everything inside log_folder plus covReport in the root directory
 clean:
-	rm -rf $(OUT_DIR)/* $(OUT_DIR)/.[!.]* DVEfiles
+	rm -rf $(OUT_DIR)/* $(OUT_DIR)/.[!.]* covReport DVEfiles
 
-# 7b. Delete everything in log_folder EXCEPT .vcd, *_simulate.log, and covReport
+# 7b. Delete everything in log_folder EXCEPT .vcd and *_simulate.log (covReport outside is untouched)
 clean_keep:
 	@if [ -d $(OUT_DIR) ]; then \
 		find $(OUT_DIR) -mindepth 1 -maxdepth 1 \
 		! -iname '*.vcd' \
 		! -iname '*_simulate.log' \
-		! -name 'covReport' \
-		! -name 'coverReport' \
-		! -name 'coverpoint' \
 		-exec rm -rf {} +; \
 	fi
 
