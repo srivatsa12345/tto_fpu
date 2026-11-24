@@ -1,8 +1,0 @@
-<Command name="schRTLInfo"  delimiter="."  >
-<RTLBlock >
-<RTLInfo   name="ps_0"  type="2"  fileName="/fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../../dut/fpu_core.v"  >
-    <Seg beginLine="86"  endLine="123"  />
-  </RTLInfo>
-<Instance name="tto_fpu_top.m1.u_fpu"  />
-</RTLBlock>
-</Command>

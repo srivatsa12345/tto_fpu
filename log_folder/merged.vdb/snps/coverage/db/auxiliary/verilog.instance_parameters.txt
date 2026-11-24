@@ -1,3 +1,0 @@
-tto_fpu_top.m1.u_fpu.S_IDLE0
-tto_fpu_top.m1.u_fpu.S_OPERATION2
-tto_fpu_top.m1.u_fpu.S_SPECIAL1
