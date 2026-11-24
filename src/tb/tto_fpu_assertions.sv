@@ -63,14 +63,14 @@ module tto_fpu_assertions(input logic clk, input logic rst_n, input logic [7:0]u
 
 	property check_ready_assertion;
 	    @(posedge clk) disable iff(!rst_n)
-	    !uo_out[3] && uo_out[7:4]==4'd2 && $rose(ui_in[0]) |=> uo_out[3];
+		!uo_out[3] && uo_out[7:4]==4'd3 && $rose(ui_in[0]) && !uo_out[0] |=> ##1 uo_out[3];
 	endproperty
 	assert property(check_ready_assertion)
 	else $error("Check ready assertion failed");
 
 	property check_ready_deassertion;
 	    @(posedge clk) disable iff(!rst_n)
-		uo_out[3] && $rose(ui_in[0]) && !uo_out[0] |-> ##2 !uo_out[3];
+		uo_out[3] && $rose(ui_in[0]) && !uo_out[0] |=> ##1 !uo_out[3];
 	endproperty
 	assert property(check_ready_deassertion)
 	else $error("Check ready deassertion failed");
