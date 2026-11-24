@@ -1,6 +1,6 @@
 # Variables for easy modification
-MASTER_FILE = src/tb/globals/tto_fpu_package.sv
-INCDIRS = +incdir+src/tb/globals
+MASTER_FILE = $(CURDIR)/src/tb/globals/tto_fpu_package.sv
+INCDIRS = +incdir+$(CURDIR) +incdir+$(CURDIR)/src/tb/globals
 TESTNAME ?= flag_test
 COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
 OUT_DIR = log_folder
@@ -56,7 +56,7 @@ JOBS ?= 4
 SEED_LIST ?= 1234 5678 9012 3456 7890
 REGRESS_TARGETS = $(foreach t,$(TEST_LIST),$(foreach s,$(SEED_LIST),regress_run_$(t).$(s)))
 
-.PHONY: all start compile sim cov regression wave clean git fail
+.PHONY: all start compile sim cov regression wave clean clean_keep git fail
 
 .DEFAULT_GOAL := all
 
@@ -66,15 +66,15 @@ all: compile sim cov
 start:
 	/bin/csh -c "source /fetools/synopsys/source/source.sh && exec /bin/csh"
 
-# 2. Compile the design
+# 2. Compile the design (runs inside log_folder so all VCS/KDB files stay there)
 compile:
 	mkdir -p $(OUT_DIR)
 	rm -rf $(OUT_DIR)/*.vdb
-	vcs -full64 -sverilog -timescale=1ns/1ps -ntb_opts uvm-1.2 \
+	cd $(OUT_DIR) && vcs -full64 -sverilog -timescale=1ns/1ps -ntb_opts uvm-1.2 \
 	$(LIC_FLAGS) -debug_access+all -kdb $(COV_FLAGS) $(INCDIRS) \
-	-Mdir=$(OUT_DIR)/csrc -o $(OUT_DIR)/simv -cm_dir $(OUT_DIR)/simv.vdb \
-	-cm_log $(OUT_DIR)/cm_compile.log \
-	-l $(OUT_DIR)/compile.log $(MASTER_FILE)
+	-Mdir=csrc -o simv -cm_dir simv.vdb \
+	-cm_log cm_compile.log \
+	-l compile.log $(MASTER_FILE)
 
 # 3. Run the Simulation (Used for standalone / single test runs)
 sim:
@@ -117,11 +117,21 @@ $(REGRESS_TARGETS): regress_run_%:
 wave:
 	cd $(OUT_DIR) && verdi -ssf dump.fsdb &
 
-# 7. Clean up generated files to start fresh
+# 7. Clean up EVERYTHING inside log_folder (keeps the empty folder)
 clean:
-	rm -rf $(OUT_DIR)/simv* $(OUT_DIR)/csrc* $(OUT_DIR)/*.log $(OUT_DIR)/*.vpd \
-	$(OUT_DIR)/*.fsdb $(OUT_DIR)/*.vdb $(OUT_DIR)/*ucli.key $(OUT_DIR)/verdiLog \
-	$(OUT_DIR)/novas* $(OUT_DIR)/covReport DVEfiles
+	rm -rf $(OUT_DIR)/* $(OUT_DIR)/.[!.]* DVEfiles
+
+# 7b. Delete everything in log_folder EXCEPT .vcd, *_simulate.log, and covReport
+clean_keep:
+	@if [ -d $(OUT_DIR) ]; then \
+		find $(OUT_DIR) -mindepth 1 -maxdepth 1 \
+		! -iname '*.vcd' \
+		! -iname '*_simulate.log' \
+		! -name 'covReport' \
+		! -name 'coverReport' \
+		! -name 'coverpoint' \
+		-exec rm -rf {} +; \
+	fi
 
 # 8. Git automation (stages all files across all directories, including log_folder)
 git:
