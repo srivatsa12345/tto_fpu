@@ -1,7 +1,7 @@
 Command: /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/log_folder/./simv -licqueue -l write_busy_test_9012_simulate.log -cm line+cond+fsm+tgl+branch+assert -cm_dir write_busy_test_9012.vdb -cm_name write_busy_test_9012 -cm_log write_busy_test_9012_cm.log -key write_busy_test_9012_ucli.key +fsdbfile+write_busy_test_9012.fsdb +VCDFILE=write_busy_test_9012.vcd +UVM_TESTNAME=write_busy_test +ntb_random_seed=9012
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 24 15:45 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 24 16:13 2026
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -27,7 +27,6 @@ UVM-1.2.Synopsys
 *Verdi* Loading libsscore_vcs202003.so
 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
 (C) 1996 - 2021 by Synopsys, Inc.
-*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'write_busy_test_9012.fsdb'
 *Verdi* : Begin traversing the scope (tto_fpu_top), layer (0).
 *Verdi* : End of traversing.
@@ -260,17 +259,19 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e0, uio_in:5d
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 940000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:41, uio_in:42
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 940000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 940000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'hd7 : rhs = 'h10
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 940000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@1485
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:d7, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-
+REF: uio_oe:ff, uio_out:10, uo_out:22
+_______________________________________________________________________________________________________________________________________
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 940000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d0, uio_in:4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:41, uio_in:42
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:4
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:d7, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 980000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:29, uio_in:7d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:4
@@ -278,7 +279,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:29, uio_in:7d
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1020000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:28, uio_in:9a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:29, uio_in:7d
@@ -286,7 +287,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:9a
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1060000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:41, uio_in:bf, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:9a
@@ -294,7 +295,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:41, uio_in:bf
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1100000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:7e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:41, uio_in:bf
@@ -302,7 +303,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:7e
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1140000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:79, uio_in:14, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:7e
@@ -310,7 +311,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:79, uio_in:14
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1180000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:20, uio_in:ab, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:79, uio_in:14
@@ -318,7 +319,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:20, uio_in:ab
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 1220000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:b4, uio_in:fa, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:ab
@@ -326,7 +327,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b4, uio_in:fa
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1260000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:d1, uio_in:1c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b4, uio_in:fa
@@ -334,7 +335,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d1, uio_in:1c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1300000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d0, uio_in:41, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d1, uio_in:1c
@@ -342,7 +343,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:41
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1340000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:49, uio_in:8e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:41
@@ -350,7 +351,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:49, uio_in:8e
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:68, uio_in:a3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:49, uio_in:8e
@@ -358,7 +359,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:68, uio_in:a3
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1420000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:f9, uio_in:b5, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:68, uio_in:a3
@@ -366,7 +367,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f9, uio_in:b5
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1460000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:6c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f9, uio_in:b5
@@ -374,7 +375,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:6c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1500000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:d9, uio_in:b8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:6c
@@ -382,7 +383,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d9, uio_in:b8
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d0, uio_in:49, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d9, uio_in:b8
@@ -390,7 +391,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:49
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 1580000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:d2, uio_in:cb, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:49
@@ -398,7 +399,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d2, uio_in:cb
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1620000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:80, uio_in:42, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d2, uio_in:cb
@@ -406,25 +407,23 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:80, uio_in:42
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 1660000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:7a, uio_in:cc, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:80, uio_in:42
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:7a, uio_in:cc
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 1700000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'h10 : rhs = 'hd7
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 1700000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@1941
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 1700000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 1700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:10, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:ff, uio_out:10, uo_out:22
+
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 1700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:70, uio_in:b1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:7a, uio_in:cc
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 1740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 1740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:b1
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 1740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 1740000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:81, uio_in:d1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 1780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:b1
@@ -600,17 +599,19 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:71
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2620000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:99, uio_in:65
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 2620000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 2620000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'hd7 : rhs = 'h10
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 2620000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@2501
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 2620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:d7, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-
+REF: uio_oe:ff, uio_out:10, uo_out:22
+_______________________________________________________________________________________________________________________________________
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 2620000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:8, uio_in:d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:99, uio_in:65
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 2660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:8, uio_in:d
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:d7, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 2660000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:f9, uio_in:2b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:8, uio_in:d
@@ -618,7 +619,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f9, uio_in:2b
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 2700000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:90, uio_in:e1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f9, uio_in:2b
@@ -626,7 +627,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:90, uio_in:e1
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 2740000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:21, uio_in:ca, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:90, uio_in:e1
@@ -634,7 +635,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:21, uio_in:ca
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 2780000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c8, uio_in:ff, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:21, uio_in:ca
@@ -642,7 +643,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c8, uio_in:ff
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 2820000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:69, uio_in:45, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c8, uio_in:ff
@@ -650,7 +651,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:69, uio_in:45
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 2860000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:f0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:69, uio_in:45
@@ -658,7 +659,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:f0
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 2900000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:64, uio_in:24, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:f0
@@ -666,7 +667,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:64, uio_in:24
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 2940000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:49, uio_in:34, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 2980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:64, uio_in:24
@@ -674,7 +675,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 2980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:49, uio_in:34
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 2980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 2980000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:58, uio_in:1c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:49, uio_in:34
@@ -682,7 +683,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:1c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3020000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:9, uio_in:f6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:1c
@@ -690,7 +691,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:9, uio_in:f6
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 3060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:18, uio_in:8a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:9, uio_in:f6
@@ -698,7 +699,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:18, uio_in:8a
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3100000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:91, uio_in:75, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:18, uio_in:8a
@@ -706,7 +707,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:91, uio_in:75
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 3140000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:58, uio_in:f8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:91, uio_in:75
@@ -714,7 +715,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:f8
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3180000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:e9, uio_in:7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:f8
@@ -722,7 +723,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:e9, uio_in:7
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 3220000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d0, uio_in:3c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:e9, uio_in:7
@@ -730,7 +731,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d0, uio_in:3c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 3260000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:12, uio_in:d1, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d0, uio_in:3c
@@ -738,7 +739,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:12, uio_in:d1
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 3300000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:58, uio_in:55, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:12, uio_in:d1
@@ -746,25 +747,23 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:58, uio_in:55
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 3340000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:12, uio_in:24, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:58, uio_in:55
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3380000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:12, uio_in:24
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 3380000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'h10 : rhs = 'hd7
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 3380000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@2957
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 3380000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 3380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:10, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:ff, uio_out:10, uo_out:22
+
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 3380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:37, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:12, uio_in:24
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 3420000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 3420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:37
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 3420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 3420000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:31, uio_in:aa, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 3460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:37
@@ -940,17 +939,19 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:16
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4300000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:99, uio_in:17
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 4300000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 4300000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'hd7 : rhs = 'h10
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 4300000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@3517
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 4300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:d7, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-
+REF: uio_oe:ff, uio_out:10, uo_out:22
+_______________________________________________________________________________________________________________________________________
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4300000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:28, uio_in:3a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:99, uio_in:17
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 4340000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:28, uio_in:3a
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:d7, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4340000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:71, uio_in:4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:28, uio_in:3a
@@ -958,7 +959,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:71, uio_in:4
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4380000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:20, uio_in:3d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:71, uio_in:4
@@ -966,7 +967,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:20, uio_in:3d
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4420000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:11, uio_in:b4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:3d
@@ -974,7 +975,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:11, uio_in:b4
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4460000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:11, uio_in:b4
@@ -982,7 +983,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4500000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:a1, uio_in:c9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:c
@@ -990,7 +991,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a1, uio_in:c9
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4540000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:88, uio_in:e7, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a1, uio_in:c9
@@ -998,7 +999,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:e7
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 4580000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:14, uio_in:4d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:e7
@@ -1006,7 +1007,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:14, uio_in:4d
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4620000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:31, uio_in:5e, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:14, uio_in:4d
@@ -1014,7 +1015,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:31, uio_in:5e
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4660000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:18, uio_in:26, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:31, uio_in:5e
@@ -1022,7 +1023,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:18, uio_in:26
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4700000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:f1, uio_in:26, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:18, uio_in:26
@@ -1030,7 +1031,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f1, uio_in:26
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:56, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f1, uio_in:26
@@ -1038,7 +1039,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:56
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4780000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:1, uio_in:19, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:56
@@ -1046,7 +1047,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:1, uio_in:19
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:70, uio_in:9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:1, uio_in:19
@@ -1054,7 +1055,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:70, uio_in:9
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 4860000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:c1, uio_in:43, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:70, uio_in:9
@@ -1062,7 +1063,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c1, uio_in:43
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:88, uio_in:d6, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c1, uio_in:43
@@ -1070,7 +1071,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:d6
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 4940000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:2a, uio_in:b9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 4980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:d6
@@ -1078,7 +1079,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 4980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:2a, uio_in:b9
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 4980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 4980000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:f0, uio_in:e2, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 5020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:2a, uio_in:b9
@@ -1086,25 +1087,23 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f0, uio_in:e2
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 5020000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:62, uio_in:27, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 5060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f0, uio_in:e2
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5060000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:62, uio_in:27
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 5060000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'h10 : rhs = 'hd7
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 5060000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@3973
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 5060000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 5060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:10, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:ff, uio_out:10, uo_out:22
+
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 5060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:50, uio_in:c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 5100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:62, uio_in:27
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5100000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:50, uio_in:c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 5100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 5100000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:69, uio_in:aa, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 5140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:50, uio_in:c
@@ -1280,17 +1279,19 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 5980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:89
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 5980000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 5980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:69, uio_in:62
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 5980000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 5980000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'hd7 : rhs = 'h10
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 5980000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@4533
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 5980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:d7, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-
+REF: uio_oe:ff, uio_out:10, uo_out:22
+_______________________________________________________________________________________________________________________________________
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 5980000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:b0, uio_in:87, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:69, uio_in:62
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6020000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b0, uio_in:87
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:d7, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6020000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:f1, uio_in:52, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b0, uio_in:87
@@ -1298,7 +1299,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f1, uio_in:52
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6060000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:c0, uio_in:38, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6100000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f1, uio_in:52
@@ -1306,7 +1307,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6100000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c0, uio_in:38
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6100000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6100000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:a1, uio_in:ce, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6140000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c0, uio_in:38
@@ -1314,7 +1315,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6140000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a1, uio_in:ce
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6140000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6140000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:78, uio_in:97, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6180000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a1, uio_in:ce
@@ -1322,7 +1323,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6180000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:78, uio_in:97
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6180000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6180000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:a9, uio_in:14, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6220000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:78, uio_in:97
@@ -1330,7 +1331,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6220000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a9, uio_in:14
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6220000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6220000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a8, uio_in:db, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6260000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a9, uio_in:14
@@ -1338,7 +1339,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6260000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a8, uio_in:db
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6260000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 6260000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:5c, uio_in:91, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6300000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a8, uio_in:db
@@ -1346,7 +1347,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6300000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:5c, uio_in:91
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6300000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6300000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:91, uio_in:33, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6340000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:5c, uio_in:91
@@ -1354,7 +1355,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6340000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:91, uio_in:33
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6340000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6340000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:50, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6380000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:91, uio_in:33
@@ -1362,7 +1363,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6380000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:50
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6380000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6380000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:41, uio_in:a4, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6420000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:50
@@ -1370,7 +1371,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6420000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:41, uio_in:a4
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6420000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6420000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:20, uio_in:bd, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6460000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:41, uio_in:a4
@@ -1378,7 +1379,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6460000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:20, uio_in:bd
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6460000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6460000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:51, uio_in:27, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6500000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:20, uio_in:bd
@@ -1386,7 +1387,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6500000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:51, uio_in:27
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6500000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6500000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:88, uio_in:fe, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6540000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:51, uio_in:27
@@ -1394,7 +1395,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6540000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:fe
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6540000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6540000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:39, uio_in:f3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6580000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:fe
@@ -1402,7 +1403,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6580000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:39, uio_in:f3
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6580000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6580000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:88, uio_in:62, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6620000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:39, uio_in:f3
@@ -1410,7 +1411,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6620000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:88, uio_in:62
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6620000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 6620000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:5a, uio_in:c0, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:88, uio_in:62
@@ -1418,7 +1419,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:5a, uio_in:c0
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6660000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:52, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:5a, uio_in:c0
@@ -1426,25 +1427,23 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:52
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_read_en_seq.sv(13) @ 6700000: uvm_test_top.env.act.sqr@@rd [assert_read_en_seq] ui_in:92, uio_in:d9, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:d8, uio_in:52
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6740000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:92, uio_in:d9
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 6740000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'h10 : rhs = 'hd7
-UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 6740000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@4989
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 6740000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 6740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:10, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-_______________________________________________________________________________________________________________________________________
+REF: uio_oe:ff, uio_out:10, uo_out:22
+
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 6740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:68, uio_in:d, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:92, uio_in:d9
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 6780000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:10, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 6780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:68, uio_in:d
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 6780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 6780000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:41, uio_in:3, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 6820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:68, uio_in:d
@@ -1620,17 +1619,19 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7660000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f0, uio_in:82
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7660000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:ff, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7660000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:1, uio_in:4b
-UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(57) @ 7660000: uvm_test_top.env.scb [SCOREBOARD] 
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(351) @ 7660000: reporter [MISCMP] Miscompare for tr.uio_out: lhs = 'hd7 : rhs = 'h10
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_comparer.svh(382) @ 7660000: reporter [MISCMP] 1 Miscompare(s) for object exp@865 vs. tr@5549
+UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(60) @ 7660000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:ff, uio_out:d7, uo_out:22
-REF: uio_oe:ff, uio_out:d7, uo_out:22
-
+REF: uio_oe:ff, uio_out:10, uo_out:22
+_______________________________________________________________________________________________________________________________________
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 7660000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:10, uio_in:95, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7700000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:1, uio_in:4b
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/rst_agent/tto_fpu_out_mon.sv(33) @ 7700000: uvm_test_top.env.rst_ag.mon [OUT_MON] Sampled data:uio_oe:0, uio_out:d7, uo_out:22
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7700000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:10, uio_in:95
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7700000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:d7, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 7700000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:b1, uio_in:12, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7740000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:10, uio_in:95
@@ -1638,7 +1639,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7740000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:b1, uio_in:12
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7740000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 7740000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:48, uio_in:4b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7780000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:b1, uio_in:12
@@ -1646,7 +1647,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7780000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:48, uio_in:4b
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7780000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 7780000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:19, uio_in:29, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7820000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:48, uio_in:4b
@@ -1654,7 +1655,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7820000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:19, uio_in:29
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7820000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:32
-REF: uio_oe:0, uio_out:d7, uo_out:32
+REF: uio_oe:0, uio_out:10, uo_out:32
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 7820000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:a0, uio_in:9b, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7860000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:19, uio_in:29
@@ -1662,7 +1663,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7860000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:a0, uio_in:9b
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7860000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 7860000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:f9, uio_in:a, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7900000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:a0, uio_in:9b
@@ -1670,7 +1671,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7900000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:f9, uio_in:a
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7900000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:a
-REF: uio_oe:0, uio_out:d7, uo_out:a
+REF: uio_oe:0, uio_out:10, uo_out:a
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 7900000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:68, uio_in:5c, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7940000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:f9, uio_in:a
@@ -1678,7 +1679,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7940000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:68, uio_in:5c
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7940000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_start_pulse_seq.sv(13) @ 7940000: uvm_test_top.env.act.sqr@@st [assert_start_pulse_seq] ui_in:c4, uio_in:c8, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 7980000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:68, uio_in:5c
@@ -1686,7 +1687,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 7980000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:c4, uio_in:c8
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 7980000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:12
-REF: uio_oe:0, uio_out:d7, uo_out:12
+REF: uio_oe:0, uio_out:10, uo_out:12
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 7980000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:71, uio_in:66, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 8020000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:c4, uio_in:c8
@@ -1694,7 +1695,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 8020000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:71, uio_in:66
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8020000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/no_op_seq.sv(13) @ 8020000: uvm_test_top.env.act.sqr@@no [no_op_seq] ui_in:d8, uio_in:38, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_in_mon.sv(34) @ 8060000: uvm_test_top.env.act.mon [INPUT_MON] Sampled data:RESET:1, ui_in:71, uio_in:66
@@ -1702,7 +1703,7 @@ UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/s
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/active_agent/tto_fpu_driver.sv(37) @ 8060000: uvm_test_top.env.act.drv [DRV] Driven data:RESET:1, ui_in:d8, uio_in:38
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(65) @ 8060000: uvm_test_top.env.scb [SCOREBOARD] 
 DUT: uio_oe:0, uio_out:10, uo_out:22
-REF: uio_oe:0, uio_out:d7, uo_out:22
+REF: uio_oe:0, uio_out:10, uo_out:22
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/assert_wr_en_seq.sv(13) @ 8060000: uvm_test_top.env.act.sqr@@wr [assert_wr_en_seq] ui_in:79, uio_in:44, uio_oe:xx, uio_out:xx, uo_out:xx
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../sequences/reset_seq.sv(13) @ 8080000: uvm_test_top.env.rst_ag.sqr@@rst [reset_seq] RESET:0
@@ -16955,8 +16956,8 @@ REF: uio_oe:0, uio_out:0, uo_out:30
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 84310000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sb.sv(266) @ 84310000: uvm_test_top.env.scb [SCOREBOARD] 
 Total Test cases ran:2107
-Total testcases passed:2099
-Total testcases failed:8
+Total testcases passed:2098
+Total testcases failed:9
 
 UVM_INFO /fetools/work_area/frontend/Batch_11/srivatsa/UVM/project/tto/tto_fpu/src/tb/globals/../env/tto_fpu_sub.sv(85) @ 84310000: uvm_test_top.env.sub [sub] INPUT COVERAGE = 100.000000
 
@@ -16977,14 +16978,14 @@ UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/b
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :10564
+UVM_INFO :10566
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
 [DRV]  2108
 [INPUT_MON]  2108
-[MISCMP]    16
+[MISCMP]    18
 [OUT_MON]  2108
 [RNTST]     1
 [RST_DRV]     6
@@ -17009,4 +17010,4 @@ VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitor
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 84310000 ps
 CPU Time:      1.960 seconds;       Data structure size:   0.7Mb
-Tue Nov 24 15:45:44 2026
+Tue Nov 24 16:13:55 2026
