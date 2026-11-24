@@ -42,3 +42,16 @@ class exact_cancellation_vseq extends uvm_sequence;
                     ec2.start(p_sequencer.act_sqr);
                     st.start(p_sequencer.act_sqr);
                     sub.start(p_sequencer.act_sqr);
+
+                    repeat(4) no_op.start(p_sequencer.act_sqr);
+
+                    repeat(`FP/8) begin
+                        rd.start(p_sequencer.act_sqr);
+                        no_op.start(p_sequencer.act_sqr);
+                    end
+                end
+            end
+        join
+    endtask
+
+endclass
