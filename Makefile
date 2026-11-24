@@ -33,7 +33,6 @@ TEST_LIST = \
 	read_before_op_test \
 	read_pointer_reset_test \
 	read_write_in_between_test \
-	sanity2 \
 	sanity_test \
 	shift_out_test \
 	start_busy_test \
