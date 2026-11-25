@@ -6,29 +6,33 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
     tto_fpu_seq_item mon;
     covergroup input_cg;
   
-        write_en: coverpoint drv.ui_in[0] iff (!drv.uo_out[0]) {
+        write_en: coverpoint drv.ui_in[0] {
             bins write_0={0};
             bins write_1={1};
         }
-        read_en: coverpoint drv.ui_in[1] iff ((!drv.uo_out[0])&&(!drv.ui_in[0])){
+        read_en: coverpoint drv.ui_in[1] {
             bins read_0={0};
             bins read_1={1};
         }
-        start: coverpoint drv.ui_in[2] iff (!drv.uo_out[0]) {
+        start: coverpoint drv.ui_in[2] {
             bins start_0={0};
             bins start_1={1};
         }
-        opcode: coverpoint drv.ui_in[3] iff (!drv.uo_out[0]) {
+        opcode: coverpoint drv.ui_in[3] {
             bins add={0};
             bins subtract={1};
         }
-        uio_in_byte: coverpoint drv.uio_in iff (!drv.uo_out[0]) {
+        uio_in_byte: coverpoint drv.uio_in {
             bins zero={8'h00};
             bins non_zero={[8'h01:8'hFF]};
         }
-        unused_pins: coverpoint drv.ui_in[7:4] iff (!drv.uo_out[0]) {
+        unused_pins: coverpoint drv.ui_in[7:4] {
             bins val={[0:15]};
         }
+        wr_rd: cross write_en, read_en;
+        st_wr: cross start, write_en;
+        st_rd: cross start, read_en;
+        st_wr_rd: cross start, write_en, read_en;
     endgroup
     covergroup output_cg;
         busy: coverpoint mon.uo_out[0]{
@@ -54,6 +58,24 @@ class tto_fpu_sub extends uvm_subscriber #(tto_fpu_seq_item);
         uio_oe: coverpoint mon.uio_oe{
             bins input_enable={8'h00};
             bins output_enable={8'hFF};
+        }
+        done_err: cross done, error {
+            bins done_err_00 = binsof(done) intersect {0} && binsof(error) intersect {0};  
+            bins done_err_10 = binsof(done) intersect {1} && binsof(error) intersect {0};  
+            bins done_err_11 = binsof(done) intersect {1} && binsof(error) intersect {1};  
+            illegal_bins done_err_01 = binsof(done) intersect {0} && binsof(error) intersect {1};
+        }
+        done_ready: cross done, ready {
+            bins done_ready_00 = binsof(done) intersect {0} && binsof(ready) intersect {0};  
+            bins done_ready_10 = binsof(done) intersect {1} && binsof(ready) intersect {0};  
+            bins done_ready_11 = binsof(done) intersect {1} && binsof(ready) intersect {1};  
+            bins done_ready_01 = binsof(done) intersect {0} && binsof(ready) intersect {1};
+        }
+        done_busy: cross done, busy {
+            bins done_busy_00 = binsof(done) intersect {0} && binsof(busy) intersect {0};  
+            bins done_busy_10 = binsof(done) intersect {1} && binsof(busy) intersect {0};  
+            bins done_busy_01 = binsof(done) intersect {0} && binsof(busy) intersect {1};
+            illegal_bins done_busy_11 = binsof(done) intersect {1} && binsof(busy) intersect {1};  
         }
     endgroup
     function new(string name="tto_fpu_sub",uvm_component parent=null);
