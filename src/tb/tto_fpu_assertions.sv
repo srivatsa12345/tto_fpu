@@ -42,7 +42,7 @@ module tto_fpu_assertions(input logic clk, input logic rst_n, input logic [7:0]u
 
 	property check_start_clears_done_error;
 	    @(posedge clk) disable iff(!rst_n)
-		uo_out[1] && uo_out[2] && ui_in[2] && uo_out[3] && !uo_out[0] |=> ##1 (!uo_out[1] && !uo_out[2] && uo_out[0]) ;
+		uo_out[1] && uo_out[2] && $rose(ui_in[2]) && uo_out[3] && !uo_out[0] |=> ##1 (!uo_out[1] && !uo_out[2] && uo_out[0]) ;
 	endproperty
 	assert property(check_start_clears_done_error)
 	else $error("Check start clears done failed");
