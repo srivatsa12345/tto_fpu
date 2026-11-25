@@ -55,12 +55,12 @@ SEED_LIST ?= 1234 5678 9012 3456 7890
 REGRESS_TARGETS = $(foreach t,$(TEST_LIST),$(foreach s,$(SEED_LIST),regress_run_$(t).$(s)))
 ONCE_TARGETS = $(foreach t,$(TEST_LIST),once_run_$(t))
 
-.PHONY: all start compile sim cov regression regress_once wave clean clean_keep git fail assert_fail
+.PHONY: run start compile sim cov regression regress_once wave clean clean_keep git fail assert_fail
 
 .DEFAULT_GOAL := all
 
 # 1. Run the entire flow for a single test (Compile, Sim, Coverage)
-all: compile sim cov
+run: compile sim cov
 
 start:
 	/bin/csh -c "source /fetools/synopsys/source/source.sh && exec /bin/csh"
