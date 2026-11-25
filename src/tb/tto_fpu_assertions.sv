@@ -7,7 +7,7 @@ module tto_fpu_assertions(input logic clk, input logic rst_n, input logic [7:0]u
 
 	property check_busy_high;
 	    @(posedge clk) disable iff(!rst_n)
-		(ui_in[2] && uo_out[3]) |=> ##1 uo_out[0];
+		($rose(ui_in[2]) && uo_out[3]) |=> ##1 uo_out[0];
 	endproperty
 	assert property(check_busy_high)
 	else $error("Check busy high failed");
