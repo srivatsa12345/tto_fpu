@@ -91,7 +91,7 @@ module tto_fpu_assertions(input logic clk, input logic rst_n, input logic [7:0]u
 
 	property check_uio_oe;
 	    @(posedge clk) disable iff(!rst_n)
-		ui_in[1] && !ui_in[0] && !uo_out[0] |=> uio_oe==8'hFF;
+		ui_in[1] && !(($past($rose(ui_in[0])))||($rose(ui_in[0])) && !uo_out[0] |=> uio_oe==8'hFF;
 	endproperty
 	assert property(check_uio_oe)
 	else $error("Check uio_oe failed");
