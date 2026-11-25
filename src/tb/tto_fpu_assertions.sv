@@ -112,17 +112,5 @@ module tto_fpu_assertions(input logic clk, input logic rst_n, input logic [7:0]u
       
 endmodule
 
-	
-
-	
-	
-		
-	
-		
-
-
-
-
-
 
 	
