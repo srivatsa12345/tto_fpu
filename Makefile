@@ -1,6 +1,7 @@
 # Variables for easy modification
 MASTER_FILE = $(CURDIR)/src/tb/globals/tto_fpu_package.sv
 INCDIRS = +incdir+$(CURDIR) +incdir+$(CURDIR)/src/tb/globals
+EL_FILE = $(CURDIR)/tto_fpu_exclusions.el
 TESTNAME ?= flag_test
 COV_FLAGS = -cm line+cond+fsm+tgl+branch+assert
 OUT_DIR = log_folder
@@ -83,11 +84,11 @@ sim:
 	+fsdbfile+dump.fsdb +VCDFILE=$(TESTNAME).vcd \
 	+UVM_TESTNAME=$(TESTNAME)
 
-# 4. Generate the Merged HTML Coverage Report (outputs covReport next to the Makefile)
+# 4. Generate the Merged HTML Coverage Report with exclusions (outputs covReport next to the Makefile)
 cov:
-	rm -rf $(CURDIR)/covReport
-	cd $(OUT_DIR) && rm -rf merged.vdb && \
-	urg -full64 -dir *.vdb -dbname merged.vdb -report $(CURDIR)/covReport -log urg.log
+	rm -rf $(CURDIR)/covReport $(OUT_DIR)/covReport $(OUT_DIR)/merged.vdb
+	urg -full64 -dir $(OUT_DIR)/*.vdb -dbname $(OUT_DIR)/merged.vdb \
+	-elfile $(EL_FILE) -report $(CURDIR)/covReport -log $(OUT_DIR)/urg.log
 
 # 5. Run Regression (Compiles once, runs all tests x all seeds in parallel)
 regression: compile
