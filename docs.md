@@ -1,3 +1,3 @@
 - [Bugs_Sheet](https://docs.google.com/spreadsheets/d/1u_KSS9hEjGtUZaMbe2SAC0AX6e-jdt22fOS0PUraZlY/edit?gid=0#gid=0)
-- [Verification_Plan]()
-- [Verification_doc]()
+- [Verification_Plan](https://docs.google.com/spreadsheets/d/1RO5VBS7wYMkZY5agIGtv7fVNI4lCf33u/edit?usp=drivesdk&ouid=117995629250545368027&rtpof=true&sd=true)
+- [Verification_doc](https://docs.google.com/document/d/1FrT4UqlsCC1ayNsYROCHNVu-M7b_eMfB/edit?usp=drivesdk&ouid=117995629250545368027&rtpof=true&sd=true)
