@@ -5,24 +5,35 @@
 // Date: Wed Nov 25 12:55:14 2026
 // ExclMode: default
 //==================================================
-CHECKSUM: "650747699 3661984174"
-INSTANCE: tto_fpu_top.m1
-Toggle _unused "net _unused"
-Toggle uo_out "net uo_out[7:0]"
-Toggle ena "net ena"
 CHECKSUM: "1189767753 909727920"
 INSTANCE: tto_fpu_top.m1.u_fpu
-Toggle lz_ext "net lz_ext[4:0]"
-Toggle m_small "net m_small[10:0]"
-Toggle m_big "net m_big[10:0]"
-CHECKSUM: "1189767753 1132876550"
-INSTANCE: tto_fpu_top.m1.u_fpu
-Fsm ps "1132876550"
+Toggle lz_ext [4] "net lz_ext[4:0]"
+Toggle m_small [10] "net m_small[10:0]"
+Toggle m_big [10] "net m_big[10:0]"
+
+CHECKSUM: "650747699 3661984174"
+INSTANCE: tto_fpu_top.m1
+Toggle ena "net ena"
+Toggle _unused "net _unused"
+Toggle uo_out [7] "net uo_out[7:0]"
+Toggle uo_out [6] "net uo_out[7:0]"
+
 CHECKSUM: "1189767753 395885532"
 INSTANCE: tto_fpu_top.m1.u_fpu
-Condition 2 "2168541633" "(((exp_big == {EXP_W {1'b0}}) && (mant_big != {MAN_W {1'b0}})) || ((exp_small == {EXP_W {1'b0}}) && (mant_small != {MAN_W {1'b0}}))) 1 -1"
-Condition 5 "1444305891" "((exp_small == {EXP_W {1'b0}}) && (mant_small == {MAN_W {1'b0}})) 1 -1"
-Condition 1 "2170637381" "((exp_big == EXP_INF) || (exp_small == EXP_INF)) 1 -1"
+Condition 1 "2170637381" "((exp_big == EXP_INF) || (exp_small == EXP_INF)) 1 -1" (2 "01")
+Condition 2 "2168541633" "(((exp_big == {EXP_W {1'b0}}) && (mant_big != {MAN_W {1'b0}})) || ((exp_small == {EXP_W {1'b0}}) && (mant_small != {MAN_W {1'b0}}))) 1 -1" (3 "10")
+Condition 5 "1444305891" "((exp_small == {EXP_W {1'b0}}) && (mant_small == {MAN_W {1'b0}})) 1 -1" (2 "10")
 CHECKSUM: "650747699 618557603"
 INSTANCE: tto_fpu_top.m1
-Condition 4 "535138940" "(((!core_start)) && (core_done || core_err)) 1 -1"
+Condition 4 "535138940" "(((!core_start)) && (core_done || core_err)) 1 -1" (1 "01")
+Condition 5 "1607585086" "(core_done || core_err) 1 -1" (2 "01")
+
+CHECKSUM: "2086183742 361657326"
+INSTANCE: tto_fpu_top.intrf
+Toggle uo_out [7] "logic uo_out[7:0]"
+Toggle uo_out [6] "logic uo_out[7:0]"
+
+CHECKSUM: "3406568860 361657326"
+INSTANCE: tto_fpu_top.tfa
+Toggle uo_out [7] "logic uo_out[7:0]"
+Toggle uo_out [6] "logic uo_out[7:0]"
